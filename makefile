@@ -7,10 +7,11 @@ DEF2 = /usr/local/include
 PRG = /usr/local/bin/$(PROG)
 
 FILES = \
+	$(LIB)(ga_schedule.o)	\
+	$(LIB)(LoadCourses.o)	\
 	$(LIB)(MakeClasses.o)	\
 	$(LIB)(MakeRequests.o)	\
 	$(LIB)(MakeSchedule.o)	\
-	$(LIB)(ga_schedule.o)	\
 	$(LIB)(getargs.o)
 
 .SILENT:
