@@ -89,6 +89,7 @@ void MakeClasses ()
 	int		Total, Classes, Remain;
 	double	PerClass;
 
+	fprintf ( ofp, "COURSE,CLASS\n" );
 	for ( xc = 0, xo = 0; xc < CourseCount; xc++ )
 	{
 		Total    = CourseArray[xc].Counter;
@@ -116,9 +117,9 @@ void MakeClasses ()
 		}
 
 		
-		for ( xe = 1; xe <= Classes; xe++ )
+		for ( xe = 0; xe < Classes; xe++ )
 		{
-			fprintf ( ofp, "%3d,%2d\n", CourseArray[xc].ID, xe );
+			fprintf ( ofp, "%3d,%3d%c\n", CourseArray[xc].ID, CourseArray[xc].ID, 'A' + xe );
 			xo++;
 		}
 	}
