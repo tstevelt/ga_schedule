@@ -77,7 +77,10 @@ void LoadClasses ()
 			printf ( "Exceeds MAXCLASS\n" );
 			exit ( 1 );
 		}
-		ClassArray[ClassCount].ID = atoi ( tokens[0] );
+		if (( ClassArray[ClassCount].ID = atoi ( tokens[0] )) == 0 )
+		{
+			continue;
+		}
 		ClassArray[ClassCount].CourseID = atoi ( tokens[1] );
 		snprintf ( ClassArray[ClassCount].ClassCode, sizeof(ClassArray[ClassCount].ClassCode), "%s", tokens[2] );
 		ClassCount++;
