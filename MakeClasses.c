@@ -30,6 +30,9 @@ void MakeClasses ()
 	int		xo;
 	int		xc;
 	COURSE_RECORD	key, *ptr;
+	int		Total, Classes, Remain;
+	double	PerClass;
+	int		ClassID;
 
 	LoadCourses ();
 
@@ -61,7 +64,7 @@ void MakeClasses ()
 			continue;
 		}
 
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 9 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 8 )
 		{
 			continue;
 		}
@@ -80,16 +83,16 @@ void MakeClasses ()
 
 	fclose ( ifp );
 
+	DumpCourses ();
+
 	if (( ofp = fopen ( "classes.TXT", "w" )) == NULL )
 	{
 		printf ( "Cannot create classes.TXT\n" );
 		exit ( 1 );
 	}
 
-	int		Total, Classes, Remain;
-	double	PerClass;
-
-	fprintf ( ofp, "COURSE,CLASS\n" );
+	ClassID = 1;
+	fprintf ( ofp, "ID,COURSE,CLASS\n" );
 	for ( xc = 0, xo = 0; xc < CourseCount; xc++ )
 	{
 		Total    = CourseArray[xc].Counter;
@@ -113,13 +116,16 @@ void MakeClasses ()
 
 		if ( Verbose )
 		{
-			printf ( "%4d %4d %5.1f %3d %3d\n", CourseArray[xc].ID, CourseArray[xc].Counter, PerClass, Classes, Remain );
+			printf ( "%4d %4d %5.1f %3d %3d\n", 
+						CourseArray[xc].ID, CourseArray[xc].Counter, PerClass, Classes, Remain );
 		}
 
 		
 		for ( xe = 0; xe < Classes; xe++ )
 		{
-			fprintf ( ofp, "%3d,%3d%c\n", CourseArray[xc].ID, CourseArray[xc].ID, 'A' + xe );
+			fprintf ( ofp, "%3d,%3d,%3d%c\n", 
+						ClassID, CourseArray[xc].ID, CourseArray[xc].ID, 'A' + xe );
+			ClassID++;
 			xo++;
 		}
 	}

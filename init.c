@@ -19,8 +19,31 @@
 
 #include	"ga_schedule.h"
 
-void MakeSchedule ()
+void init ()
 {
-	init ();
+	if (( CurrPop = calloc ( PopCount, sizeof(INDIVIUDAL) )) == NULL )
+	{
+		printf ( "init: calloc CurrPop failed, %s\n", strerror(errno) );
+		exit ( 1 );
+	}
+
+	if (( NextPop = calloc ( PopCount, sizeof(INDIVIUDAL) )) == NULL )
+	{
+		printf ( "init: calloc NextPop failed, %s\n", strerror(errno) );
+		exit ( 1 );
+	}
+
+	LoadClasses ();
+
+	for ( int p = 0; p < PopCount; p++ )
+	{
+		for ( int c = 0; c < ClassCount; c++ )
+		{
+			CurrPop[p].Chromosome[c].period  = random_range ( 1, MAXPERIODS );
+			CurrPop[p].Chromosome[c].classIndex  = c;
+		}
+	}
+
+	report ( 0, REPORT_ALL );
 
 }

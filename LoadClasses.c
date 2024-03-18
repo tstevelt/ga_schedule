@@ -19,7 +19,7 @@
 
 #include	"ga_schedule.h"
 
-int cmpcourse ( COURSE_RECORD *a, COURSE_RECORD *b )
+int cmpclass ( CLASS_RECORD *a, CLASS_RECORD *b )
 {
 	if ( a->ID < b->ID )
 	{
@@ -32,7 +32,7 @@ int cmpcourse ( COURSE_RECORD *a, COURSE_RECORD *b )
 	return ( 0 );
 }
 
-void LoadCourses ()
+void LoadClasses ()
 {
 	FILE	*ifp;
 	char	buffer[1024];
@@ -42,68 +42,62 @@ void LoadCourses ()
 //	int		xe = 0;
 //	int		xo;
 
-	if (( ifp = fopen ( "courses.TXT", "r" )) == NULL )
+	if (( ifp = fopen ( "classes.TXT", "r" )) == NULL )
 	{
-		printf ( "Cannot open courses.TXT\n" );
+		printf ( "Cannot open classes.TXT\n" );
 		exit ( 1 );
 	}
 
 	/*----------------------------------------------------------
-		# required courses by year
-		101,9,R,English
-		102,9,R,Algebra 1
-		103,9,R,Biology 1
-		104,9,R,US History
-		201,10,R,Literature
-		202,10,R,Algebra 2
-		...
+		ID,COURSE,CLASS
+		  1,101,101A
+		  2,101,101B
+		  3,101,101C
+		  4,101,101D
+		  5,101,101E
+		  6,101,101F
+		  7,101,101G
+		  8,102,102A
+		  9,102,102B
+	int		ID;
+	int		CourseID;
+	char	ClassCode[10];
 	----------------------------------------------------------*/
 	lineno = 0;
 	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
 	{
 		lineno++;
 
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 4 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 3 )
 		{
 			continue;
 		}
-		if ( CourseCount >= MAXCOURSE )
+		if ( ClassCount >= MAXCLASS )
 		{
-			printf ( "Exceeds MAXCOURSE\n" );
+			printf ( "Exceeds MAXCLASS\n" );
 			exit ( 1 );
 		}
-		CourseArray[CourseCount].ID = atoi ( tokens[0] );
-		CourseArray[CourseCount].Level = atoi ( tokens[1] );
-		switch ( tokens[2][0] )
-		{
-			case 'R':
-				CourseArray[CourseCount].Required = 1;
-				break;
-			case 'E':
-				CourseArray[CourseCount].Required = 0;
-				break;
-			default:
-				printf ( "Unknown course type in line %d\n", lineno );
-				exit ( 1 );
-		}
-		snprintf ( CourseArray[CourseCount].Name, MAXNAME, "%s", tokens[3] );
-		CourseCount++;
+		ClassArray[ClassCount].ID = atoi ( tokens[0] );
+		ClassArray[ClassCount].CourseID = atoi ( tokens[1] );
+		snprintf ( ClassArray[ClassCount].ClassCode, sizeof(ClassArray[ClassCount].ClassCode), "%s", tokens[2] );
+		ClassCount++;
 	}
-	printf ( "Loaded %d courses\n", CourseCount );
+	printf ( "Loaded %d Classs\n", ClassCount );
 	fclose ( ifp );
 
-	qsort ( CourseArray, CourseCount, sizeof(COURSE_RECORD), (int(*)()) cmpcourse );
+	qsort ( ClassArray, ClassCount, sizeof(CLASS_RECORD), (int(*)()) cmpclass );
+
+	DumpClasses ();
+
 }
 
-void DumpCourses ()
+void DumpClasses ()
 {
-	for ( int xc = 0; xc < CourseCount; xc++ )
+	for ( int xc = 0; xc < ClassCount; xc++ )
 	{
-		printf ( "%4d %2d %c %-20.20s %2d\n",
-			CourseArray[xc].ID,
-			CourseArray[xc].Level,
-			CourseArray[xc].Required ? 'R' : 'E',
-			CourseArray[xc].Name,
-			CourseArray[xc].Counter );
+		printf ( "%4d %4d %s\n",
+			ClassArray[xc].ID,
+			ClassArray[xc].CourseID,
+			ClassArray[xc].ClassCode );
 	}
 }

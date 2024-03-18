@@ -27,7 +27,7 @@ void MakeRequests ()
 	int		tokcnt;
 	int		lineno;
 	int		xe = 0;
-	int		xo;
+	int		xo, xs, xl;
 
 	if (( ofp = fopen ( "requests.TXT", "w" )) == NULL )
 	{
@@ -58,7 +58,7 @@ void MakeRequests ()
 		 10,9,Hudson Bardot
 		 ...
 	----------------------------------------------------------*/
-	lineno = 0;
+	lineno = xs = 0;
 	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
 	{
 		lineno++;
@@ -67,6 +67,9 @@ void MakeRequests ()
 		{
 			continue;
 		}
+
+		xs++;
+
 		Student.ID = atoi ( tokens[0] );
 		Student.Level = atoi ( tokens[1] );
 		switch ( Student.Level )
@@ -97,9 +100,18 @@ void MakeRequests ()
 		}
 
 		/*----------------------------------------------------------
-			print three electives for grade level or 5xx level 0
+			print two or three electives for grade level or 5xx level 0
 		----------------------------------------------------------*/
-		for ( xo = 0; xo < 3; )
+		if ( xs % 2 )
+		{
+			xl = 2;
+		}
+		else
+		{
+			xl = 3;
+		}
+
+		for ( xo = 0; xo < xl;  )
 		{
 			if (( CourseArray[xe].Required == 0 ) &&
 				( CourseArray[xe].Level == 0 || CourseArray[xe].Level == Student.Level ))

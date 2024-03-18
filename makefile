@@ -9,9 +9,12 @@ PRG = /usr/local/bin/$(PROG)
 FILES = \
 	$(LIB)(ga_schedule.o)	\
 	$(LIB)(LoadCourses.o)	\
+	$(LIB)(LoadClasses.o)	\
 	$(LIB)(MakeClasses.o)	\
 	$(LIB)(MakeRequests.o)	\
 	$(LIB)(MakeSchedule.o)	\
+	$(LIB)(init.o)	\
+	$(LIB)(report.o)	\
 	$(LIB)(getargs.o)
 
 .SILENT:

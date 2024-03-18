@@ -21,12 +21,12 @@
 #include	<stdlib.h>
 #include	<unistd.h>
 #include	<string.h>
+#include	<errno.h>
 /*
 #include	<sys/types.h>
 #include	<sys/stat.h>
 #include	<dirent.h>
 #include	<stdint.h>
-#include	<errno.h>
 #include	<libgen.h>		// for basename()
 */
 #include	"shslib.h"
@@ -44,7 +44,8 @@ TYPE	int		RunMode;
 TYPE	int		Verbose;
 
 #define		MAXNAME			30
-#define		MAXCOURSES		100
+#define		MAXCOURSE		100
+#define		MAXCLASS		300
 #define		MAXPERIODS		7
 #define		MAXPERCLASS		20
 
@@ -57,8 +58,7 @@ typedef struct
 	int		Counter;
 } COURSE_RECORD;
 
-
-TYPE	COURSE_RECORD	CourseArray[MAXCOURSES];
+TYPE	COURSE_RECORD	CourseArray[MAXCOURSE];
 TYPE	int				CourseCount;
 
 typedef struct
@@ -71,14 +71,60 @@ typedef struct
 TYPE	STUDENT_RECORD	Student;
 TYPE	int				StudentCount;
 
+typedef struct
+{
+	int		ID;
+	int		CourseID;
+	char	ClassCode[10];
+} CLASS_RECORD;
+
+TYPE	CLASS_RECORD	ClassArray[MAXCLASS];
+TYPE	int				ClassCount;
+
+/*----------------------------------------------------------
+	Genetic Algorithm defines and variables
+----------------------------------------------------------*/
+
+TYPE	int		PopCount;
+TYPE	int		MaxGenerations;
+TYPE	double	ProbCross;
+TYPE	double	ProbMutate;
+
+typedef struct
+{
+	int	period;
+	int	classIndex;
+} ALLELE;
+
+typedef struct
+{
+	ALLELE	Chromosome[MAXCLASS];
+	int		Conflicts;		// student is in more than one class at a time
+	int		Missing;		// student's class is not represented.
+	int		Fitness;		// total of Conflicts + Missing
+} INDIVIUDAL;
+
+TYPE	INDIVIUDAL		*CurrPop;
+TYPE	INDIVIUDAL		*NextPop;
+
+#define		REPORT_ALL		1
+#define		REPORT_BEST		2
+
 /*----------------------------
 :.,$d
 :r ! mkproto -p *.c
 ----------------------------*/
 
+
+/* LoadClasses.c */
+int cmpclass ( CLASS_RECORD *a , CLASS_RECORD *b );
+void LoadClasses ( void );
+void DumpClasses ( void );
+
 /* LoadCourses.c */
 int cmpcourse ( COURSE_RECORD *a , COURSE_RECORD *b );
 void LoadCourses ( void );
+void DumpCourses ( void );
 
 /* MakeClasses.c */
 void MakeClasses ( void );
@@ -94,3 +140,9 @@ int main ( int argc , char *argv []);
 
 /* getargs.c */
 void getargs ( int argc , char *argv []);
+
+/* init.c */
+void init ( void );
+
+/* report.c */
+void report ( int generation , int mode );

@@ -19,8 +19,19 @@
 
 #include	"ga_schedule.h"
 
-void MakeSchedule ()
+void report ( int generation, int mode )
 {
-	init ();
+	printf ( "Generation %d\n", generation );
 
+	for ( int p = 0; p < PopCount; p++ )
+	{
+		printf ( "%4d:", p );
+		for ( int c = 0; c < ClassCount; c++ )
+		{
+			printf ( " (%s %d)",
+					ClassArray[CurrPop[p].Chromosome[c].classIndex].ClassCode,
+					CurrPop[p].Chromosome[c].period );
+		}
+		printf ( " = %d\n", CurrPop[p].Fitness );
+	}
 }
