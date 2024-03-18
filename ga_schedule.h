@@ -44,8 +44,8 @@ TYPE	int		RunMode;
 TYPE	int		Verbose;
 
 #define		MAXNAME			30
-#define		MAXCOURSE		100
-#define		MAXCLASS		300
+#define		MAXCOURSE		50
+#define		MAXCLASS		200
 #define		MAXPERIODS		7
 #define		MAXPERCLASS		20
 
@@ -75,6 +75,7 @@ typedef struct
 {
 	int		ID;
 	int		CourseID;
+	int		CourseIndex;
 	char	ClassCode[10];
 } CLASS_RECORD;
 
@@ -92,8 +93,9 @@ TYPE	double	ProbMutate;
 
 typedef struct
 {
-	int	period;
 	int	classIndex;
+	int courseIndex;
+	int	period;
 } ALLELE;
 
 typedef struct
@@ -114,7 +116,6 @@ TYPE	INDIVIUDAL		*NextPop;
 :.,$d
 :r ! mkproto -p *.c
 ----------------------------*/
-
 
 /* LoadClasses.c */
 int cmpclass ( CLASS_RECORD *a , CLASS_RECORD *b );
@@ -143,6 +144,9 @@ void getargs ( int argc , char *argv []);
 
 /* init.c */
 void init ( void );
+
+/* obj_func.c */
+int obj_func ( ALLELE Chromosome []);
 
 /* report.c */
 void report ( int generation , int mode );

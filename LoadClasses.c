@@ -42,6 +42,11 @@ void LoadClasses ()
 //	int		xe = 0;
 //	int		xo;
 
+	if ( CourseCount == 0 )
+	{
+		LoadCourses ();
+	}
+
 	if (( ifp = fopen ( "classes.TXT", "r" )) == NULL )
 	{
 		printf ( "Cannot open classes.TXT\n" );
@@ -83,6 +88,16 @@ void LoadClasses ()
 		}
 		ClassArray[ClassCount].CourseID = atoi ( tokens[1] );
 		snprintf ( ClassArray[ClassCount].ClassCode, sizeof(ClassArray[ClassCount].ClassCode), "%s", tokens[2] );
+
+		for ( int ndx = 0; ndx < CourseCount; ndx++ )
+		{
+			if ( CourseArray[ndx].ID == ClassArray[ClassCount].CourseID )
+			{
+				ClassArray[ClassCount].CourseIndex = ndx;
+				break;
+			}
+		}
+
 		ClassCount++;
 	}
 	printf ( "Loaded %d Classs\n", ClassCount );

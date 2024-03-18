@@ -41,7 +41,10 @@ void init ()
 		{
 			CurrPop[p].Chromosome[c].period  = random_range ( 1, MAXPERIODS );
 			CurrPop[p].Chromosome[c].classIndex  = c;
+			CurrPop[p].Chromosome[c].courseIndex  = ClassArray[c].CourseIndex;
 		}
+
+		CurrPop[p].Fitness = obj_func ( CurrPop[p].Chromosome );
 	}
 
 	report ( 0, REPORT_ALL );

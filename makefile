@@ -13,8 +13,9 @@ FILES = \
 	$(LIB)(MakeClasses.o)	\
 	$(LIB)(MakeRequests.o)	\
 	$(LIB)(MakeSchedule.o)	\
-	$(LIB)(init.o)	\
+	$(LIB)(init.o)		\
 	$(LIB)(report.o)	\
+	$(LIB)(obj_func.o)	\
 	$(LIB)(getargs.o)
 
 .SILENT:
