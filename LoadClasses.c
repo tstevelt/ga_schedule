@@ -21,11 +21,11 @@
 
 int cmpclass ( CLASS_RECORD *a, CLASS_RECORD *b )
 {
-	if ( a->ID < b->ID )
+	if ( a->ClassID < b->ClassID )
 	{
 		return ( -1 );
 	}
-	if ( a->ID > b->ID )
+	if ( a->ClassID > b->ClassID )
 	{
 		return ( 1 );
 	}
@@ -47,27 +47,12 @@ void LoadClasses ()
 		LoadCourses ();
 	}
 
-	if (( ifp = fopen ( "classes.TXT", "r" )) == NULL )
+	if (( ifp = fopen ( "classes.CSV", "r" )) == NULL )
 	{
-		printf ( "Cannot open classes.TXT\n" );
+		printf ( "Cannot open classes.CSV\n" );
 		exit ( 1 );
 	}
 
-	/*----------------------------------------------------------
-		ID,COURSE,CLASS
-		  1,101,101A
-		  2,101,101B
-		  3,101,101C
-		  4,101,101D
-		  5,101,101E
-		  6,101,101F
-		  7,101,101G
-		  8,102,102A
-		  9,102,102B
-	int		ID;
-	int		CourseID;
-	char	ClassCode[10];
-	----------------------------------------------------------*/
 	lineno = 0;
 	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
 	{
@@ -77,23 +62,23 @@ void LoadClasses ()
 		{
 			continue;
 		}
+		if (( ClassArray[ClassCount].ClassID = atoi ( tokens[0] )) == 0 )
+		{
+			continue;
+		}
 		if ( ClassCount >= MAXCLASS )
 		{
 			printf ( "Exceeds MAXCLASS\n" );
 			exit ( 1 );
 		}
-		if (( ClassArray[ClassCount].ID = atoi ( tokens[0] )) == 0 )
-		{
-			continue;
-		}
-		ClassArray[ClassCount].CourseID = atoi ( tokens[1] );
 		snprintf ( ClassArray[ClassCount].ClassCode, sizeof(ClassArray[ClassCount].ClassCode), "%s", tokens[2] );
 
-		for ( int ndx = 0; ndx < CourseCount; ndx++ )
+		for ( int xc = 0; xc < CourseCount; xc++ )
 		{
-			if ( CourseArray[ndx].ID == ClassArray[ClassCount].CourseID )
+			int CourseID = atoi ( tokens[1] );
+			if ( CourseArray[xc].CourseID == CourseID )
 			{
-				ClassArray[ClassCount].CourseIndex = ndx;
+				ClassArray[ClassCount].CourseIndex = xc;
 				break;
 			}
 		}
@@ -105,7 +90,10 @@ void LoadClasses ()
 
 	qsort ( ClassArray, ClassCount, sizeof(CLASS_RECORD), (int(*)()) cmpclass );
 
-	DumpClasses ();
+	if ( Verbose )
+	{
+		DumpClasses ();
+	}
 
 }
 
@@ -114,8 +102,8 @@ void DumpClasses ()
 	for ( int xc = 0; xc < ClassCount; xc++ )
 	{
 		printf ( "%4d %4d %s\n",
-			ClassArray[xc].ID,
-			ClassArray[xc].CourseID,
+			ClassArray[xc].ClassID,
+			ClassArray[xc].CourseIndex,
 			ClassArray[xc].ClassCode );
 	}
 }

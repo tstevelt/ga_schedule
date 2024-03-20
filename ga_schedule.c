@@ -32,6 +32,10 @@
 
 int main ( int argc, char *argv[] )
 {
+	time_t	StartTime, EndTime;
+	int		Elapsed, Hours, Minutes, Seconds;
+	double	Average;
+
 	getargs ( argc, argv );
 
 	seed_random_with_usec ( );
@@ -47,7 +51,32 @@ int main ( int argc, char *argv[] )
 			break;
 
 		case MODE_SCHEDULE:
+			time ( &StartTime );
 			MakeSchedule ();
+			PrintSchedule ();
+			time ( &EndTime );
+			Elapsed = EndTime - StartTime;
+			Average = (double) Elapsed / (double) GenerationCount;
+			Hours = Elapsed / 3600;
+			if ( Hours )
+			{
+				Elapsed -= Hours * 3600;
+			}
+			Minutes = Elapsed / 60;
+			Seconds = Elapsed % 60;
+			if ( Hours )
+			{
+				printf ( "runtime: %d hours %d minutes %d seconds\n", Hours, Minutes, Seconds );
+			}
+			else if ( Minutes )
+			{
+				printf ( "runtime: %d minutes %d seconds\n", Minutes, Seconds );
+			}
+			else
+			{
+				printf ( "runtime: %d seconds\n", Seconds );
+			}
+			printf ( "average per generation %.4f\n", Average );
 			break;
 	}
 

@@ -22,13 +22,6 @@
 #include	<unistd.h>
 #include	<string.h>
 #include	<errno.h>
-/*
-#include	<sys/types.h>
-#include	<sys/stat.h>
-#include	<dirent.h>
-#include	<stdint.h>
-#include	<libgen.h>		// for basename()
-*/
 #include	"shslib.h"
 
 #ifdef MAIN
@@ -51,11 +44,12 @@ TYPE	int		Verbose;
 
 typedef struct
 {
-	int		ID;
+	int		CourseID;
 	int		Level;
 	int		Required;
 	char	Name[MAXNAME];
 	int		Counter;
+	int		RingIndex;
 } COURSE_RECORD;
 
 TYPE	COURSE_RECORD	CourseArray[MAXCOURSE];
@@ -63,7 +57,7 @@ TYPE	int				CourseCount;
 
 typedef struct
 {
-	int		ID;
+	int		StudentID;
 	int		Level;
 	char	Name[MAXNAME];
 } STUDENT_RECORD;
@@ -73,8 +67,8 @@ TYPE	int				StudentCount;
 
 typedef struct
 {
-	int		ID;
-	int		CourseID;
+	int		ClassID;
+//	int		CourseID;
 	int		CourseIndex;
 	char	ClassCode[10];
 } CLASS_RECORD;
@@ -82,35 +76,46 @@ typedef struct
 TYPE	CLASS_RECORD	ClassArray[MAXCLASS];
 TYPE	int				ClassCount;
 
+typedef struct
+{
+	int		StudentID;
+	int		Level;
+	int		ClassCount;
+	int		ClassIndex[MAXPERIODS];
+} REQUEST_RECORD;
+
+TYPE	REQUEST_RECORD	*RequestArray;
+TYPE	int				RequestCount;
+
 /*----------------------------------------------------------
 	Genetic Algorithm defines and variables
 ----------------------------------------------------------*/
 
 TYPE	int		PopCount;
 TYPE	int		MaxGenerations;
+TYPE	int		GenerationCount;
 TYPE	double	ProbCross;
 TYPE	double	ProbMutate;
 
 typedef struct
 {
-	int	classIndex;
-	int courseIndex;
-	int	period;
+	int	Period;
 } ALLELE;
 
 typedef struct
 {
 	ALLELE	Chromosome[MAXCLASS];
-	int		Conflicts;		// student is in more than one class at a time
-	int		Missing;		// student's class is not represented.
-	int		Fitness;		// total of Conflicts + Missing
-} INDIVIUDAL;
+	int		Fitness;
+} INDIVIDUAL;
 
-TYPE	INDIVIUDAL		*CurrPop;
-TYPE	INDIVIUDAL		*NextPop;
+TYPE	INDIVIDUAL		*CurrPop;
+TYPE	INDIVIDUAL		*NextPop;
+TYPE	INDIVIDUAL		BestIndividual;
+TYPE	int				BestFitness;
 
 #define		REPORT_ALL		1
 #define		REPORT_BEST		2
+#define		REPORT_MINMAX	3
 
 /*----------------------------
 :.,$d
@@ -127,6 +132,10 @@ int cmpcourse ( COURSE_RECORD *a , COURSE_RECORD *b );
 void LoadCourses ( void );
 void DumpCourses ( void );
 
+/* LoadRequests.c */
+void LoadRequests ( void );
+void DumpRequests ( void );
+
 /* MakeClasses.c */
 void MakeClasses ( void );
 
@@ -136,8 +145,17 @@ void MakeRequests ( void );
 /* MakeSchedule.c */
 void MakeSchedule ( void );
 
+/* PrintSchedule.c */
+void PrintSchedule ( void );
+
+/* crossover.c */
+int crossover ( ALLELE parent1 [], ALLELE parent2 [], ALLELE child1 [], ALLELE child2 []);
+
 /* ga_schedule.c */
 int main ( int argc , char *argv []);
+
+/* generation.c */
+void generation ( int Generation );
 
 /* getargs.c */
 void getargs ( int argc , char *argv []);
@@ -149,4 +167,7 @@ void init ( void );
 int obj_func ( ALLELE Chromosome []);
 
 /* report.c */
-void report ( int generation , int mode );
+void report ( int Generation , int mode );
+
+/* select_shuffle.c */
+int select_shuffle ( void );

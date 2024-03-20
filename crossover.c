@@ -19,20 +19,43 @@
 
 #include	"ga_schedule.h"
 
-void MakeSchedule ()
+int crossover ( ALLELE parent1[], ALLELE parent2[],
+			  	ALLELE child1[], ALLELE child2[] )
 {
-	init ();
+	int		cross_site;
+	int		xi;
 
-	for ( GenerationCount = 1; GenerationCount <= MaxGenerations; GenerationCount++ )
+	if ( flip ( ProbCross ) )
 	{
-		generation ( GenerationCount );
-	
-		for ( int xp = 0; xp < PopCount; xp++ )
-		{
-			memcpy ( &CurrPop[xp], &NextPop[xp], sizeof(INDIVIDUAL) );
-		}
-
-		report ( GenerationCount, REPORT_MINMAX );
+		cross_site = (int) random_range ( 0, ClassCount - 2 );
 	}
-	GenerationCount--;
+	else
+	{
+		cross_site = ClassCount;
+	}
+
+	/*---------------------------------------------------------------------------
+		typedef struct
+		{
+			int	Period;
+		} ALLELE;
+
+		From start to site-1, children are the same as their parents
+		From site to end, children get the other parent's period
+	---------------------------------------------------------------------------*/
+
+	for ( xi = 0; xi < cross_site; xi++ )
+	{
+		child1[xi].Period = parent1[xi].Period;
+		child2[xi].Period = parent2[xi].Period;
+	}
+
+	for ( ; xi < ClassCount; xi++ )
+	{
+		child1[xi].Period = parent2[xi].Period;
+		child2[xi].Period = parent1[xi].Period;
+	}
+
+	return ( cross_site );
+
 }

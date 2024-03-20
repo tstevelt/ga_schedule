@@ -29,19 +29,20 @@ void MakeRequests ()
 	int		xe = 0;
 	int		xo, xs, xl;
 
-	if (( ofp = fopen ( "requests.TXT", "w" )) == NULL )
+	if (( ofp = fopen ( "requests.CSV", "w" )) == NULL )
 	{
-		printf ( "Cannot create requests.TXT\n" );
+		printf ( "Cannot create requests.CSV\n" );
 		exit ( 1 );
 	}
 
 	fprintf ( ofp, "# these are fake student requests for testing\n" );
+	fprintf ( ofp, "ID,LAVEL,CRS1,CRS2,CRS3,CRS4,CRS5,CRS6,CRS7\n" );
 
 	LoadCourses ();
 
-	if (( ifp = fopen ( "students.TXT", "r" )) == NULL )
+	if (( ifp = fopen ( "students.CSV", "r" )) == NULL )
 	{
-		printf ( "Cannot open students.TXT\n" );
+		printf ( "Cannot open students.CSV\n" );
 		exit ( 1 );
 	}
 
@@ -68,9 +69,13 @@ void MakeRequests ()
 			continue;
 		}
 
+		if (( Student.StudentID = atoi ( tokens[0] )) == 0 )
+		{
+			continue;
+		}
+
 		xs++;
 
-		Student.ID = atoi ( tokens[0] );
 		Student.Level = atoi ( tokens[1] );
 		switch ( Student.Level )
 		{
@@ -86,7 +91,7 @@ void MakeRequests ()
 		snprintf ( Student.Name, MAXNAME, "%s", tokens[2] );
 		StudentCount++;
 
-		fprintf ( ofp, "%3d,%2d", Student.ID, Student.Level );
+		fprintf ( ofp, "%3d,%2d", Student.StudentID, Student.Level );
 
 		/*----------------------------------------------------------
 			print required courses for student's grade level
@@ -95,7 +100,7 @@ void MakeRequests ()
 		{
 			if ( CourseArray[ndx].Level == Student.Level && CourseArray[ndx].Required == 1 )
 			{
-				fprintf ( ofp, ",%4d", CourseArray[ndx].ID );
+				fprintf ( ofp, ",%4d", CourseArray[ndx].CourseID );
 			}
 		}
 
@@ -116,7 +121,7 @@ void MakeRequests ()
 			if (( CourseArray[xe].Required == 0 ) &&
 				( CourseArray[xe].Level == 0 || CourseArray[xe].Level == Student.Level ))
 			{
-				fprintf ( ofp, ",%4d", CourseArray[xe].ID );
+				fprintf ( ofp, ",%4d", CourseArray[xe].CourseID );
 				xo++;
 			}
 

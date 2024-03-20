@@ -36,9 +36,9 @@ void MakeClasses ()
 
 	LoadCourses ();
 
-	if (( ifp = fopen ( "requests.TXT", "r" )) == NULL )
+	if (( ifp = fopen ( "requests.CSV", "r" )) == NULL )
 	{
-		printf ( "Cannot open requests.TXT\n" );
+		printf ( "Cannot open requests.CSV\n" );
 		exit ( 1 );
 	}
 
@@ -68,13 +68,17 @@ void MakeClasses ()
 		{
 			continue;
 		}
+		if ( atoi ( tokens[0] ) == 0 )
+		{
+			continue;
+		}
 
 		for ( int xt = 2; xt < tokcnt; xt++ )
 		{
-			key.ID = atoi ( tokens[xt] );
+			key.CourseID = atoi ( tokens[xt] );
 			if (( ptr = bsearch ( &key, CourseArray, CourseCount, sizeof(COURSE_RECORD), (int(*)()) cmpcourse )) == NULL )
 			{
-				printf ( "Unknown course ID %d in line %d\n", key.ID, lineno );
+				printf ( "Unknown course ID %d in line %d\n", key.CourseID, lineno );
 				continue;
 			}
 			ptr->Counter++;
@@ -83,11 +87,14 @@ void MakeClasses ()
 
 	fclose ( ifp );
 
-	DumpCourses ();
-
-	if (( ofp = fopen ( "classes.TXT", "w" )) == NULL )
+	if ( Verbose )
 	{
-		printf ( "Cannot create classes.TXT\n" );
+		DumpCourses ();
+	}
+
+	if (( ofp = fopen ( "classes.CSV", "w" )) == NULL )
+	{
+		printf ( "Cannot create classes.CSV\n" );
 		exit ( 1 );
 	}
 
@@ -110,21 +117,21 @@ void MakeClasses ()
 			}
 			else
 			{
-				printf ( "Too many requests for course %d, overflow %d\n", CourseArray[xc].ID, Remain );
+				printf ( "Too many requests for course %d, overflow %d\n", CourseArray[xc].CourseID, Remain );
 			}
 		}
 
 		if ( Verbose )
 		{
 			printf ( "%4d %4d %5.1f %3d %3d\n", 
-						CourseArray[xc].ID, CourseArray[xc].Counter, PerClass, Classes, Remain );
+						CourseArray[xc].CourseID, CourseArray[xc].Counter, PerClass, Classes, Remain );
 		}
 
 		
 		for ( xe = 0; xe < Classes; xe++ )
 		{
 			fprintf ( ofp, "%3d,%3d,%3d%c\n", 
-						ClassID, CourseArray[xc].ID, CourseArray[xc].ID, 'A' + xe );
+						ClassID, CourseArray[xc].CourseID, CourseArray[xc].CourseID, 'A' + xe );
 			ClassID++;
 			xo++;
 		}

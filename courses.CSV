@@ -1,6 +1,6 @@
-
+# this file is created by hand
 # required courses by year
-
+ID,LEVEL,REQUIRED,NAME
 101,9,R,English
 102,9,R,Algebra 1
 103,9,R,Biology 1

@@ -19,9 +19,47 @@
 
 #include	"ga_schedule.h"
 
+static int DebugObjFunc = 0;
+
 int obj_func ( ALLELE Chromosome [] )
 {
 	int		rv = 0;
+	int		PeriodArray[MAXPERIODS];
+	int		xp, PeriodCount;
+
+	for ( int RequestIndex = 0; RequestIndex < RequestCount; RequestIndex++ )
+	{
+		if ( DebugObjFunc )
+		{
+			printf ( "---\n" );
+		}
+		PeriodCount = 0;
+		memset ( PeriodArray, '\0', sizeof(PeriodArray) );
+
+		for ( int RequestClassIndex = 0; RequestClassIndex < RequestArray[RequestIndex].ClassCount; RequestClassIndex++ )
+		{
+			for ( int ChromoIndex = 0; ChromoIndex < ClassCount; ChromoIndex++ )
+			{
+				if ( ChromoIndex == RequestArray[RequestIndex].ClassIndex[RequestClassIndex] )
+				{
+					for ( xp = 0; xp < PeriodCount; xp++ )
+					{
+						if ( PeriodArray[xp] == Chromosome[ChromoIndex].Period )
+						{
+							break;
+						}
+					}
+					if ( xp >= PeriodCount )
+					{
+						 PeriodArray[PeriodCount] = Chromosome[ChromoIndex].Period;
+						 PeriodCount++;
+					}
+				}
+			}
+		}
+		
+		rv += (RequestArray[RequestIndex].ClassCount - PeriodCount);
+	}
 
 	return ( rv );
 }

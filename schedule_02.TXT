@@ -1,0 +1,197 @@
+BEST PERIOD SCHEDULE
+--------------------------------------------------
+PERIOD   ID  CLASS  NAME
+--------------------------------------------------
+   1      2   101B  English
+   1      3   101C  English
+   1      5   101E  English
+   1     20   103F  Biology 1
+   1     21   103G  Biology 1
+   1     25   104D  US History
+   1     35   201A  Literature
+   1     45   202D  Algebra 2
+   1     54   203F  Biology 2
+   1     55   203G  Biology 2
+   1     57   204B  US Government
+   1     60   204E  US Government
+   1     71   301C  Composition
+   1     75   301G  Composition
+   1     84   303B  Chemistry
+   1     88   303F  Chemistry
+   1     90   304A  World History
+   1     93   304D  World History
+   1    104   401B  Speech
+   1    112   402C  Statistics
+   1    114   402E  Statistics
+   1    117   403A  Physics
+   1    120   403D  Physics
+   1    129   404F  Economics
+   1    149   502F  Health
+   1    154   503D  Fine Art
+   1    173   506B  Carpentry
+
+   2     31   112A  Spanish 1
+   2     32   112B  Spanish 1
+   2     33   113A  Latin 1
+   2     34   113B  Latin 1
+   2     49   203A  Biology 2
+   2     65   212A  Spanish 2
+   2     66   212B  Spanish 2
+   2     97   311A  French 3
+   2    100   312B  Spanish 3
+   2    101   313A  Latin 3
+   2    102   313B  Latin 3
+   2    113   402D  Statistics
+   2    121   403E  Physics
+   2    133   412A  Spanish 4
+   2    136   413B  Latin 4
+   2    146   502C  Health
+   2    151   503A  Fine Art
+   2    163   504F  Computer
+   2    166   505B  Auto
+   2    167   505C  Auto
+   2    168   505D  Auto
+   2    169   505E  Auto
+   2    177   506F  Carpentry
+   2    178   506G  Carpentry
+   2    179   507A  Agriculture
+
+   3     12   102E  Algebra 1
+   3     15   103A  Biology 1
+   3     18   103D  Biology 1
+   3     24   104C  US History
+   3     27   104F  US History
+   3     40   201F  Literature
+   3     41   201G  Literature
+   3     44   202C  Algebra 2
+   3     67   213A  Latin 2
+   3     68   213B  Latin 2
+   3     76   302A  Geometry
+   3     77   302B  Geometry
+   3     82   302G  Geometry
+   3     85   303C  Chemistry
+   3     94   304E  World History
+   3    126   404C  Economics
+   3    130   404G  Economics
+   3    134   412B  Spanish 4
+   3    135   413A  Latin 4
+   3    140   501D  Phys Ed
+   3    144   502A  Health
+   3    156   503F  Fine Art
+   3    159   504B  Computer
+   3    171   505G  Auto
+   3    175   506D  Carpentry
+
+   4      7   101G  English
+   4      8   102A  Algebra 1
+   4     11   102D  Algebra 1
+   4     13   102F  Algebra 1
+   4     17   103C  Biology 1
+   4     23   104B  US History
+   4     36   201B  Literature
+   4     37   201C  Literature
+   4     38   201D  Literature
+   4     47   202F  Algebra 2
+   4     53   203E  Biology 2
+   4     56   204A  US Government
+   4     73   301E  Composition
+   4     78   302C  Geometry
+   4     79   302D  Geometry
+   4     81   302F  Geometry
+   4     83   303A  Chemistry
+   4     96   304G  World History
+   4    105   401C  Speech
+   4    108   401F  Speech
+   4    110   402A  Statistics
+   4    116   402G  Statistics
+   4    125   404B  Economics
+   4    128   404E  Economics
+   4    150   502G  Health
+   4    155   503E  Fine Art
+   4    174   506C  Carpentry
+
+   5      1   101A  English
+   5     10   102C  Algebra 1
+   5     16   103B  Biology 1
+   5     26   104E  US History
+   5     28   104G  US History
+   5     46   202E  Algebra 2
+   5     48   202G  Algebra 2
+   5     50   203B  Biology 2
+   5     51   203C  Biology 2
+   5     59   204D  US Government
+   5     70   301B  Composition
+   5     74   301F  Composition
+   5     86   303D  Chemistry
+   5     87   303E  Chemistry
+   5     89   303G  Chemistry
+   5    111   402B  Statistics
+   5    115   402F  Statistics
+   5    123   403G  Physics
+   5    124   404A  Economics
+   5    127   404D  Economics
+   5    145   502B  Health
+   5    148   502E  Health
+   5    153   503C  Fine Art
+   5    157   503G  Fine Art
+   5    165   505A  Auto
+   5    183   507E  Agriculture
+
+   6      4   101D  English
+   6      9   102B  Algebra 1
+   6     29   111A  French 1
+   6     30   111B  French 1
+   6     52   203D  Biology 2
+   6     61   204F  US Government
+   6     63   211A  French 2
+   6     64   211B  French 2
+   6     69   301A  Composition
+   6     95   304F  World History
+   6     98   311B  French 3
+   6     99   312A  Spanish 3
+   6    103   401A  Speech
+   6    119   403C  Physics
+   6    131   411A  French 4
+   6    132   411B  French 4
+   6    138   501B  Phys Ed
+   6    139   501C  Phys Ed
+   6    142   501F  Phys Ed
+   6    143   501G  Phys Ed
+   6    147   502D  Health
+   6    152   503B  Fine Art
+   6    158   504A  Computer
+   6    161   504D  Computer
+   6    162   504E  Computer
+   6    164   504G  Computer
+   6    176   506E  Carpentry
+   6    180   507B  Agriculture
+   6    181   507C  Agriculture
+   6    184   507F  Agriculture
+   6    185   507G  Agriculture
+
+   7      6   101F  English
+   7     14   102G  Algebra 1
+   7     19   103E  Biology 1
+   7     22   104A  US History
+   7     39   201E  Literature
+   7     42   202A  Algebra 2
+   7     43   202B  Algebra 2
+   7     58   204C  US Government
+   7     62   204G  US Government
+   7     72   301D  Composition
+   7     80   302E  Geometry
+   7     91   304B  World History
+   7     92   304C  World History
+   7    106   401D  Speech
+   7    107   401E  Speech
+   7    109   401G  Speech
+   7    118   403B  Physics
+   7    122   403F  Physics
+   7    137   501A  Phys Ed
+   7    141   501E  Phys Ed
+   7    160   504C  Computer
+   7    170   505F  Auto
+   7    172   506A  Carpentry
+   7    182   507D  Agriculture
+
+

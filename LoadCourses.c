@@ -21,11 +21,11 @@
 
 int cmpcourse ( COURSE_RECORD *a, COURSE_RECORD *b )
 {
-	if ( a->ID < b->ID )
+	if ( a->CourseID < b->CourseID )
 	{
 		return ( -1 );
 	}
-	if ( a->ID > b->ID )
+	if ( a->CourseID > b->CourseID )
 	{
 		return ( 1 );
 	}
@@ -42,9 +42,9 @@ void LoadCourses ()
 //	int		xe = 0;
 //	int		xo;
 
-	if (( ifp = fopen ( "courses.TXT", "r" )) == NULL )
+	if (( ifp = fopen ( "courses.CSV", "r" )) == NULL )
 	{
-		printf ( "Cannot open courses.TXT\n" );
+		printf ( "Cannot open courses.CSV\n" );
 		exit ( 1 );
 	}
 
@@ -72,7 +72,11 @@ void LoadCourses ()
 			printf ( "Exceeds MAXCOURSE\n" );
 			exit ( 1 );
 		}
-		CourseArray[CourseCount].ID = atoi ( tokens[0] );
+		if (( CourseArray[CourseCount].CourseID = atoi ( tokens[0] )) == 0 )
+		{
+			continue;
+		}
+
 		CourseArray[CourseCount].Level = atoi ( tokens[1] );
 		switch ( tokens[2][0] )
 		{
@@ -99,11 +103,12 @@ void DumpCourses ()
 {
 	for ( int xc = 0; xc < CourseCount; xc++ )
 	{
-		printf ( "%4d %2d %c %-20.20s %2d\n",
-			CourseArray[xc].ID,
+		printf ( "%4d %2d %c %-20.20s %2d %4d\n",
+			CourseArray[xc].CourseID,
 			CourseArray[xc].Level,
 			CourseArray[xc].Required ? 'R' : 'E',
 			CourseArray[xc].Name,
-			CourseArray[xc].Counter );
+			CourseArray[xc].Counter,
+			CourseArray[xc].RingIndex );
 	}
 }

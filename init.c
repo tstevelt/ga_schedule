@@ -21,13 +21,13 @@
 
 void init ()
 {
-	if (( CurrPop = calloc ( PopCount, sizeof(INDIVIUDAL) )) == NULL )
+	if (( CurrPop = calloc ( PopCount, sizeof(INDIVIDUAL) )) == NULL )
 	{
 		printf ( "init: calloc CurrPop failed, %s\n", strerror(errno) );
 		exit ( 1 );
 	}
 
-	if (( NextPop = calloc ( PopCount, sizeof(INDIVIUDAL) )) == NULL )
+	if (( NextPop = calloc ( PopCount, sizeof(INDIVIDUAL) )) == NULL )
 	{
 		printf ( "init: calloc NextPop failed, %s\n", strerror(errno) );
 		exit ( 1 );
@@ -35,18 +35,22 @@ void init ()
 
 	LoadClasses ();
 
+	LoadRequests ();
+
+	BestFitness = -1;
+
 	for ( int p = 0; p < PopCount; p++ )
 	{
 		for ( int c = 0; c < ClassCount; c++ )
 		{
-			CurrPop[p].Chromosome[c].period  = random_range ( 1, MAXPERIODS );
-			CurrPop[p].Chromosome[c].classIndex  = c;
-			CurrPop[p].Chromosome[c].courseIndex  = ClassArray[c].CourseIndex;
+			CurrPop[p].Chromosome[c].Period  = random_range ( 1, MAXPERIODS );
 		}
 
 		CurrPop[p].Fitness = obj_func ( CurrPop[p].Chromosome );
 	}
 
-	report ( 0, REPORT_ALL );
+	report ( 0, Verbose ? REPORT_ALL : REPORT_MINMAX );
+
+
 
 }

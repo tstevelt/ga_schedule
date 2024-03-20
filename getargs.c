@@ -40,7 +40,7 @@ void getargs ( int argc, char *argv[] )
 	RunMode = 0;
 	Verbose = 0;
 	PopCount = 500;
-	MaxGenerations = 500;
+	MaxGenerations =  500;
 	ProbCross = 0.995;
 	ProbMutate = 0.05;
 

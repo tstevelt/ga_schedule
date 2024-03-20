@@ -19,20 +19,61 @@
 
 #include	"ga_schedule.h"
 
-void report ( int generation, int mode )
+void report ( int Generation, int mode )
 {
-	printf ( "Generation %d\n", generation );
+	int		BestIndex, MinFit, MaxFit;
 
+	BestIndex = 0;
+	MinFit = MaxFit = CurrPop[0].Fitness;
 	for ( int p = 0; p < PopCount; p++ )
 	{
-		printf ( "%4d:", p );
-		for ( int c = 0; c < ClassCount; c++ )
+		if ( MinFit > CurrPop[p].Fitness )
 		{
-			printf ( " (%s %d %d)",
-					ClassArray[CurrPop[p].Chromosome[c].classIndex].ClassCode,
-					CurrPop[p].Chromosome[c].courseIndex,
-					CurrPop[p].Chromosome[c].period );
+			MinFit = CurrPop[p].Fitness;
+			BestIndex = p;
 		}
-		printf ( " = %d\n", CurrPop[p].Fitness );
+		if ( MaxFit < CurrPop[p].Fitness )
+		{
+			MaxFit = CurrPop[p].Fitness;
+		}
 	}
+
+	/*---------------------------------------------------------------------------
+		TYPE	INDIVIDUAL		BestIndividual;
+		TYPE	int				BestFitness;
+	---------------------------------------------------------------------------*/
+	if ( BestFitness == -1 || BestFitness > MinFit )
+	{
+		BestFitness = MinFit;
+		memcpy ( &BestIndividual, &CurrPop[BestIndex], sizeof(INDIVIDUAL) );
+		if ( mode == REPORT_MINMAX )
+		{
+			printf ( "Generation %d: New Minimum %d\n", Generation, MinFit );
+		}
+	}
+
+	switch ( mode )
+	{
+		case REPORT_ALL:
+			printf ( "Generation %d\n", Generation );
+			for ( int p = 0; p < PopCount; p++ )
+			{
+				if ( mode == REPORT_ALL )
+				{
+					printf ( "%4d:", p );
+					for ( int c = 0; c < ClassCount; c++ )
+					{
+						printf ( " %d", CurrPop[p].Chromosome[c].Period );
+					}
+					printf ( " = %d\n", CurrPop[p].Fitness );
+				}
+			}
+			printf ( "Minimum %d, Maximum %d\n", MinFit, MaxFit );
+			break;
+
+		case REPORT_MINMAX:
+			printf ( "Generation %d: Minimum %d, Maximum %d\n", Generation, MinFit, MaxFit );
+			break;
+	}
+
 }
