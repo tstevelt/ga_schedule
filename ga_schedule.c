@@ -54,6 +54,7 @@ int main ( int argc, char *argv[] )
 			time ( &StartTime );
 			MakeSchedule ();
 			PrintSchedule ();
+			PrintStudents ();
 			time ( &EndTime );
 			Elapsed = EndTime - StartTime;
 			Average = (double) Elapsed / (double) GenerationCount;

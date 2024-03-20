@@ -25,9 +25,9 @@ void PrintSchedule ()
 	COURSE_RECORD	*ptrCourse;
 	FILE			*ofp;
 
-	if (( ofp = fopen ( "schedule.TXT", "w" )) == NULL )
+	if (( ofp = fopen ( "schedule_classes.TXT", "w" )) == NULL )
 	{
-		printf ( "Cannot create schedule.TXT\n" );
+		printf ( "Cannot create schedule_classes.TXT\n" );
 		ofp = stdout;
 	}
 
@@ -55,5 +55,11 @@ void PrintSchedule ()
 
 		fprintf ( ofp, "\n" );
 	}
+
 	fprintf ( ofp, "\n" );
+
+	if ( ofp != stdout )
+	{
+		fclose ( ofp );
+	}
 }

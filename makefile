@@ -9,10 +9,12 @@ FILES = \
 	$(LIB)(LoadCourses.o)	\
 	$(LIB)(LoadClasses.o)	\
 	$(LIB)(LoadRequests.o)	\
+	$(LIB)(LoadStudents.o)	\
 	$(LIB)(MakeClasses.o)	\
 	$(LIB)(MakeRequests.o)	\
 	$(LIB)(MakeSchedule.o)	\
 	$(LIB)(PrintSchedule.o)	\
+	$(LIB)(PrintStudents.o)	\
 	$(LIB)(init.o)			\
 	$(LIB)(report.o)		\
 	$(LIB)(obj_func.o)		\

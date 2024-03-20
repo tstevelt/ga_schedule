@@ -63,14 +63,16 @@ typedef struct
 } STUDENT_RECORD;
 
 TYPE	STUDENT_RECORD	Student;
+
+TYPE	STUDENT_RECORD	*StudentArray;
 TYPE	int				StudentCount;
 
 typedef struct
 {
 	int		ClassID;
-//	int		CourseID;
 	int		CourseIndex;
 	char	ClassCode[10];
+	int		Period;
 } CLASS_RECORD;
 
 TYPE	CLASS_RECORD	ClassArray[MAXCLASS];
@@ -136,6 +138,10 @@ void DumpCourses ( void );
 void LoadRequests ( void );
 void DumpRequests ( void );
 
+/* LoadStudents.c */
+void LoadStudents ( void );
+void DumpStudents ( void );
+
 /* MakeClasses.c */
 void MakeClasses ( void );
 
@@ -147,6 +153,9 @@ void MakeSchedule ( void );
 
 /* PrintSchedule.c */
 void PrintSchedule ( void );
+
+/* PrintStudents.c */
+void PrintStudents ( void );
 
 /* crossover.c */
 int crossover ( ALLELE parent1 [], ALLELE parent2 [], ALLELE child1 [], ALLELE child2 []);

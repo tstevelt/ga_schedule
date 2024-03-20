@@ -89,7 +89,7 @@ void MakeRequests ()
 				exit ( 1 );
 		}
 		snprintf ( Student.Name, MAXNAME, "%s", tokens[2] );
-		StudentCount++;
+		RequestCount++;
 
 		fprintf ( ofp, "%3d,%2d", Student.StudentID, Student.Level );
 
@@ -135,7 +135,7 @@ void MakeRequests ()
 		fprintf ( ofp, "\n" );
 	}
 
-	printf ( "Loaded %d students\n", StudentCount );
+	printf ( "Loaded %d students\n", RequestCount );
 	fclose ( ifp );
 
 	fclose ( ofp );
