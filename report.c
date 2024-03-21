@@ -69,10 +69,12 @@ void report ( int Generation, int mode )
 				}
 			}
 			printf ( "Minimum %d, Maximum %d\n", MinFit, MaxFit );
+			fflush ( stdout );
 			break;
 
 		case REPORT_MINMAX:
 			printf ( "Generation %d: Minimum %d, Maximum %d\n", Generation, MinFit, MaxFit );
+			fflush ( stdout );
 			break;
 	}
 

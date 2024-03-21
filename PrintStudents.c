@@ -32,10 +32,57 @@ static STUDENT_RECORD *FindStudent ( int StudentID )
 	return ( NULL );
 }
 
+typedef struct
+{
+	int		Period;
+	int		ClassIndex;
+} RECORD;
+
+static	RECORD	Array[MAXPERIODS];
+static	int		Count;
+
+static int cmprec ( RECORD *a, RECORD *b )
+{
+	if ( a->Period < b->Period )
+	{
+		return ( -1 );
+	}
+	if ( a->Period > b->Period )
+	{
+		return ( 1 );
+	}
+	return ( 0 );
+}
+
+
 void PrintStudents ()
 {
 	STUDENT_RECORD	*ptrStudent;
 	FILE			*ofp;
+	int				StudentsWithConflicts = 0;
+
+	if ( StudentCount == 0 )
+	{
+		LoadStudents ();
+	}
+
+	if (( ofp = fopen ( "schedule_chromosome.TXT", "w" )) == NULL )
+	{
+		printf ( "Cannot create schedule_chromosome.TXT\n" );
+		ofp = stdout;
+	}
+
+	for ( int xc = 0; xc < ClassCount; xc++ )
+	{
+		ClassArray[xc].Period = BestIndividual.Chromosome[xc].Period;
+		fprintf ( ofp, "%d", BestIndividual.Chromosome[xc].Period );
+	}
+	fprintf ( ofp, "\n" );
+	
+	if ( ofp != stdout )
+	{
+		fclose ( ofp );
+	}
 
 	if (( ofp = fopen ( "schedule_students.TXT", "w" )) == NULL )
 	{
@@ -43,45 +90,46 @@ void PrintStudents ()
 		ofp = stdout;
 	}
 
-	if ( StudentCount == 0 )
-	{
-		LoadStudents ();
-	}
-
-	for ( int xc = 0; xc < ClassCount; xc++ )
-	{
-		ClassArray[xc].Period = BestIndividual.Chromosome[xc].Period;
-	}
-	
 	for ( int xr = 0; xr < RequestCount; xr++ )
 	{
 		ptrStudent = FindStudent ( RequestArray[xr].StudentID );
-		fprintf ( ofp, "%4d %s\n", RequestArray[xr].StudentID, ptrStudent->Name );
+		fprintf ( ofp, "%s  (%d) %d classes\n", 
+				ptrStudent->Name, RequestArray[xr].StudentID, RequestArray[xr].ClassCount );
 
-		for ( int xp = 1; xp < MAXPERIODS; xp++ )
+		Count = 0;
+		CLASS_RECORD	*ptrClass;
+		COURSE_RECORD	*ptrCourse;
+		for ( int xc = 0; xc < RequestArray[xr].ClassCount; xc++ )
 		{
-			int xo = 0;
-			for ( int xc = 0; xc < RequestArray[xr].ClassCount; xc++ )
+			int xp = Array[Count].ClassIndex = RequestArray[xr].ClassIndex[xc];
+			Array[Count].Period = ClassArray[xp].Period;
+			Count++;
+		}
+		qsort ( Array, Count, sizeof(RECORD), (int(*)()) cmprec );
+
+		int	ConflictCount = 0;
+		for ( int xp = 0; xp < Count; xp++ )
+		{
+			ptrClass = &ClassArray[Array[xp].ClassIndex];
+			ptrCourse = &CourseArray[ptrClass->CourseIndex];
+			fprintf ( ofp, "  %d: %s\n", Array[xp].Period, ptrCourse->Name );
+			if ( xp > 0 && Array[xp-1].Period == Array[xp].Period )
 			{
-				if ( xp == ClassArray[xc].Period )
-				{
-					if ( xo == 0 )
-					{
-						fprintf ( ofp, " %2d:", xp );
-					}
-					fprintf ( ofp, "  [%s %s]",
-						ClassArray[RequestArray[xr].ClassIndex[xc]].ClassCode,
-						CourseArray[ClassArray[RequestArray[xr].ClassIndex[xc]].CourseIndex].Name );
-					xo++;
-				}
+				ConflictCount++;
 			}
-			if ( xo )
-			{
-				fprintf ( ofp, "\n" );
-			}
+		}
+		if ( ConflictCount )
+		{
+			fprintf ( ofp, "  %d conflicts\n", ConflictCount );
+			StudentsWithConflicts++;
 		}
 
 		fprintf ( ofp, "\n\n" );
+	}
+
+	if ( StudentsWithConflicts )
+	{
+		fprintf ( ofp, "%d students with conflicts\n", StudentsWithConflicts );
 	}
 
 	if ( ofp != stdout )

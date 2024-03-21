@@ -1,3250 +1,4852 @@
-   1 Gianna Amos
-  4:  [103A Biology 1]
-  5:  [111A French 1]
-  6:  [101A English]  [104A US History]
-
-
-   2 Aaron Sharpe
-  1:  [502A Health]
-  4:  [103B Biology 1]
-  5:  [113A Latin 1]
-  6:  [101B English]  [104B US History]
-
-
-   3 Joseph Gray
-  4:  [103C Biology 1]
-  5:  [503A Fine Art]
-  6:  [101C English]  [104C US History]
-
-
-   4 Adam Marley
-  1:  [507A Agriculture]
-  4:  [103D Biology 1]
-  5:  [505A Auto]
-  6:  [101D English]  [104D US History]
-
-
-   5 Cameron Elsher
-  4:  [103E Biology 1]
-  5:  [111B French 1]
-  6:  [101E English]  [104E US History]
-
-
-   6 Santiago Thatcher
-  1:  [502B Health]
-  4:  [103F Biology 1]
-  5:  [113B Latin 1]
-  6:  [101F English]  [104F US History]
-
-
-   7 Adrian Lennon
-  4:  [103G Biology 1]
-  5:  [503B Fine Art]
-  6:  [101G English]  [104G US History]
-
-
-   8 Logan Marley
-  1:  [507B Agriculture]
-  4:  [103A Biology 1]
-  5:  [505B Auto]
-  6:  [101A English]  [104A US History]
-
-
-   9 Adrian Sharpe
-  4:  [103B Biology 1]
-  5:  [111A French 1]
-  6:  [101B English]  [104B US History]
-
-
-  10 Hudson Bardot
-  1:  [502C Health]
-  4:  [103C Biology 1]
-  5:  [113A Latin 1]
-  6:  [101C English]  [104C US History]
-
-
-  11 Autumn Stoll
-  4:  [103D Biology 1]
-  5:  [503C Fine Art]
-  6:  [101D English]  [104D US History]
-
-
-  12 Benjamin Curran
-  1:  [507C Agriculture]
-  4:  [103E Biology 1]
-  5:  [505C Auto]
-  6:  [101E English]  [104E US History]
-
-
-  13 Silas Cyprus
-  4:  [103F Biology 1]
-  5:  [111B French 1]
-  6:  [101F English]  [104F US History]
-
-
-  14 Josiah Biddercombe
-  1:  [502D Health]
-  4:  [103G Biology 1]
-  5:  [113B Latin 1]
-  6:  [101G English]  [104G US History]
-
-
-  15 Walker Wixx
-  4:  [103A Biology 1]
-  5:  [503D Fine Art]
-  6:  [101A English]  [104A US History]
-
-
-  16 David Finch
-  1:  [507D Agriculture]
-  4:  [103B Biology 1]
-  5:  [505D Auto]
-  6:  [101B English]  [104B US History]
-
-
-  17 Xavier Dagon
-  4:  [103C Biology 1]
-  5:  [111A French 1]
-  6:  [101C English]  [104C US History]
-
-
-  18 Ayla James
-  1:  [502E Health]
-  4:  [103D Biology 1]
-  5:  [113A Latin 1]
-  6:  [101D English]  [104D US History]
-
-
-  19 Maria Caddel
-  4:  [103E Biology 1]
-  5:  [503E Fine Art]
-  6:  [101E English]  [104E US History]
-
-
-  20 Charlotte Strongblossom
-  1:  [507E Agriculture]
-  4:  [103F Biology 1]
-  5:  [505E Auto]
-  6:  [101F English]  [104F US History]
-
-
-  21 Ivy Ashbluff
-  4:  [103G Biology 1]
-  5:  [111B French 1]
-  6:  [101G English]  [104G US History]
-
-
-  22 Mia Humblecut
-  1:  [502F Health]
-  4:  [103A Biology 1]
-  5:  [113B Latin 1]
-  6:  [101A English]  [104A US History]
-
-
-  23 Luna Finch
-  4:  [103B Biology 1]
-  5:  [503F Fine Art]
-  6:  [101B English]  [104B US History]
-
-
-  24 Caleb Mintz
-  1:  [507F Agriculture]
-  4:  [103C Biology 1]
-  5:  [505F Auto]
-  6:  [101C English]  [104C US History]
-
-
-  25 Ayla Ledger
-  4:  [103D Biology 1]
-  5:  [111A French 1]
-  6:  [101D English]  [104D US History]
-
-
-  26 Nora Dagon
-  1:  [502G Health]
-  4:  [103E Biology 1]
-  5:  [113A Latin 1]
-  6:  [101E English]  [104E US History]
-
-
-  27 Isaac Whitlock
-  4:  [103F Biology 1]
-  5:  [503G Fine Art]
-  6:  [101F English]  [104F US History]
-
-
-  28 Jacob Finch
-  1:  [507G Agriculture]
-  4:  [103G Biology 1]
-  5:  [505G Auto]
-  6:  [101G English]  [104G US History]
-
-
-  29 Brooklyn Adler
-  4:  [103A Biology 1]
-  5:  [111B French 1]
-  6:  [101A English]  [104A US History]
-
-
-  30 Ivy Beam
-  1:  [502A Health]
-  4:  [103B Biology 1]
-  5:  [113B Latin 1]
-  6:  [101B English]  [104B US History]
-
-
-  31 Wyatt Monroe
-  4:  [103C Biology 1]
-  5:  [503A Fine Art]
-  6:  [101C English]  [104C US History]
-
-
-  32 Isaac Woodgrip
-  1:  [507A Agriculture]
-  4:  [103D Biology 1]
-  5:  [505A Auto]
-  6:  [101D English]  [104D US History]
-
-
-  33 Walker Langley
-  4:  [103E Biology 1]
-  5:  [111A French 1]
-  6:  [101E English]  [104E US History]
-
-
-  34 James Lopez
-  1:  [502B Health]
-  4:  [103F Biology 1]
-  5:  [113A Latin 1]
-  6:  [101F English]  [104F US History]
-
-
-  35 Michael McKenna
-  4:  [103G Biology 1]
-  5:  [503B Fine Art]
-  6:  [101G English]  [104G US History]
-
-
-  36 Jacob Cassidy
-  1:  [507B Agriculture]
-  4:  [103A Biology 1]
-  5:  [505B Auto]
-  6:  [101A English]  [104A US History]
-
-
-  37 Natalie Collymore
-  4:  [103B Biology 1]
-  5:  [111B French 1]
-  6:  [101B English]  [104B US History]
-
-
-  38 Madison Gatlin
-  1:  [502C Health]
-  4:  [103C Biology 1]
-  5:  [113B Latin 1]
-  6:  [101C English]  [104C US History]
-
-
-  39 Joseph Stoll
-  4:  [103D Biology 1]
-  5:  [503C Fine Art]
-  6:  [101D English]  [104D US History]
-
-
-  40 Asher Marblemaw
-  1:  [507C Agriculture]
-  4:  [103E Biology 1]
-  5:  [505C Auto]
-  6:  [101E English]  [104E US History]
-
-
-  41 Ian Thatcher
-  4:  [103F Biology 1]
-  5:  [111A French 1]
-  6:  [101F English]  [104F US History]
-
-
-  42 Sophia Truthbelly
-  1:  [502D Health]
-  4:  [103G Biology 1]
-  5:  [113A Latin 1]
-  6:  [101G English]  [104G US History]
-
-
-  43 Oliver Gasper
-  4:  [103A Biology 1]
-  5:  [503D Fine Art]
-  6:  [101A English]  [104A US History]
-
-
-  44 Christian Wilson
-  1:  [507D Agriculture]
-  4:  [103B Biology 1]
-  5:  [505D Auto]
-  6:  [101B English]  [104B US History]
-
-
-  45 Hannah Marley
-  4:  [103C Biology 1]
-  5:  [111B French 1]
-  6:  [101C English]  [104C US History]
-
-
-  46 Alice Gasper
-  1:  [502E Health]
-  4:  [103D Biology 1]
-  5:  [113B Latin 1]
-  6:  [101D English]  [104D US History]
-
-
-  47 Genesis Humblecut
-  4:  [103E Biology 1]
-  5:  [503E Fine Art]
-  6:  [101E English]  [104E US History]
-
-
-  48 Ezekiel Fellowes
-  1:  [507E Agriculture]
-  4:  [103F Biology 1]
-  5:  [505E Auto]
-  6:  [101F English]  [104F US History]
-
-
-  49 Andrew Stoll
-  4:  [103G Biology 1]
-  5:  [111A French 1]
-  6:  [101G English]  [104G US History]
-
-
-  50 Waylon Remington
-  1:  [502F Health]
-  4:  [103A Biology 1]
-  5:  [113A Latin 1]
-  6:  [101A English]  [104A US History]
-
-
-  51 Joseph Hansley
-  4:  [103B Biology 1]
-  5:  [503F Fine Art]
-  6:  [101B English]  [104B US History]
-
-
-  52 Waylon Driscoll
-  1:  [507F Agriculture]
-  4:  [103C Biology 1]
-  5:  [505F Auto]
-  6:  [101C English]  [104C US History]
-
-
-  53 Lincoln Lopez
-  4:  [103D Biology 1]
-  5:  [111B French 1]
-  6:  [101D English]  [104D US History]
-
-
-  54 Maria Carter
-  1:  [502G Health]
-  4:  [103E Biology 1]
-  5:  [113B Latin 1]
-  6:  [101E English]  [104E US History]
-
-
-  55 Jack Raven
-  4:  [103F Biology 1]
-  5:  [503G Fine Art]
-  6:  [101F English]  [104F US History]
-
-
-  56 Raelynn Vespertine
-  1:  [507G Agriculture]
-  4:  [103G Biology 1]
-  5:  [505G Auto]
-  6:  [101G English]  [104G US History]
-
-
-  57 Lincoln Oatrun
-  4:  [103A Biology 1]
-  5:  [111A French 1]
-  6:  [101A English]  [104A US History]
-
-
-  58 Nova Gonzales
-  1:  [502A Health]
-  4:  [103B Biology 1]
-  5:  [113A Latin 1]
-  6:  [101B English]  [104B US History]
-
-
-  59 Autumn Yearwood
-  4:  [103C Biology 1]
-  5:  [503A Fine Art]
-  6:  [101C English]  [104C US History]
-
-
-  60 Everleigh James
-  1:  [507A Agriculture]
-  4:  [103D Biology 1]
-  5:  [505A Auto]
-  6:  [101D English]  [104D US History]
-
-
-  61 Luna Gasper
-  4:  [103E Biology 1]
-  5:  [111B French 1]
-  6:  [101E English]  [104E US History]
-
-
-  62 Sophie Amos
-  1:  [502B Health]
-  4:  [103F Biology 1]
-  5:  [113B Latin 1]
-  6:  [101F English]  [104F US History]
-
-
-  63 Scarlett Dawson
-  4:  [103G Biology 1]
-  5:  [503B Fine Art]
-  6:  [101G English]  [104G US History]
-
-
-  64 Ezra Wilson
-  1:  [507B Agriculture]
-  4:  [103A Biology 1]
-  5:  [505B Auto]
-  6:  [101A English]  [104A US History]
-
-
-  65 Ava Fellowes
-  4:  [103B Biology 1]
-  5:  [111A French 1]
-  6:  [101B English]  [104B US History]
-
-
-  66 Micah Madison
-  1:  [502C Health]
-  4:  [103C Biology 1]
-  5:  [113A Latin 1]
-  6:  [101C English]  [104C US History]
-
-
-  67 Noah Marley
-  4:  [103D Biology 1]
-  5:  [503C Fine Art]
-  6:  [101D English]  [104D US History]
-
-
-  68 Theodore Gasper
-  1:  [507C Agriculture]
-  4:  [103E Biology 1]
-  5:  [505C Auto]
-  6:  [101E English]  [104E US History]
-
-
-  69 Ella Lennon
-  4:  [103F Biology 1]
-  5:  [111B French 1]
-  6:  [101F English]  [104F US History]
-
-
-  70 Josiah Raven
-  1:  [502D Health]
-  4:  [103G Biology 1]
-  5:  [113B Latin 1]
-  6:  [101G English]  [104G US History]
-
-
-  71 Gabriel Ford
-  4:  [103A Biology 1]
-  5:  [503D Fine Art]
-  6:  [101A English]  [104A US History]
-
-
-  72 Madelyn Zimmerman
-  1:  [507D Agriculture]
-  4:  [103B Biology 1]
-  5:  [505D Auto]
-  6:  [101B English]  [104B US History]
-
-
-  73 Aubrey Hart
-  4:  [103C Biology 1]
-  5:  [111A French 1]
-  6:  [101C English]  [104C US History]
-
-
-  74 Hannah Crawford
-  1:  [502E Health]
-  4:  [103D Biology 1]
-  5:  [113A Latin 1]
-  6:  [101D English]  [104D US History]
-
-
-  75 Ian Poverly
-  4:  [103E Biology 1]
-  5:  [503E Fine Art]
-  6:  [101E English]  [104E US History]
-
-
-  76 Miles Barlowe
-  1:  [507E Agriculture]
-  4:  [103F Biology 1]
-  5:  [505E Auto]
-  6:  [101F English]  [104F US History]
-
-
-  77 Benjamin Madden
-  4:  [103G Biology 1]
-  5:  [111B French 1]
-  6:  [101G English]  [104G US History]
-
-
-  78 Axel Adler
-  1:  [502F Health]
-  4:  [103A Biology 1]
-  5:  [113B Latin 1]
-  6:  [101A English]  [104A US History]
-
-
-  79 Sophie Humblecut
-  4:  [103B Biology 1]
-  5:  [503F Fine Art]
-  6:  [101B English]  [104B US History]
-
-
-  80 Weston Adler
-  1:  [507F Agriculture]
-  4:  [103C Biology 1]
-  5:  [505F Auto]
-  6:  [101C English]  [104C US History]
-
-
-  81 Raelynn McKenna
-  4:  [103D Biology 1]
-  5:  [111A French 1]
-  6:  [101D English]  [104D US History]
-
-
-  82 Mason Laurier
-  1:  [502G Health]
-  4:  [103E Biology 1]
-  5:  [113A Latin 1]
-  6:  [101E English]  [104E US History]
-
-
-  83 Everett Levine
-  4:  [103F Biology 1]
-  5:  [503G Fine Art]
-  6:  [101F English]  [104F US History]
-
-
-  84 Weston Madden
-  1:  [507G Agriculture]
-  4:  [103G Biology 1]
-  5:  [505G Auto]
-  6:  [101G English]  [104G US History]
-
-
-  85 Christopher James
-  4:  [103A Biology 1]
-  5:  [111B French 1]
-  6:  [101A English]  [104A US History]
-
-
-  86 Hannah Laurier
-  1:  [502A Health]
-  4:  [103B Biology 1]
-  5:  [113B Latin 1]
-  6:  [101B English]  [104B US History]
-
-
-  87 Serenity Ashley
-  4:  [103C Biology 1]
-  5:  [503A Fine Art]
-  6:  [101C English]  [104C US History]
-
-
-  88 Layla Yearwood
-  1:  [507A Agriculture]
-  4:  [103D Biology 1]
-  5:  [505A Auto]
-  6:  [101D English]  [104D US History]
-
-
-  89 Jordan Yearwood
-  4:  [103E Biology 1]
-  5:  [111A French 1]
-  6:  [101E English]  [104E US History]
-
-
-  90 Carter Wixx
-  1:  [502B Health]
-  4:  [103F Biology 1]
-  5:  [113A Latin 1]
-  6:  [101F English]  [104F US History]
-
-
-  91 Natalie West
-  4:  [103G Biology 1]
-  5:  [503B Fine Art]
-  6:  [101G English]  [104G US History]
-
-
-  92 Alexander Verlice
-  1:  [507B Agriculture]
-  4:  [103A Biology 1]
-  5:  [505B Auto]
-  6:  [101A English]  [104A US History]
-
-
-  93 Kennedy Cassidy
-  4:  [103B Biology 1]
-  5:  [111B French 1]
-  6:  [101B English]  [104B US History]
-
-
-  94 Theo Hendrix
-  1:  [502C Health]
-  4:  [103C Biology 1]
-  5:  [113B Latin 1]
-  6:  [101C English]  [104C US History]
-
-
-  95 Lydia Undergrove
-  4:  [103D Biology 1]
-  5:  [503C Fine Art]
-  6:  [101D English]  [104D US History]
-
-
-  96 Jaxon Hope
-  1:  [507C Agriculture]
-  4:  [103E Biology 1]
-  5:  [505C Auto]
-  6:  [101E English]  [104E US History]
-
-
-  97 Kinsley Cassidy
-  4:  [103F Biology 1]
-  5:  [111A French 1]
-  6:  [101F English]  [104F US History]
-
-
-  98 Andrew West
-  1:  [502D Health]
-  4:  [103G Biology 1]
-  5:  [113A Latin 1]
-  6:  [101G English]  [104G US History]
-
-
-  99 Olivia Adler
-  4:  [103A Biology 1]
-  5:  [503D Fine Art]
-  6:  [101A English]  [104A US History]
-
-
- 100 Julian Adair
-  1:  [507D Agriculture]
-  4:  [103B Biology 1]
-  5:  [505D Auto]
-  6:  [101B English]  [104B US History]
-
-
- 101 Joshua Wixx
-  4:  [103C Biology 1]
-  5:  [111B French 1]
-  6:  [101C English]  [104C US History]
-
-
- 102 Leah Gray
-  1:  [502E Health]
-  4:  [103D Biology 1]
-  5:  [113B Latin 1]
-  6:  [101D English]  [104D US History]
-
-
- 103 Aiden Caskcut
-  4:  [103E Biology 1]
-  5:  [503E Fine Art]
-  6:  [101E English]  [104E US History]
-
-
- 104 Harper Kicklighter
-  1:  [507E Agriculture]
-  4:  [103F Biology 1]
-  5:  [505E Auto]
-  6:  [101F English]  [104F US History]
-
-
- 105 Bennett Lennon
-  4:  [103G Biology 1]
-  5:  [111A French 1]
-  6:  [101G English]  [104G US History]
-
-
- 106 John Verlice
-  1:  [502F Health]
-  4:  [103A Biology 1]
-  5:  [113A Latin 1]
-  6:  [101A English]  [104A US History]
-
-
- 107 Jordan Keller
-  4:  [103B Biology 1]
-  5:  [503F Fine Art]
-  6:  [101B English]  [104B US History]
-
-
- 108 Olivia Bardot
-  1:  [507F Agriculture]
-  4:  [103C Biology 1]
-  5:  [505F Auto]
-  6:  [101C English]  [104C US History]
-
-
- 109 Miles Moses
-  4:  [103D Biology 1]
-  5:  [111B French 1]
-  6:  [101D English]  [104D US History]
-
-
- 110 Julian Gasper
-  1:  [502G Health]
-  4:  [103E Biology 1]
-  5:  [113B Latin 1]
-  6:  [101E English]  [104E US History]
-
-
- 111 Leonardo Ashbluff
-  4:  [103F Biology 1]
-  5:  [503G Fine Art]
-  6:  [101F English]  [104F US History]
-
-
- 112 Savannah Caskcut
-  1:  [507G Agriculture]
-  4:  [103G Biology 1]
-  5:  [505G Auto]
-  6:  [101G English]  [104G US History]
-
-
- 113 Cora Whitlock
-  4:  [103A Biology 1]
-  5:  [111A French 1]
-  6:  [101A English]  [104A US History]
-
-
- 114 Anthony Adams
-  1:  [502A Health]
-  4:  [103B Biology 1]
-  5:  [113A Latin 1]
-  6:  [101B English]  [104B US History]
-
-
- 115 Walker Lightfoot
-  4:  [103C Biology 1]
-  5:  [503A Fine Art]
-  6:  [101C English]  [104C US History]
-
-
- 116 Adam Huxley
-  1:  [507A Agriculture]
-  4:  [103D Biology 1]
-  5:  [505A Auto]
-  6:  [101D English]  [104D US History]
-
-
- 117 Leilani Lennon
-  4:  [103E Biology 1]
-  5:  [111B French 1]
-  6:  [101E English]  [104E US History]
-
-
- 118 Theodore Lightfoot
-  1:  [502B Health]
-  4:  [103F Biology 1]
-  5:  [113B Latin 1]
-  6:  [101F English]  [104F US History]
-
-
- 119 Nolan Finch
-  4:  [103G Biology 1]
-  5:  [503B Fine Art]
-  6:  [101G English]  [104G US History]
-
-
- 120 Camila West
-  1:  [507B Agriculture]
-  4:  [103A Biology 1]
-  5:  [505B Auto]
-  6:  [101A English]  [104A US History]
-
-
- 121 Victoria Mintz
-  4:  [103B Biology 1]
-  5:  [111A French 1]
-  6:  [101B English]  [104B US History]
-
-
- 122 Quinn Hayes
-  1:  [502C Health]
-  4:  [103C Biology 1]
-  5:  [113A Latin 1]
-  6:  [101C English]  [104C US History]
-
-
- 123 David Lennon
-  4:  [103D Biology 1]
-  5:  [503C Fine Art]
-  6:  [101D English]  [104D US History]
-
-
- 124 Josiah Yarrow
-  1:  [507C Agriculture]
-  4:  [103E Biology 1]
-  5:  [505C Auto]
-  6:  [101E English]  [104E US History]
-
-
- 125 Eloise Barlowe
-  4:  [103F Biology 1]
-  5:  [111B French 1]
-  6:  [101F English]  [104F US History]
-
-
- 126 Ezra Vespertine
-  1:  [213A Latin 2]
-  4:  [203A Biology 2]
-  5:  [211A French 2]
-  6:  [201A Literature]  [204A US Government]
-
-
- 127 Benjamin Cyprus
-  4:  [203B Biology 2]
-  5:  [501D Phys Ed]
-  6:  [201B Literature]  [204B US Government]
-
-
- 128 Anthony Gannon
-  1:  [505D Auto]
-  4:  [203C Biology 2]
-  5:  [503D Fine Art]
-  6:  [201C Literature]  [204C US Government]
-
-
- 129 Brooks Caddel
-  4:  [203D Biology 2]
-  5:  [506D Carpentry]
-  6:  [201D Literature]  [204D US Government]
-
-
- 130 Greyson Beckett
-  1:  [213B Latin 2]
-  4:  [203E Biology 2]
-  5:  [211B French 2]
-  6:  [201E Literature]  [204E US Government]
-
-
- 131 Nora Gorestriker
-  4:  [203F Biology 2]
-  5:  [501E Phys Ed]
-  6:  [201F Literature]  [204F US Government]
-
-
- 132 Lillian Fleet
-  1:  [505E Auto]
-  4:  [203G Biology 2]
-  5:  [503E Fine Art]
-  6:  [201G Literature]  [204G US Government]
-
-
- 133 Adam Keller
-  4:  [203A Biology 2]
-  5:  [506E Carpentry]
-  6:  [201A Literature]  [204A US Government]
-
-
- 134 Willow Sagespark
-  1:  [213A Latin 2]
-  4:  [203B Biology 2]
-  5:  [211A French 2]
-  6:  [201B Literature]  [204B US Government]
-
-
- 135 Serenity Carter
-  4:  [203C Biology 2]
-  5:  [501F Phys Ed]
-  6:  [201C Literature]  [204C US Government]
-
-
- 136 Maverick Spade
-  1:  [505F Auto]
-  4:  [203D Biology 2]
-  5:  [503F Fine Art]
-  6:  [201D Literature]  [204D US Government]
-
-
- 137 Ruby Hydrafist
-  4:  [203E Biology 2]
-  5:  [506F Carpentry]
-  6:  [201E Literature]  [204E US Government]
-
-
- 138 Elizabeth Bardot
-  1:  [213B Latin 2]
-  4:  [203F Biology 2]
-  5:  [211B French 2]
-  6:  [201F Literature]  [204F US Government]
-
-
- 139 Aurora Spade
-  4:  [203G Biology 2]
-  5:  [501G Phys Ed]
-  6:  [201G Literature]  [204G US Government]
-
-
- 140 Angel Gorestriker
-  1:  [505G Auto]
-  4:  [203A Biology 2]
-  5:  [503G Fine Art]
-  6:  [201A Literature]  [204A US Government]
-
-
- 141 Thomas Gray
-  4:  [203B Biology 2]
-  5:  [506G Carpentry]
-  6:  [201B Literature]  [204B US Government]
-
-
- 142 Emily Bardot
-  1:  [213A Latin 2]
-  4:  [203C Biology 2]
-  5:  [211A French 2]
-  6:  [201C Literature]  [204C US Government]
-
-
- 143 Lydia Gasper
-  4:  [203D Biology 2]
-  5:  [501A Phys Ed]
-  6:  [201D Literature]  [204D US Government]
-
-
- 144 Ivy Solace
-  1:  [505A Auto]
-  4:  [203E Biology 2]
-  5:  [503A Fine Art]
-  6:  [201E Literature]  [204E US Government]
-
-
- 145 Josephine Strongblossom
-  4:  [203F Biology 2]
-  5:  [506A Carpentry]
-  6:  [201F Literature]  [204F US Government]
-
-
- 146 Victoria Elrod
-  1:  [213B Latin 2]
-  4:  [203G Biology 2]
-  5:  [211B French 2]
-  6:  [201G Literature]  [204G US Government]
-
-
- 147 Eli Kicklighter
-  4:  [203A Biology 2]
-  5:  [501B Phys Ed]
-  6:  [201A Literature]  [204A US Government]
-
-
- 148 Lydia Dustfinger
-  1:  [505B Auto]
-  4:  [203B Biology 2]
-  5:  [503B Fine Art]
-  6:  [201B Literature]  [204B US Government]
-
-
- 149 Audrey Madden
-  4:  [203C Biology 2]
-  5:  [506B Carpentry]
-  6:  [201C Literature]  [204C US Government]
-
-
- 150 Anthony Zimmerman
-  1:  [213A Latin 2]
-  4:  [203D Biology 2]
-  5:  [211A French 2]
-  6:  [201D Literature]  [204D US Government]
-
-
- 151 Owen Remington
-  4:  [203E Biology 2]
-  5:  [501C Phys Ed]
-  6:  [201E Literature]  [204E US Government]
-
-
- 152 Riley Madden
-  1:  [505C Auto]
-  4:  [203F Biology 2]
-  5:  [503C Fine Art]
-  6:  [201F Literature]  [204F US Government]
-
-
- 153 Elias Beckett
-  4:  [203G Biology 2]
-  5:  [506C Carpentry]
-  6:  [201G Literature]  [204G US Government]
-
-
- 154 Miles Gasper
-  1:  [213B Latin 2]
-  4:  [203A Biology 2]
-  5:  [211B French 2]
-  6:  [201A Literature]  [204A US Government]
-
-
- 155 Walker Sharpe
-  4:  [203B Biology 2]
-  5:  [501D Phys Ed]
-  6:  [201B Literature]  [204B US Government]
-
-
- 156 Parker Undergrove
-  1:  [505D Auto]
-  4:  [203C Biology 2]
-  5:  [503D Fine Art]
-  6:  [201C Literature]  [204C US Government]
-
-
- 157 Claire Biddercombe
-  4:  [203D Biology 2]
-  5:  [506D Carpentry]
-  6:  [201D Literature]  [204D US Government]
-
-
- 158 Weston Truthbelly
-  1:  [213A Latin 2]
-  4:  [203E Biology 2]
-  5:  [211A French 2]
-  6:  [201E Literature]  [204E US Government]
-
-
- 159 Jonathan Gray
-  4:  [203F Biology 2]
-  5:  [501E Phys Ed]
-  6:  [201F Literature]  [204F US Government]
-
-
- 160 Maya Ashbluff
-  1:  [505E Auto]
-  4:  [203G Biology 2]
-  5:  [503E Fine Art]
-  6:  [201G Literature]  [204G US Government]
-
-
- 161 Elijah Madden
-  4:  [203A Biology 2]
-  5:  [506E Carpentry]
-  6:  [201A Literature]  [204A US Government]
-
-
- 162 Ezekiel Kicklighter
-  1:  [213B Latin 2]
-  4:  [203B Biology 2]
-  5:  [211B French 2]
-  6:  [201B Literature]  [204B US Government]
-
-
- 163 Chloe Adler
-  4:  [203C Biology 2]
-  5:  [501F Phys Ed]
-  6:  [201C Literature]  [204C US Government]
-
-
- 164 Ryan Elrod
-  1:  [505F Auto]
-  4:  [203D Biology 2]
-  5:  [503F Fine Art]
-  6:  [201D Literature]  [204D US Government]
-
-
- 165 Luna West
-  4:  [203E Biology 2]
-  5:  [506F Carpentry]
-  6:  [201E Literature]  [204E US Government]
-
-
- 166 Ella Hart
-  1:  [213A Latin 2]
-  4:  [203F Biology 2]
-  5:  [211A French 2]
-  6:  [201F Literature]  [204F US Government]
-
-
- 167 Mateo Beckett
-  4:  [203G Biology 2]
-  5:  [501G Phys Ed]
-  6:  [201G Literature]  [204G US Government]
-
-
- 168 Athena Woodgrip
-  1:  [505G Auto]
-  4:  [203A Biology 2]
-  5:  [503G Fine Art]
-  6:  [201A Literature]  [204A US Government]
-
-
- 169 Cooper Solace
-  4:  [203B Biology 2]
-  5:  [506G Carpentry]
-  6:  [201B Literature]  [204B US Government]
-
-
- 170 Everly Cassidy
-  1:  [213B Latin 2]
-  4:  [203C Biology 2]
-  5:  [211B French 2]
-  6:  [201C Literature]  [204C US Government]
-
-
- 171 Liliana Carter
-  4:  [203D Biology 2]
-  5:  [501A Phys Ed]
-  6:  [201D Literature]  [204D US Government]
-
-
- 172 Anna Spade
-  1:  [505A Auto]
-  4:  [203E Biology 2]
-  5:  [503A Fine Art]
-  6:  [201E Literature]  [204E US Government]
-
-
- 173 Elias Amos
-  4:  [203F Biology 2]
-  5:  [506A Carpentry]
-  6:  [201F Literature]  [204F US Government]
-
-
- 174 Mia Sharpe
-  1:  [213A Latin 2]
-  4:  [203G Biology 2]
-  5:  [211A French 2]
-  6:  [201G Literature]  [204G US Government]
-
-
- 175 Jack Gonzales
-  4:  [203A Biology 2]
-  5:  [501B Phys Ed]
-  6:  [201A Literature]  [204A US Government]
-
-
- 176 Ryan Poverly
-  1:  [505B Auto]
-  4:  [203B Biology 2]
-  5:  [503B Fine Art]
-  6:  [201B Literature]  [204B US Government]
-
-
- 177 Alice Crawford
-  4:  [203C Biology 2]
-  5:  [506B Carpentry]
-  6:  [201C Literature]  [204C US Government]
-
-
- 178 Eloise Dagon
-  1:  [213B Latin 2]
-  4:  [203D Biology 2]
-  5:  [211B French 2]
-  6:  [201D Literature]  [204D US Government]
-
-
- 179 Cooper Carter
-  4:  [203E Biology 2]
-  5:  [501C Phys Ed]
-  6:  [201E Literature]  [204E US Government]
-
-
- 180 Julian Undergrove
-  1:  [505C Auto]
-  4:  [203F Biology 2]
-  5:  [503C Fine Art]
-  6:  [201F Literature]  [204F US Government]
-
-
- 181 Anthony Strongblossom
-  4:  [203G Biology 2]
-  5:  [506C Carpentry]
-  6:  [201G Literature]  [204G US Government]
-
-
- 182 Everett Poverly
-  1:  [213A Latin 2]
-  4:  [203A Biology 2]
-  5:  [211A French 2]
-  6:  [201A Literature]  [204A US Government]
-
-
- 183 Weston Hansley
-  4:  [203B Biology 2]
-  5:  [501D Phys Ed]
-  6:  [201B Literature]  [204B US Government]
-
-
- 184 Mila Crassus
-  1:  [505D Auto]
-  4:  [203C Biology 2]
-  5:  [503D Fine Art]
-  6:  [201C Literature]  [204C US Government]
-
-
- 185 Easton Ashley
-  4:  [203D Biology 2]
-  5:  [506D Carpentry]
-  6:  [201D Literature]  [204D US Government]
-
-
- 186 Genesis Truthbelly
-  1:  [213B Latin 2]
-  4:  [203E Biology 2]
-  5:  [211B French 2]
-  6:  [201E Literature]  [204E US Government]
-
-
- 187 Cora Hansley
-  4:  [203F Biology 2]
-  5:  [501E Phys Ed]
-  6:  [201F Literature]  [204F US Government]
-
-
- 188 Maya James
-  1:  [505E Auto]
-  4:  [203G Biology 2]
-  5:  [503E Fine Art]
-  6:  [201G Literature]  [204G US Government]
-
-
- 189 Jacob Gonzales
-  4:  [203A Biology 2]
-  5:  [506E Carpentry]
-  6:  [201A Literature]  [204A US Government]
-
-
- 190 Emery Windward
-  1:  [213A Latin 2]
-  4:  [203B Biology 2]
-  5:  [211A French 2]
-  6:  [201B Literature]  [204B US Government]
-
-
- 191 Raelynn Caskcut
-  4:  [203C Biology 2]
-  5:  [501F Phys Ed]
-  6:  [201C Literature]  [204C US Government]
-
-
- 192 Maverick Thatcher
-  1:  [505F Auto]
-  4:  [203D Biology 2]
-  5:  [503F Fine Art]
-  6:  [201D Literature]  [204D US Government]
-
-
- 193 Gabriella Adair
-  4:  [203E Biology 2]
-  5:  [506F Carpentry]
-  6:  [201E Literature]  [204E US Government]
-
-
- 194 Ava Lennon
-  1:  [213B Latin 2]
-  4:  [203F Biology 2]
-  5:  [211B French 2]
-  6:  [201F Literature]  [204F US Government]
-
-
- 195 Brooks Marley
-  4:  [203G Biology 2]
-  5:  [501G Phys Ed]
-  6:  [201G Literature]  [204G US Government]
-
-
- 196 James Curran
-  1:  [505G Auto]
-  4:  [203A Biology 2]
-  5:  [503G Fine Art]
-  6:  [201A Literature]  [204A US Government]
-
-
- 197 Jordan Spade
-  4:  [203B Biology 2]
-  5:  [506G Carpentry]
-  6:  [201B Literature]  [204B US Government]
-
-
- 198 Xavier Humblecut
-  1:  [213A Latin 2]
-  4:  [203C Biology 2]
-  5:  [211A French 2]
-  6:  [201C Literature]  [204C US Government]
-
-
- 199 Elena Moses
-  4:  [203D Biology 2]
-  5:  [501A Phys Ed]
-  6:  [201D Literature]  [204D US Government]
-
-
- 200 Mateo Jenkins
-  1:  [505A Auto]
-  4:  [203E Biology 2]
-  5:  [503A Fine Art]
-  6:  [201E Literature]  [204E US Government]
-
-
- 201 Owen Ashford
-  4:  [203F Biology 2]
-  5:  [506A Carpentry]
-  6:  [201F Literature]  [204F US Government]
-
-
- 202 Greyson Adler
-  1:  [213B Latin 2]
-  4:  [203G Biology 2]
-  5:  [211B French 2]
-  6:  [201G Literature]  [204G US Government]
-
-
- 203 Jayden Beam
-  4:  [203A Biology 2]
-  5:  [501B Phys Ed]
-  6:  [201A Literature]  [204A US Government]
-
-
- 204 Joshua Yearwood
-  1:  [505B Auto]
-  4:  [203B Biology 2]
-  5:  [503B Fine Art]
-  6:  [201B Literature]  [204B US Government]
-
-
- 205 John Strongblossom
-  4:  [203C Biology 2]
-  5:  [506B Carpentry]
-  6:  [201C Literature]  [204C US Government]
-
-
- 206 Theodore Fellowes
-  1:  [213A Latin 2]
-  4:  [203D Biology 2]
-  5:  [211A French 2]
-  6:  [201D Literature]  [204D US Government]
-
-
- 207 Adam Lopez
-  4:  [203E Biology 2]
-  5:  [501C Phys Ed]
-  6:  [201E Literature]  [204E US Government]
-
-
- 208 Charlotte Gasper
-  1:  [505C Auto]
-  4:  [203F Biology 2]
-  5:  [503C Fine Art]
-  6:  [201F Literature]  [204F US Government]
-
-
- 209 Logan Elsher
-  4:  [203G Biology 2]
-  5:  [506C Carpentry]
-  6:  [201G Literature]  [204G US Government]
-
-
- 210 Xavier Sharpe
-  1:  [213B Latin 2]
-  4:  [203A Biology 2]
-  5:  [211B French 2]
-  6:  [201A Literature]  [204A US Government]
-
-
- 211 Xavier Hendrix
-  4:  [203B Biology 2]
-  5:  [501D Phys Ed]
-  6:  [201B Literature]  [204B US Government]
-
-
- 212 Adeline Hydrafist
-  1:  [505D Auto]
-  4:  [203C Biology 2]
-  5:  [503D Fine Art]
-  6:  [201C Literature]  [204C US Government]
-
-
- 213 Eloise Adams
-  4:  [203D Biology 2]
-  5:  [506D Carpentry]
-  6:  [201D Literature]  [204D US Government]
-
-
- 214 Aaliyah Langley
-  1:  [213A Latin 2]
-  4:  [203E Biology 2]
-  5:  [211A French 2]
-  6:  [201E Literature]  [204E US Government]
-
-
- 215 Naomi Mintz
-  4:  [203F Biology 2]
-  5:  [501E Phys Ed]
-  6:  [201F Literature]  [204F US Government]
-
-
- 216 Aubrey James
-  1:  [505E Auto]
-  4:  [203G Biology 2]
-  5:  [503E Fine Art]
-  6:  [201G Literature]  [204G US Government]
-
-
- 217 Nathan Huxley
-  4:  [203A Biology 2]
-  5:  [506E Carpentry]
-  6:  [201A Literature]  [204A US Government]
-
-
- 218 Josiah Daughtler
-  1:  [213B Latin 2]
-  4:  [203B Biology 2]
-  5:  [211B French 2]
-  6:  [201B Literature]  [204B US Government]
-
-
- 219 Levi Bardot
-  4:  [203C Biology 2]
-  5:  [501F Phys Ed]
-  6:  [201C Literature]  [204C US Government]
-
-
- 220 Daniel Beckett
-  1:  [505F Auto]
-  4:  [203D Biology 2]
-  5:  [503F Fine Art]
-  6:  [201D Literature]  [204D US Government]
-
-
- 221 Victoria Caskcut
-  4:  [203E Biology 2]
-  5:  [506F Carpentry]
-  6:  [201E Literature]  [204E US Government]
-
-
- 222 Isabella Woodgrip
-  1:  [213A Latin 2]
-  4:  [203F Biology 2]
-  5:  [211A French 2]
-  6:  [201F Literature]  [204F US Government]
-
-
- 223 Owen Madden
-  4:  [203G Biology 2]
-  5:  [501G Phys Ed]
-  6:  [201G Literature]  [204G US Government]
-
-
- 224 Everleigh Gray
-  1:  [505G Auto]
-  4:  [203A Biology 2]
-  5:  [503G Fine Art]
-  6:  [201A Literature]  [204A US Government]
-
-
- 225 Wesley Finch
-  4:  [203B Biology 2]
-  5:  [506G Carpentry]
-  6:  [201B Literature]  [204B US Government]
-
-
- 226 Cooper Wixx
-  1:  [213B Latin 2]
-  4:  [203C Biology 2]
-  5:  [211B French 2]
-  6:  [201C Literature]  [204C US Government]
-
-
- 227 Penelope Daughtler
-  4:  [203D Biology 2]
-  5:  [501A Phys Ed]
-  6:  [201D Literature]  [204D US Government]
-
-
- 228 Jack Beckett
-  1:  [505A Auto]
-  4:  [203E Biology 2]
-  5:  [503A Fine Art]
-  6:  [201E Literature]  [204E US Government]
-
-
- 229 Eli Hendrix
-  4:  [203F Biology 2]
-  5:  [506A Carpentry]
-  6:  [201F Literature]  [204F US Government]
-
-
- 230 Mateo Adair
-  1:  [213A Latin 2]
-  4:  [203G Biology 2]
-  5:  [211A French 2]
-  6:  [201G Literature]  [204G US Government]
-
-
- 231 Bennett Sagespark
-  4:  [203A Biology 2]
-  5:  [501B Phys Ed]
-  6:  [201A Literature]  [204A US Government]
-
-
- 232 Jordan Vespertine
-  1:  [505B Auto]
-  4:  [203B Biology 2]
-  5:  [503B Fine Art]
-  6:  [201B Literature]  [204B US Government]
-
-
- 233 Elias Ashley
-  4:  [203C Biology 2]
-  5:  [506B Carpentry]
-  6:  [201C Literature]  [204C US Government]
-
-
- 234 Brooklyn Undergrove
-  1:  [213B Latin 2]
-  4:  [203D Biology 2]
-  5:  [211B French 2]
-  6:  [201D Literature]  [204D US Government]
-
-
- 235 Brooks Gasper
-  4:  [203E Biology 2]
-  5:  [501C Phys Ed]
-  6:  [201E Literature]  [204E US Government]
-
-
- 236 Zoey Beam
-  1:  [505C Auto]
-  4:  [203F Biology 2]
-  5:  [503C Fine Art]
-  6:  [201F Literature]  [204F US Government]
-
-
- 237 Kennedy Hart
-  4:  [203G Biology 2]
-  5:  [506C Carpentry]
-  6:  [201G Literature]  [204G US Government]
-
-
- 238 Angel Fleet
-  1:  [213A Latin 2]
-  4:  [203A Biology 2]
-  5:  [211A French 2]
-  6:  [201A Literature]  [204A US Government]
-
-
- 239 Athena Gonzales
-  4:  [203B Biology 2]
-  5:  [501D Phys Ed]
-  6:  [201B Literature]  [204B US Government]
-
-
- 240 Oliver Ashbluff
-  1:  [505D Auto]
-  4:  [203C Biology 2]
-  5:  [503D Fine Art]
-  6:  [201C Literature]  [204C US Government]
-
-
- 241 Nathan Adair
-  4:  [203D Biology 2]
-  5:  [506D Carpentry]
-  6:  [201D Literature]  [204D US Government]
-
-
- 242 Aaron Keller
-  1:  [213B Latin 2]
-  4:  [203E Biology 2]
-  5:  [211B French 2]
-  6:  [201E Literature]  [204E US Government]
-
-
- 243 Eleanor Hendrix
-  4:  [203F Biology 2]
-  5:  [501E Phys Ed]
-  6:  [201F Literature]  [204F US Government]
-
-
- 244 Madelyn Jenkins
-  1:  [505E Auto]
-  4:  [203G Biology 2]
-  5:  [503E Fine Art]
-  6:  [201G Literature]  [204G US Government]
-
-
- 245 Victoria Finnegan
-  4:  [203A Biology 2]
-  5:  [506E Carpentry]
-  6:  [201A Literature]  [204A US Government]
-
-
- 246 Josephine Barlowe
-  1:  [213A Latin 2]
-  4:  [203B Biology 2]
-  5:  [211A French 2]
-  6:  [201B Literature]  [204B US Government]
-
-
- 247 Beau Ashford
-  4:  [203C Biology 2]
-  5:  [501F Phys Ed]
-  6:  [201C Literature]  [204C US Government]
-
-
- 248 Zoey Gorestriker
-  1:  [505F Auto]
-  4:  [203D Biology 2]
-  5:  [503F Fine Art]
-  6:  [201D Literature]  [204D US Government]
-
-
- 249 Ayla Carter
-  4:  [203E Biology 2]
-  5:  [506F Carpentry]
-  6:  [201E Literature]  [204E US Government]
-
-
- 250 Ellie Ellis
-  1:  [213B Latin 2]
-  4:  [203F Biology 2]
-  5:  [211B French 2]
-  6:  [201F Literature]  [204F US Government]
-
-
- 251 Josiah Elrod
-  4:  [303A Chemistry]
-  5:  [311A French 3]
-  6:  [301A Composition]  [304A World History]
-
-
- 252 Greyson Beam
-  1:  [502G Health]
-  4:  [303B Chemistry]
-  5:  [313A Latin 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 253 Nevaeh Hayes
-  4:  [303C Chemistry]
-  5:  [503G Fine Art]
-  6:  [301C Composition]  [304C World History]
-
-
- 254 Ivy Stoll
-  1:  [507G Agriculture]
-  4:  [303D Chemistry]
-  5:  [505G Auto]
-  6:  [301D Composition]  [304D World History]
-
-
- 255 Savannah Dagon
-  4:  [303E Chemistry]
-  5:  [311B French 3]
-  6:  [301E Composition]  [304E World History]
-
-
- 256 Skylar Lightfoot
-  1:  [502A Health]
-  4:  [303F Chemistry]
-  5:  [313B Latin 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 257 Easton Vespertine
-  4:  [303G Chemistry]
-  5:  [503A Fine Art]
-  6:  [301G Composition]  [304G World History]
-
-
- 258 Cameron James
-  1:  [507A Agriculture]
-  4:  [303A Chemistry]
-  5:  [505A Auto]
-  6:  [301A Composition]  [304A World History]
-
-
- 259 Gianna Stoll
-  4:  [303B Chemistry]
-  5:  [311A French 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 260 Andrew Elsher
-  1:  [502B Health]
-  4:  [303C Chemistry]
-  5:  [313A Latin 3]
-  6:  [301C Composition]  [304C World History]
-
-
- 261 Charles Ledger
-  4:  [303D Chemistry]
-  5:  [503B Fine Art]
-  6:  [301D Composition]  [304D World History]
-
-
- 262 Hazel Fellowes
-  1:  [507B Agriculture]
-  4:  [303E Chemistry]
-  5:  [505B Auto]
-  6:  [301E Composition]  [304E World History]
-
-
- 263 Luke Gorestriker
-  4:  [303F Chemistry]
-  5:  [311B French 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 264 Nathan Sagespark
-  1:  [502C Health]
-  4:  [303G Chemistry]
-  5:  [313B Latin 3]
-  6:  [301G Composition]  [304G World History]
-
-
- 265 Landon Ashbluff
-  4:  [303A Chemistry]
-  5:  [503C Fine Art]
-  6:  [301A Composition]  [304A World History]
-
-
- 266 Aria Biddercombe
-  1:  [507C Agriculture]
-  4:  [303B Chemistry]
-  5:  [505C Auto]
-  6:  [301B Composition]  [304B World History]
-
-
- 267 Ezekiel Hope
-  4:  [303C Chemistry]
-  5:  [311A French 3]
-  6:  [301C Composition]  [304C World History]
-
-
- 268 Cora Beam
-  1:  [502D Health]
-  4:  [303D Chemistry]
-  5:  [313A Latin 3]
-  6:  [301D Composition]  [304D World History]
-
-
- 269 Valentina Mintz
-  4:  [303E Chemistry]
-  5:  [503D Fine Art]
-  6:  [301E Composition]  [304E World History]
-
-
- 270 Violet Snakeleaf
-  1:  [507D Agriculture]
-  4:  [303F Chemistry]
-  5:  [505D Auto]
-  6:  [301F Composition]  [304F World History]
-
-
- 271 Victoria Stoll
-  4:  [303G Chemistry]
-  5:  [311B French 3]
-  6:  [301G Composition]  [304G World History]
-
-
- 272 Ian Crassus
-  1:  [502E Health]
-  4:  [303A Chemistry]
-  5:  [313B Latin 3]
-  6:  [301A Composition]  [304A World History]
-
-
- 273 Nicholas Lennon
-  4:  [303B Chemistry]
-  5:  [503E Fine Art]
-  6:  [301B Composition]  [304B World History]
-
-
- 274 Mila Bozzelli
-  1:  [507E Agriculture]
-  4:  [303C Chemistry]
-  5:  [505E Auto]
-  6:  [301C Composition]  [304C World History]
-
-
- 275 Isaac Remington
-  4:  [303D Chemistry]
-  5:  [311A French 3]
-  6:  [301D Composition]  [304D World History]
-
-
- 276 Isla Lopez
-  1:  [502F Health]
-  4:  [303E Chemistry]
-  5:  [313A Latin 3]
-  6:  [301E Composition]  [304E World History]
-
-
- 277 Gabriel Undergrove
-  4:  [303F Chemistry]
-  5:  [503F Fine Art]
-  6:  [301F Composition]  [304F World History]
-
-
- 278 Wesley Adler
-  1:  [507F Agriculture]
-  4:  [303G Chemistry]
-  5:  [505F Auto]
-  6:  [301G Composition]  [304G World History]
-
-
- 279 Ella Moses
-  4:  [303A Chemistry]
-  5:  [311B French 3]
-  6:  [301A Composition]  [304A World History]
-
-
- 280 Penelope Truthbelly
-  1:  [502G Health]
-  4:  [303B Chemistry]
-  5:  [313B Latin 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 281 Nicholas Undergrove
-  4:  [303C Chemistry]
-  5:  [503G Fine Art]
-  6:  [301C Composition]  [304C World History]
-
-
- 282 Zoey Beckett
-  1:  [507G Agriculture]
-  4:  [303D Chemistry]
-  5:  [505G Auto]
-  6:  [301D Composition]  [304D World History]
-
-
- 283 Ezra Curran
-  4:  [303E Chemistry]
-  5:  [311A French 3]
-  6:  [301E Composition]  [304E World History]
-
-
- 284 Colton Ellis
-  1:  [502A Health]
-  4:  [303F Chemistry]
-  5:  [313A Latin 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 285 Theo Caskcut
-  4:  [303G Chemistry]
-  5:  [503A Fine Art]
-  6:  [301G Composition]  [304G World History]
-
-
- 286 Autumn Thatcher
-  1:  [507A Agriculture]
-  4:  [303A Chemistry]
-  5:  [505A Auto]
-  6:  [301A Composition]  [304A World History]
-
-
- 287 Adam Keller
-  4:  [303B Chemistry]
-  5:  [311B French 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 288 Anna Remington
-  1:  [502B Health]
-  4:  [303C Chemistry]
-  5:  [313B Latin 3]
-  6:  [301C Composition]  [304C World History]
-
-
- 289 Bennett Sharpe
-  4:  [303D Chemistry]
-  5:  [503B Fine Art]
-  6:  [301D Composition]  [304D World History]
-
-
- 290 Sophia Lennon
-  1:  [507B Agriculture]
-  4:  [303E Chemistry]
-  5:  [505B Auto]
-  6:  [301E Composition]  [304E World History]
-
-
- 291 Kinsley Ford
-  4:  [303F Chemistry]
-  5:  [311A French 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 292 Cora Wilson
-  1:  [502C Health]
-  4:  [303G Chemistry]
-  5:  [313A Latin 3]
-  6:  [301G Composition]  [304G World History]
-
-
- 293 Delilah Crassus
-  4:  [303A Chemistry]
-  5:  [503C Fine Art]
-  6:  [301A Composition]  [304A World History]
-
-
- 294 Waylon Keller
-  1:  [507C Agriculture]
-  4:  [303B Chemistry]
-  5:  [505C Auto]
-  6:  [301B Composition]  [304B World History]
-
-
- 295 Sofia Raven
-  4:  [303C Chemistry]
-  5:  [311B French 3]
-  6:  [301C Composition]  [304C World History]
-
-
- 296 Henry Marblemaw
-  1:  [502D Health]
-  4:  [303D Chemistry]
-  5:  [313B Latin 3]
-  6:  [301D Composition]  [304D World History]
-
-
- 297 Luke Gorestriker
-  4:  [303E Chemistry]
-  5:  [503D Fine Art]
-  6:  [301E Composition]  [304E World History]
-
-
- 298 Nora Adams
-  1:  [507D Agriculture]
-  4:  [303F Chemistry]
-  5:  [505D Auto]
-  6:  [301F Composition]  [304F World History]
-
-
- 299 Lucy Zimmerman
-  4:  [303G Chemistry]
-  5:  [311A French 3]
-  6:  [301G Composition]  [304G World History]
-
-
- 300 Emery Langley
-  1:  [502E Health]
-  4:  [303A Chemistry]
-  5:  [313A Latin 3]
-  6:  [301A Composition]  [304A World History]
-
-
- 301 Caleb Gray
-  4:  [303B Chemistry]
-  5:  [503E Fine Art]
-  6:  [301B Composition]  [304B World History]
-
-
- 302 Isaac Collymore
-  1:  [507E Agriculture]
-  4:  [303C Chemistry]
-  5:  [505E Auto]
-  6:  [301C Composition]  [304C World History]
-
-
- 303 William Hydrafist
-  4:  [303D Chemistry]
-  5:  [311B French 3]
-  6:  [301D Composition]  [304D World History]
-
-
- 304 Waylon Biddercombe
-  1:  [502F Health]
-  4:  [303E Chemistry]
-  5:  [313B Latin 3]
-  6:  [301E Composition]  [304E World History]
-
-
- 305 Ella Thatcher
-  4:  [303F Chemistry]
-  5:  [503F Fine Art]
-  6:  [301F Composition]  [304F World History]
-
-
- 306 Mila Thatcher
-  1:  [507F Agriculture]
-  4:  [303G Chemistry]
-  5:  [505F Auto]
-  6:  [301G Composition]  [304G World History]
-
-
- 307 Daniel Wixx
-  4:  [303A Chemistry]
-  5:  [311A French 3]
-  6:  [301A Composition]  [304A World History]
-
-
- 308 Paisley Hope
-  1:  [502G Health]
-  4:  [303B Chemistry]
-  5:  [313A Latin 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 309 Bella Poverly
-  4:  [303C Chemistry]
-  5:  [503G Fine Art]
-  6:  [301C Composition]  [304C World History]
-
-
- 310 Adrian Anderson
-  1:  [507G Agriculture]
-  4:  [303D Chemistry]
-  5:  [505G Auto]
-  6:  [301D Composition]  [304D World History]
-
-
- 311 Jordan Hart
-  4:  [303E Chemistry]
-  5:  [311B French 3]
-  6:  [301E Composition]  [304E World History]
-
-
- 312 Mia Cassidy
-  1:  [502A Health]
-  4:  [303F Chemistry]
-  5:  [313B Latin 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 313 Savannah Hope
-  4:  [303G Chemistry]
-  5:  [503A Fine Art]
-  6:  [301G Composition]  [304G World History]
-
-
- 314 Caroline James
-  1:  [507A Agriculture]
-  4:  [303A Chemistry]
-  5:  [505A Auto]
-  6:  [301A Composition]  [304A World History]
-
-
- 315 Jacob Huxley
-  4:  [303B Chemistry]
-  5:  [311A French 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 316 Asher Madden
-  1:  [502B Health]
-  4:  [303C Chemistry]
-  5:  [313A Latin 3]
-  6:  [301C Composition]  [304C World History]
-
-
- 317 Theo Jenkins
-  4:  [303D Chemistry]
-  5:  [503B Fine Art]
-  6:  [301D Composition]  [304D World History]
-
-
- 318 Riley Verlice
-  1:  [507B Agriculture]
-  4:  [303E Chemistry]
-  5:  [505B Auto]
-  6:  [301E Composition]  [304E World History]
-
-
- 319 Aiden Sagespark
-  4:  [303F Chemistry]
-  5:  [311B French 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 320 Adam Finch
-  1:  [502C Health]
-  4:  [303G Chemistry]
-  5:  [313B Latin 3]
-  6:  [301G Composition]  [304G World History]
-
-
- 321 Lucas Pierce
-  4:  [303A Chemistry]
-  5:  [503C Fine Art]
-  6:  [301A Composition]  [304A World History]
-
-
- 322 Chloe Undergrove
-  1:  [507C Agriculture]
-  4:  [303B Chemistry]
-  5:  [505C Auto]
-  6:  [301B Composition]  [304B World History]
-
-
- 323 Matthew Adair
-  4:  [303C Chemistry]
-  5:  [311A French 3]
-  6:  [301C Composition]  [304C World History]
-
-
- 324 Ezra Spade
-  1:  [502D Health]
-  4:  [303D Chemistry]
-  5:  [313A Latin 3]
-  6:  [301D Composition]  [304D World History]
-
-
- 325 Nicholas Gatlin
-  4:  [303E Chemistry]
-  5:  [503D Fine Art]
-  6:  [301E Composition]  [304E World History]
-
-
- 326 Sebastian Driscoll
-  1:  [507D Agriculture]
-  4:  [303F Chemistry]
-  5:  [505D Auto]
-  6:  [301F Composition]  [304F World History]
-
-
- 327 Ryan Laurier
-  4:  [303G Chemistry]
-  5:  [311B French 3]
-  6:  [301G Composition]  [304G World History]
-
-
- 328 Isaiah Oatrun
-  1:  [502E Health]
-  4:  [303A Chemistry]
-  5:  [313B Latin 3]
-  6:  [301A Composition]  [304A World History]
-
-
- 329 Anna Madden
-  4:  [303B Chemistry]
-  5:  [503E Fine Art]
-  6:  [301B Composition]  [304B World History]
-
-
- 330 Daniel Katz
-  1:  [507E Agriculture]
-  4:  [303C Chemistry]
-  5:  [505E Auto]
-  6:  [301C Composition]  [304C World History]
-
-
- 331 Ayla Fellowes
-  4:  [303D Chemistry]
-  5:  [311A French 3]
-  6:  [301D Composition]  [304D World History]
-
-
- 332 Caroline Ashbluff
-  1:  [502F Health]
-  4:  [303E Chemistry]
-  5:  [313A Latin 3]
-  6:  [301E Composition]  [304E World History]
-
-
- 333 Samuel Adair
-  4:  [303F Chemistry]
-  5:  [503F Fine Art]
-  6:  [301F Composition]  [304F World History]
-
-
- 334 Walker Verlice
-  1:  [507F Agriculture]
-  4:  [303G Chemistry]
-  5:  [505F Auto]
-  6:  [301G Composition]  [304G World History]
-
-
- 335 Oliver Yarrow
-  4:  [303A Chemistry]
-  5:  [311B French 3]
-  6:  [301A Composition]  [304A World History]
-
-
- 336 Cora Gray
-  1:  [502G Health]
-  4:  [303B Chemistry]
-  5:  [313B Latin 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 337 Micah Hansley
-  4:  [303C Chemistry]
-  5:  [503G Fine Art]
-  6:  [301C Composition]  [304C World History]
-
-
- 338 Eloise Gonzales
-  1:  [507G Agriculture]
-  4:  [303D Chemistry]
-  5:  [505G Auto]
-  6:  [301D Composition]  [304D World History]
-
-
- 339 Iris Marley
-  4:  [303E Chemistry]
-  5:  [311A French 3]
-  6:  [301E Composition]  [304E World History]
-
-
- 340 Daniel Crassus
-  1:  [502A Health]
-  4:  [303F Chemistry]
-  5:  [313A Latin 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 341 Anna Beckett
-  4:  [303G Chemistry]
-  5:  [503A Fine Art]
-  6:  [301G Composition]  [304G World History]
-
-
- 342 Jade West
-  1:  [507A Agriculture]
-  4:  [303A Chemistry]
-  5:  [505A Auto]
-  6:  [301A Composition]  [304A World History]
-
-
- 343 Mia Wilson
-  4:  [303B Chemistry]
-  5:  [311B French 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 344 Luca Remington
-  1:  [502B Health]
-  4:  [303C Chemistry]
-  5:  [313B Latin 3]
-  6:  [301C Composition]  [304C World History]
-
-
- 345 Kinsley Truthbelly
-  4:  [303D Chemistry]
-  5:  [503B Fine Art]
-  6:  [301D Composition]  [304D World History]
-
-
- 346 Emery Monroe
-  1:  [507B Agriculture]
-  4:  [303E Chemistry]
-  5:  [505B Auto]
-  6:  [301E Composition]  [304E World History]
-
-
- 347 Chloe Humblecut
-  4:  [303F Chemistry]
-  5:  [311A French 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 348 Noah Ashford
-  1:  [502C Health]
-  4:  [303G Chemistry]
-  5:  [313A Latin 3]
-  6:  [301G Composition]  [304G World History]
-
-
- 349 Jaxon Moses
-  4:  [303A Chemistry]
-  5:  [503C Fine Art]
-  6:  [301A Composition]  [304A World History]
-
-
- 350 Waylon Driscoll
-  1:  [507C Agriculture]
-  4:  [303B Chemistry]
-  5:  [505C Auto]
-  6:  [301B Composition]  [304B World History]
-
-
- 351 Mateo Crassus
-  4:  [303C Chemistry]
-  5:  [311B French 3]
-  6:  [301C Composition]  [304C World History]
-
-
- 352 Mia Gatlin
-  1:  [502D Health]
-  4:  [303D Chemistry]
-  5:  [313B Latin 3]
-  6:  [301D Composition]  [304D World History]
-
-
- 353 Lincoln Adams
-  4:  [303E Chemistry]
-  5:  [503D Fine Art]
-  6:  [301E Composition]  [304E World History]
-
-
- 354 Parker Ashford
-  1:  [507D Agriculture]
-  4:  [303F Chemistry]
-  5:  [505D Auto]
-  6:  [301F Composition]  [304F World History]
-
-
- 355 Mateo Anderson
-  4:  [303G Chemistry]
-  5:  [311A French 3]
-  6:  [301G Composition]  [304G World History]
-
-
- 356 Elena Poverly
-  1:  [502E Health]
-  4:  [303A Chemistry]
-  5:  [313A Latin 3]
-  6:  [301A Composition]  [304A World History]
-
-
- 357 Brooks Poverly
-  4:  [303B Chemistry]
-  5:  [503E Fine Art]
-  6:  [301B Composition]  [304B World History]
-
-
- 358 Madison Thatcher
-  1:  [507E Agriculture]
-  4:  [303C Chemistry]
-  5:  [505E Auto]
-  6:  [301C Composition]  [304C World History]
-
-
- 359 Mason Elrod
-  4:  [303D Chemistry]
-  5:  [311B French 3]
-  6:  [301D Composition]  [304D World History]
-
-
- 360 Lucas Dagon
-  1:  [502F Health]
-  4:  [303E Chemistry]
-  5:  [313B Latin 3]
-  6:  [301E Composition]  [304E World History]
-
-
- 361 Caroline Wixx
-  4:  [303F Chemistry]
-  5:  [503F Fine Art]
-  6:  [301F Composition]  [304F World History]
-
-
- 362 Walker Gasper
-  1:  [507F Agriculture]
-  4:  [303G Chemistry]
-  5:  [505F Auto]
-  6:  [301G Composition]  [304G World History]
-
-
- 363 Isabella Moses
-  4:  [303A Chemistry]
-  5:  [311A French 3]
-  6:  [301A Composition]  [304A World History]
-
-
- 364 Isabella Windward
-  1:  [502G Health]
-  4:  [303B Chemistry]
-  5:  [313A Latin 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 365 Hudson Gonzales
-  4:  [303C Chemistry]
-  5:  [503G Fine Art]
-  6:  [301C Composition]  [304C World History]
-
-
- 366 Colton Beckett
-  1:  [507G Agriculture]
-  4:  [303D Chemistry]
-  5:  [505G Auto]
-  6:  [301D Composition]  [304D World History]
-
-
- 367 Leonardo Wilson
-  4:  [303E Chemistry]
-  5:  [311B French 3]
-  6:  [301E Composition]  [304E World History]
-
-
- 368 John Curran
-  1:  [502A Health]
-  4:  [303F Chemistry]
-  5:  [313B Latin 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 369 Violet Elrod
-  4:  [303G Chemistry]
-  5:  [503A Fine Art]
-  6:  [301G Composition]  [304G World History]
-
-
- 370 Ella Lopez
-  1:  [507A Agriculture]
-  4:  [303A Chemistry]
-  5:  [505A Auto]
-  6:  [301A Composition]  [304A World History]
-
-
- 371 Everly Langley
-  4:  [303B Chemistry]
-  5:  [311A French 3]
-  6:  [301B Composition]  [304B World History]
-
-
- 372 Grace James
-  1:  [502B Health]
-  4:  [303C Chemistry]
-  5:  [313A Latin 3]
-  6:  [301C Composition]  [304C World History]
-
-
- 373 Emilia Ashbluff
-  4:  [303D Chemistry]
-  5:  [503B Fine Art]
-  6:  [301D Composition]  [304D World History]
-
-
- 374 Gianna Zimmerman
-  1:  [507B Agriculture]
-  4:  [303E Chemistry]
-  5:  [505B Auto]
-  6:  [301E Composition]  [304E World History]
-
-
- 375 Gabriel Adler
-  4:  [303F Chemistry]
-  5:  [311B French 3]
-  6:  [301F Composition]  [304F World History]
-
-
- 376 Delilah Keller
-  1:  [413A Latin 4]
-  4:  [403A Physics]
-  5:  [411A French 4]
-  6:  [401A Speech]  [404A Economics]
-
-
- 377 Willow Crawford
-  4:  [403B Physics]
-  5:  [501C Phys Ed]
-  6:  [401B Speech]  [404B Economics]
-
-
- 378 Victoria Gorestriker
-  1:  [505C Auto]
-  4:  [403C Physics]
-  5:  [503C Fine Art]
-  6:  [401C Speech]  [404C Economics]
-
-
- 379 Stella Gasper
-  4:  [403D Physics]
-  5:  [506C Carpentry]
-  6:  [401D Speech]  [404D Economics]
-
-
- 380 Gabriel Finch
-  1:  [413B Latin 4]
-  4:  [403E Physics]
-  5:  [411B French 4]
-  6:  [401E Speech]  [404E Economics]
-
-
- 381 Paisley Ledger
-  4:  [403F Physics]
-  5:  [501D Phys Ed]
-  6:  [401F Speech]  [404F Economics]
-
-
- 382 Isla Gatlin
-  1:  [505D Auto]
-  4:  [403G Physics]
-  5:  [503D Fine Art]
-  6:  [401G Speech]  [404G Economics]
-
-
- 383 Jordan Woodgrip
-  4:  [403A Physics]
-  5:  [506D Carpentry]
-  6:  [401A Speech]  [404A Economics]
-
-
- 384 Lily Hendrix
-  1:  [413A Latin 4]
-  4:  [403B Physics]
-  5:  [411A French 4]
-  6:  [401B Speech]  [404B Economics]
-
-
- 385 Eliana Whitlock
-  4:  [403C Physics]
-  5:  [501E Phys Ed]
-  6:  [401C Speech]  [404C Economics]
-
-
- 386 Audrey Lopez
-  1:  [505E Auto]
-  4:  [403D Physics]
-  5:  [503E Fine Art]
-  6:  [401D Speech]  [404D Economics]
-
-
- 387 James Humblecut
-  4:  [403E Physics]
-  5:  [506E Carpentry]
-  6:  [401E Speech]  [404E Economics]
-
-
- 388 Benjamin Singh
-  1:  [413B Latin 4]
-  4:  [403F Physics]
-  5:  [411B French 4]
-  6:  [401F Speech]  [404F Economics]
-
-
- 389 Julian Jenkins
-  4:  [403G Physics]
-  5:  [501F Phys Ed]
-  6:  [401G Speech]  [404G Economics]
-
-
- 390 Parker Whitlock
-  1:  [505F Auto]
-  4:  [403A Physics]
-  5:  [503F Fine Art]
-  6:  [401A Speech]  [404A Economics]
-
-
- 391 Kai Ashbluff
-  4:  [403B Physics]
-  5:  [506F Carpentry]
-  6:  [401B Speech]  [404B Economics]
-
-
- 392 Jackson Jenkins
-  1:  [413A Latin 4]
-  4:  [403C Physics]
-  5:  [411A French 4]
-  6:  [401C Speech]  [404C Economics]
-
-
- 393 Dylan Gorestriker
-  4:  [403D Physics]
-  5:  [501G Phys Ed]
-  6:  [401D Speech]  [404D Economics]
-
-
- 394 Waylon Caskcut
-  1:  [505G Auto]
-  4:  [403E Physics]
-  5:  [503G Fine Art]
-  6:  [401E Speech]  [404E Economics]
-
-
- 395 Penelope Elsher
-  4:  [403F Physics]
-  5:  [506G Carpentry]
-  6:  [401F Speech]  [404F Economics]
-
-
- 396 John Lennon
-  1:  [413B Latin 4]
-  4:  [403G Physics]
-  5:  [411B French 4]
-  6:  [401G Speech]  [404G Economics]
-
-
- 397 Sophie Woodgrip
-  4:  [403A Physics]
-  5:  [501A Phys Ed]
-  6:  [401A Speech]  [404A Economics]
-
-
- 398 Zoey Hansley
-  1:  [505A Auto]
-  4:  [403B Physics]
-  5:  [503A Fine Art]
-  6:  [401B Speech]  [404B Economics]
-
-
- 399 Thomas Lightfoot
-  4:  [403C Physics]
-  5:  [506A Carpentry]
-  6:  [401C Speech]  [404C Economics]
-
-
- 400 Sophia Crawford
-  1:  [413A Latin 4]
-  4:  [403D Physics]
-  5:  [411A French 4]
-  6:  [401D Speech]  [404D Economics]
-
-
- 401 Josephine Adair
-  4:  [403E Physics]
-  5:  [501B Phys Ed]
-  6:  [401E Speech]  [404E Economics]
-
-
- 402 Ruby Adler
-  1:  [505B Auto]
-  4:  [403F Physics]
-  5:  [503B Fine Art]
-  6:  [401F Speech]  [404F Economics]
-
-
- 403 Jaxon Yearwood
-  4:  [403G Physics]
-  5:  [506B Carpentry]
-  6:  [401G Speech]  [404G Economics]
-
-
- 404 Roman Anderson
-  1:  [413B Latin 4]
-  4:  [403A Physics]
-  5:  [411B French 4]
-  6:  [401A Speech]  [404A Economics]
-
-
- 405 Jordan Lopez
-  4:  [403B Physics]
-  5:  [501C Phys Ed]
-  6:  [401B Speech]  [404B Economics]
-
-
- 406 William Ashley
-  1:  [505C Auto]
-  4:  [403C Physics]
-  5:  [503C Fine Art]
-  6:  [401C Speech]  [404C Economics]
-
-
- 407 Mateo Hart
-  4:  [403D Physics]
-  5:  [506C Carpentry]
-  6:  [401D Speech]  [404D Economics]
-
-
- 408 Liam Windward
-  1:  [413A Latin 4]
-  4:  [403E Physics]
-  5:  [411A French 4]
-  6:  [401E Speech]  [404E Economics]
-
-
- 409 Santiago Kicklighter
-  4:  [403F Physics]
-  5:  [501D Phys Ed]
-  6:  [401F Speech]  [404F Economics]
-
-
- 410 Autumn Marblemaw
-  1:  [505D Auto]
-  4:  [403G Physics]
-  5:  [503D Fine Art]
-  6:  [401G Speech]  [404G Economics]
-
-
- 411 Serenity Lightfoot
-  4:  [403A Physics]
-  5:  [506D Carpentry]
-  6:  [401A Speech]  [404A Economics]
-
-
- 412 Elena Singh
-  1:  [413B Latin 4]
-  4:  [403B Physics]
-  5:  [411B French 4]
-  6:  [401B Speech]  [404B Economics]
-
-
- 413 Leo Daughtler
-  4:  [403C Physics]
-  5:  [501E Phys Ed]
-  6:  [401C Speech]  [404C Economics]
-
-
- 414 Daniel Jenkins
-  1:  [505E Auto]
-  4:  [403D Physics]
-  5:  [503E Fine Art]
-  6:  [401D Speech]  [404D Economics]
-
-
- 415 Sebastian Caddel
-  4:  [403E Physics]
-  5:  [506E Carpentry]
-  6:  [401E Speech]  [404E Economics]
-
-
- 416 Natalia Gorestriker
-  1:  [413A Latin 4]
-  4:  [403F Physics]
-  5:  [411A French 4]
-  6:  [401F Speech]  [404F Economics]
-
-
- 417 Bennett Laurier
-  4:  [403G Physics]
-  5:  [501F Phys Ed]
-  6:  [401G Speech]  [404G Economics]
-
-
- 418 Isabella Madison
-  1:  [505F Auto]
-  4:  [403A Physics]
-  5:  [503F Fine Art]
-  6:  [401A Speech]  [404A Economics]
-
-
- 419 Kinsley Driscoll
-  4:  [403B Physics]
-  5:  [506F Carpentry]
-  6:  [401B Speech]  [404B Economics]
-
-
- 420 Maya Bardot
-  1:  [413B Latin 4]
-  4:  [403C Physics]
-  5:  [411B French 4]
-  6:  [401C Speech]  [404C Economics]
-
-
- 421 Sophie Marley
-  4:  [403D Physics]
-  5:  [501G Phys Ed]
-  6:  [401D Speech]  [404D Economics]
-
-
- 422 Caleb Lennon
-  1:  [505G Auto]
-  4:  [403E Physics]
-  5:  [503G Fine Art]
-  6:  [401E Speech]  [404E Economics]
-
-
- 423 Ava Remington
-  4:  [403F Physics]
-  5:  [506G Carpentry]
-  6:  [401F Speech]  [404F Economics]
-
-
- 424 Josephine Yarrow
-  1:  [413A Latin 4]
-  4:  [403G Physics]
-  5:  [411A French 4]
-  6:  [401G Speech]  [404G Economics]
-
-
- 425 Evelyn Madison
-  4:  [403A Physics]
-  5:  [501A Phys Ed]
-  6:  [401A Speech]  [404A Economics]
-
-
- 426 Lucas Curran
-  1:  [505A Auto]
-  4:  [403B Physics]
-  5:  [503A Fine Art]
-  6:  [401B Speech]  [404B Economics]
-
-
- 427 Eli West
-  4:  [403C Physics]
-  5:  [506A Carpentry]
-  6:  [401C Speech]  [404C Economics]
-
-
- 428 Adeline Thatcher
-  1:  [413B Latin 4]
-  4:  [403D Physics]
-  5:  [411B French 4]
-  6:  [401D Speech]  [404D Economics]
-
-
- 429 Cameron Dawson
-  4:  [403E Physics]
-  5:  [501B Phys Ed]
-  6:  [401E Speech]  [404E Economics]
-
-
- 430 Grayson Ashbluff
-  1:  [505B Auto]
-  4:  [403F Physics]
-  5:  [503B Fine Art]
-  6:  [401F Speech]  [404F Economics]
-
-
- 431 Harper Bozzelli
-  4:  [403G Physics]
-  5:  [506B Carpentry]
-  6:  [401G Speech]  [404G Economics]
-
-
- 432 Jackson Kicklighter
-  1:  [413A Latin 4]
-  4:  [403A Physics]
-  5:  [411A French 4]
-  6:  [401A Speech]  [404A Economics]
-
-
- 433 Micah West
-  4:  [403B Physics]
-  5:  [501C Phys Ed]
-  6:  [401B Speech]  [404B Economics]
-
-
- 434 Claire Driscoll
-  1:  [505C Auto]
-  4:  [403C Physics]
-  5:  [503C Fine Art]
-  6:  [401C Speech]  [404C Economics]
-
-
- 435 Charlotte Whitlock
-  4:  [403D Physics]
-  5:  [506C Carpentry]
-  6:  [401D Speech]  [404D Economics]
-
-
- 436 Gabriella Beam
-  1:  [413B Latin 4]
-  4:  [403E Physics]
-  5:  [411B French 4]
-  6:  [401E Speech]  [404E Economics]
-
-
- 437 Leonardo Katz
-  4:  [403F Physics]
-  5:  [501D Phys Ed]
-  6:  [401F Speech]  [404F Economics]
-
-
- 438 Mia Moses
-  1:  [505D Auto]
-  4:  [403G Physics]
-  5:  [503D Fine Art]
-  6:  [401G Speech]  [404G Economics]
-
-
- 439 Emery Dagon
-  4:  [403A Physics]
-  5:  [506D Carpentry]
-  6:  [401A Speech]  [404A Economics]
-
-
- 440 Matthew Madison
-  1:  [413A Latin 4]
-  4:  [403B Physics]
-  5:  [411A French 4]
-  6:  [401B Speech]  [404B Economics]
-
-
- 441 Skylar Finch
-  4:  [403C Physics]
-  5:  [501E Phys Ed]
-  6:  [401C Speech]  [404C Economics]
-
-
- 442 Scarlett Cassidy
-  1:  [505E Auto]
-  4:  [403D Physics]
-  5:  [503E Fine Art]
-  6:  [401D Speech]  [404D Economics]
-
-
- 443 Delilah Vespertine
-  4:  [403E Physics]
-  5:  [506E Carpentry]
-  6:  [401E Speech]  [404E Economics]
-
-
- 444 Aiden Gorestriker
-  1:  [413B Latin 4]
-  4:  [403F Physics]
-  5:  [411B French 4]
-  6:  [401F Speech]  [404F Economics]
-
-
- 445 Caleb Gray
-  4:  [403G Physics]
-  5:  [501F Phys Ed]
-  6:  [401G Speech]  [404G Economics]
-
-
- 446 Jackson Laurier
-  1:  [505F Auto]
-  4:  [403A Physics]
-  5:  [503F Fine Art]
-  6:  [401A Speech]  [404A Economics]
-
-
- 447 Kinsley Windward
-  4:  [403B Physics]
-  5:  [506F Carpentry]
-  6:  [401B Speech]  [404B Economics]
-
-
- 448 Benjamin Driscoll
-  1:  [413A Latin 4]
-  4:  [403C Physics]
-  5:  [411A French 4]
-  6:  [401C Speech]  [404C Economics]
-
-
- 449 Santiago Ford
-  4:  [403D Physics]
-  5:  [501G Phys Ed]
-  6:  [401D Speech]  [404D Economics]
-
-
- 450 Kennedy Ashbluff
-  1:  [505G Auto]
-  4:  [403E Physics]
-  5:  [503G Fine Art]
-  6:  [401E Speech]  [404E Economics]
-
-
- 451 Elijah Wilson
-  4:  [403F Physics]
-  5:  [506G Carpentry]
-  6:  [401F Speech]  [404F Economics]
-
-
- 452 Caleb Undergrove
-  1:  [413B Latin 4]
-  4:  [403G Physics]
-  5:  [411B French 4]
-  6:  [401G Speech]  [404G Economics]
-
-
- 453 Jackson Truthbelly
-  4:  [403A Physics]
-  5:  [501A Phys Ed]
-  6:  [401A Speech]  [404A Economics]
-
-
- 454 Leonardo Sagespark
-  1:  [505A Auto]
-  4:  [403B Physics]
-  5:  [503A Fine Art]
-  6:  [401B Speech]  [404B Economics]
-
-
- 455 Avery Dustfinger
-  4:  [403C Physics]
-  5:  [506A Carpentry]
-  6:  [401C Speech]  [404C Economics]
-
-
- 456 Ian Adler
-  1:  [413A Latin 4]
-  4:  [403D Physics]
-  5:  [411A French 4]
-  6:  [401D Speech]  [404D Economics]
-
-
- 457 Lincoln Elrod
-  4:  [403E Physics]
-  5:  [501B Phys Ed]
-  6:  [401E Speech]  [404E Economics]
-
-
- 458 Charles Truthbelly
-  1:  [505B Auto]
-  4:  [403F Physics]
-  5:  [503B Fine Art]
-  6:  [401F Speech]  [404F Economics]
-
-
- 459 Christopher Cyprus
-  4:  [403G Physics]
-  5:  [506B Carpentry]
-  6:  [401G Speech]  [404G Economics]
-
-
- 460 Ella Gannon
-  1:  [413B Latin 4]
-  4:  [403A Physics]
-  5:  [411B French 4]
-  6:  [401A Speech]  [404A Economics]
-
-
- 461 Madelyn Remington
-  4:  [403B Physics]
-  5:  [501C Phys Ed]
-  6:  [401B Speech]  [404B Economics]
-
-
- 462 Wesley Cyprus
-  1:  [505C Auto]
-  4:  [403C Physics]
-  5:  [503C Fine Art]
-  6:  [401C Speech]  [404C Economics]
-
-
- 463 Micah Beam
-  4:  [403D Physics]
-  5:  [506C Carpentry]
-  6:  [401D Speech]  [404D Economics]
-
-
- 464 John Langley
-  1:  [413A Latin 4]
-  4:  [403E Physics]
-  5:  [411A French 4]
-  6:  [401E Speech]  [404E Economics]
-
-
- 465 Jackson Ashley
-  4:  [403F Physics]
-  5:  [501D Phys Ed]
-  6:  [401F Speech]  [404F Economics]
-
-
- 466 Logan Raven
-  1:  [505D Auto]
-  4:  [403G Physics]
-  5:  [503D Fine Art]
-  6:  [401G Speech]  [404G Economics]
-
-
- 467 Aaron Singh
-  4:  [403A Physics]
-  5:  [506D Carpentry]
-  6:  [401A Speech]  [404A Economics]
-
-
- 468 Lucas Hope
-  1:  [413B Latin 4]
-  4:  [403B Physics]
-  5:  [411B French 4]
-  6:  [401B Speech]  [404B Economics]
-
-
- 469 Maria Cyprus
-  4:  [403C Physics]
-  5:  [501E Phys Ed]
-  6:  [401C Speech]  [404C Economics]
-
-
- 470 Eleanor Singh
-  1:  [505E Auto]
-  4:  [403D Physics]
-  5:  [503E Fine Art]
-  6:  [401D Speech]  [404D Economics]
-
-
- 471 Joseph Mintz
-  4:  [403E Physics]
-  5:  [506E Carpentry]
-  6:  [401E Speech]  [404E Economics]
-
-
- 472 Riley Carter
-  1:  [413A Latin 4]
-  4:  [403F Physics]
-  5:  [411A French 4]
-  6:  [401F Speech]  [404F Economics]
-
-
- 473 Aaliyah Adams
-  4:  [403G Physics]
-  5:  [501F Phys Ed]
-  6:  [401G Speech]  [404G Economics]
-
-
- 474 Adrian Cromwell
-  1:  [505F Auto]
-  4:  [403A Physics]
-  5:  [503F Fine Art]
-  6:  [401A Speech]  [404A Economics]
-
-
- 475 Delilah Fellowes
-  4:  [403B Physics]
-  5:  [506F Carpentry]
-  6:  [401B Speech]  [404B Economics]
-
-
- 476 Levi West
-  1:  [413B Latin 4]
-  4:  [403C Physics]
-  5:  [411B French 4]
-  6:  [401C Speech]  [404C Economics]
-
-
- 477 Aubrey Kicklighter
-  4:  [403D Physics]
-  5:  [501G Phys Ed]
-  6:  [401D Speech]  [404D Economics]
-
-
- 478 Benjamin Snakeleaf
-  1:  [505G Auto]
-  4:  [403E Physics]
-  5:  [503G Fine Art]
-  6:  [401E Speech]  [404E Economics]
-
-
- 479 Madison Marblemaw
-  4:  [403F Physics]
-  5:  [506G Carpentry]
-  6:  [401F Speech]  [404F Economics]
-
-
- 480 Gianna Caddel
-  1:  [413A Latin 4]
-  4:  [403G Physics]
-  5:  [411A French 4]
-  6:  [401G Speech]  [404G Economics]
-
-
- 481 Naomi Adams
-  4:  [403A Physics]
-  5:  [501A Phys Ed]
-  6:  [401A Speech]  [404A Economics]
-
-
- 482 Sophie October
-  1:  [505A Auto]
-  4:  [403B Physics]
-  5:  [503A Fine Art]
-  6:  [401B Speech]  [404B Economics]
-
-
- 483 Raelynn Keller
-  4:  [403C Physics]
-  5:  [506A Carpentry]
-  6:  [401C Speech]  [404C Economics]
-
-
- 484 Christopher Humblecut
-  1:  [413B Latin 4]
-  4:  [403D Physics]
-  5:  [411B French 4]
-  6:  [401D Speech]  [404D Economics]
-
-
- 485 Paisley Hope
-  4:  [403E Physics]
-  5:  [501B Phys Ed]
-  6:  [401E Speech]  [404E Economics]
-
-
- 486 Ella Fellowes
-  1:  [505B Auto]
-  4:  [403F Physics]
-  5:  [503B Fine Art]
-  6:  [401F Speech]  [404F Economics]
-
-
- 487 Cameron Beckett
-  4:  [403G Physics]
-  5:  [506B Carpentry]
-  6:  [401G Speech]  [404G Economics]
-
-
- 488 James Cassidy
-  1:  [413A Latin 4]
-  4:  [403A Physics]
-  5:  [411A French 4]
-  6:  [401A Speech]  [404A Economics]
-
-
- 489 Ayla James
-  4:  [403B Physics]
-  5:  [501C Phys Ed]
-  6:  [401B Speech]  [404B Economics]
-
-
- 490 Grayson Gannon
-  1:  [505C Auto]
-  4:  [403C Physics]
-  5:  [503C Fine Art]
-  6:  [401C Speech]  [404C Economics]
-
-
- 491 Ryan Zimmerman
-  4:  [403D Physics]
-  5:  [506C Carpentry]
-  6:  [401D Speech]  [404D Economics]
-
-
- 492 Elizabeth Windward
-  1:  [413B Latin 4]
-  4:  [403E Physics]
-  5:  [411B French 4]
-  6:  [401E Speech]  [404E Economics]
-
-
- 493 Kennedy Hansley
-  4:  [403F Physics]
-  5:  [501D Phys Ed]
-  6:  [401F Speech]  [404F Economics]
-
-
- 494 Nevaeh Cyprus
-  1:  [505D Auto]
-  4:  [403G Physics]
-  5:  [503D Fine Art]
-  6:  [401G Speech]  [404G Economics]
-
-
- 495 Athena Bozzelli
-  4:  [403A Physics]
-  5:  [506D Carpentry]
-  6:  [401A Speech]  [404A Economics]
-
-
- 496 Gianna Solace
-  1:  [413A Latin 4]
-  4:  [403B Physics]
-  5:  [411A French 4]
-  6:  [401B Speech]  [404B Economics]
-
-
- 497 Brooklyn Ellis
-  4:  [403C Physics]
-  5:  [501E Phys Ed]
-  6:  [401C Speech]  [404C Economics]
-
-
- 498 Kennedy Yarrow
-  1:  [505E Auto]
-  4:  [403D Physics]
-  5:  [503E Fine Art]
-  6:  [401D Speech]  [404D Economics]
-
-
- 499 Ryan Remington
-  4:  [403E Physics]
-  5:  [506E Carpentry]
-  6:  [401E Speech]  [404E Economics]
-
-
- 500 Jack Madden
-  1:  [413B Latin 4]
-  4:  [403F Physics]
-  5:  [411B French 4]
-  6:  [401F Speech]  [404F Economics]
-
-
+Gianna Amos  (1) 6 classes
+  1: US History
+  2: Spanish 1
+  3: Algebra 1
+  4: French 1
+  6: English
+  7: Biology 1
+
+
+Aaron Sharpe  (2) 7 classes
+  1: Phys Ed
+  2: Latin 1
+  3: US History
+  4: Health
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Joseph Gray  (3) 6 classes
+  1: Computer
+  3: English
+  4: Fine Art
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Adam Marley  (4) 7 classes
+  1: US History
+  2: Algebra 1
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: Biology 1
+  7: English
+
+
+Cameron Elsher  (5) 6 classes
+  2: French 1
+  3: US History
+  4: Spanish 1
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Santiago Thatcher  (6) 7 classes
+  1: Health
+  2: Latin 1
+  3: Algebra 1
+  4: Phys Ed
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Adrian Lennon  (7) 6 classes
+  1: Fine Art
+  3: Biology 1
+  4: Computer
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Logan Marley  (8) 7 classes
+  1: US History
+  2: Carpentry
+  3: Algebra 1
+  4: Agriculture
+  5: Auto
+  6: English
+  7: Biology 1
+
+
+Adrian Sharpe  (9) 6 classes
+  2: Spanish 1
+  3: US History
+  4: French 1
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Hudson Bardot  (10) 7 classes
+  1: Health
+  2: Latin 1
+  3: English
+  4: Phys Ed
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Autumn Stoll  (11) 6 classes
+  1: US History
+  2: Algebra 1
+  3: Fine Art
+  5: Computer
+  6: Biology 1
+  7: English
+
+
+Benjamin Curran  (12) 7 classes
+  1: Auto
+  2: Agriculture
+  3: US History
+  4: Carpentry
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Silas Cyprus  (13) 6 classes
+  2: French 1
+  3: Algebra 1
+  4: Spanish 1
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Josiah Biddercombe  (14) 7 classes
+  1: Health
+  2: Latin 1
+  3: Biology 1
+  4: Phys Ed
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Walker Wixx  (15) 6 classes
+  1: US History
+  2: Fine Art
+  3: Algebra 1
+  4: Computer
+  6: English
+  7: Biology 1
+
+
+David Finch  (16) 7 classes
+  1: Carpentry
+  3: US History
+  4: Agriculture
+  5: Biology 1
+  6: Algebra 1
+  7: English
+  7: Auto
+  1 conflicts
+
+
+Xavier Dagon  (17) 6 classes
+  2: Spanish 1
+  3: English
+  4: French 1
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Ayla James  (18) 7 classes
+  1: US History
+  2: Algebra 1
+  2: Latin 1
+  3: Health
+  5: Phys Ed
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Maria Caddel  (19) 6 classes
+  2: Computer
+  3: US History
+  4: Fine Art
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Charlotte Strongblossom  (20) 7 classes
+  1: Agriculture
+  3: Algebra 1
+  4: Carpentry
+  5: English
+  6: Biology 1
+  6: Auto
+  7: US History
+  1 conflicts
+
+
+Ivy Ashbluff  (21) 6 classes
+  2: French 1
+  3: Biology 1
+  4: Spanish 1
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Mia Humblecut  (22) 7 classes
+  1: US History
+  2: Latin 1
+  2: Phys Ed
+  3: Algebra 1
+  4: Health
+  6: English
+  7: Biology 1
+  1 conflicts
+
+
+Luna Finch  (23) 6 classes
+  1: Computer
+  3: US History
+  4: Fine Art
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Caleb Mintz  (24) 7 classes
+  1: Agriculture
+  3: English
+  4: Carpentry
+  5: Biology 1
+  5: Auto
+  6: US History
+  7: Algebra 1
+  1 conflicts
+
+
+Ayla Ledger  (25) 6 classes
+  1: US History
+  2: Algebra 1
+  2: Spanish 1
+  4: French 1
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Nora Dagon  (26) 7 classes
+  2: Latin 1
+  2: Health
+  3: US History
+  4: Phys Ed
+  5: Algebra 1
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Isaac Whitlock  (27) 6 classes
+  1: Computer
+  3: Algebra 1
+  4: Fine Art
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Jacob Finch  (28) 7 classes
+  1: Agriculture
+  3: Biology 1
+  4: Carpentry
+  5: English
+  5: Auto
+  6: US History
+  7: Algebra 1
+  1 conflicts
+
+
+Brooklyn Adler  (29) 6 classes
+  1: US History
+  2: French 1
+  3: Algebra 1
+  4: Spanish 1
+  6: English
+  7: Biology 1
+
+
+Ivy Beam  (30) 7 classes
+  1: Phys Ed
+  2: Latin 1
+  3: US History
+  4: Health
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Wyatt Monroe  (31) 6 classes
+  1: Computer
+  3: English
+  4: Fine Art
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Isaac Woodgrip  (32) 7 classes
+  1: US History
+  2: Algebra 1
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: Biology 1
+  7: English
+
+
+Walker Langley  (33) 6 classes
+  2: Spanish 1
+  3: US History
+  4: French 1
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+James Lopez  (34) 7 classes
+  1: Health
+  2: Latin 1
+  3: Algebra 1
+  4: Phys Ed
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Michael McKenna  (35) 6 classes
+  1: Fine Art
+  3: Biology 1
+  4: Computer
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Jacob Cassidy  (36) 7 classes
+  1: US History
+  2: Carpentry
+  3: Algebra 1
+  4: Agriculture
+  5: Auto
+  6: English
+  7: Biology 1
+
+
+Natalie Collymore  (37) 6 classes
+  2: French 1
+  3: US History
+  4: Spanish 1
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Madison Gatlin  (38) 7 classes
+  1: Health
+  2: Latin 1
+  3: English
+  4: Phys Ed
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Joseph Stoll  (39) 6 classes
+  1: US History
+  2: Algebra 1
+  3: Fine Art
+  5: Computer
+  6: Biology 1
+  7: English
+
+
+Asher Marblemaw  (40) 7 classes
+  1: Auto
+  2: Agriculture
+  3: US History
+  4: Carpentry
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Ian Thatcher  (41) 6 classes
+  2: Spanish 1
+  3: Algebra 1
+  4: French 1
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Sophia Truthbelly  (42) 7 classes
+  1: Health
+  2: Latin 1
+  3: Biology 1
+  4: Phys Ed
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Oliver Gasper  (43) 6 classes
+  1: US History
+  2: Fine Art
+  3: Algebra 1
+  4: Computer
+  6: English
+  7: Biology 1
+
+
+Christian Wilson  (44) 7 classes
+  1: Carpentry
+  3: US History
+  4: Agriculture
+  5: Biology 1
+  6: Algebra 1
+  7: English
+  7: Auto
+  1 conflicts
+
+
+Hannah Marley  (45) 6 classes
+  2: French 1
+  3: English
+  4: Spanish 1
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Alice Gasper  (46) 7 classes
+  1: US History
+  2: Algebra 1
+  2: Latin 1
+  3: Health
+  5: Phys Ed
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Genesis Humblecut  (47) 6 classes
+  2: Computer
+  3: US History
+  4: Fine Art
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Ezekiel Fellowes  (48) 7 classes
+  1: Agriculture
+  3: Algebra 1
+  4: Carpentry
+  5: English
+  6: Biology 1
+  6: Auto
+  7: US History
+  1 conflicts
+
+
+Andrew Stoll  (49) 6 classes
+  2: Spanish 1
+  3: Biology 1
+  4: French 1
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Waylon Remington  (50) 7 classes
+  1: US History
+  2: Latin 1
+  2: Phys Ed
+  3: Algebra 1
+  4: Health
+  6: English
+  7: Biology 1
+  1 conflicts
+
+
+Joseph Hansley  (51) 6 classes
+  1: Computer
+  3: US History
+  4: Fine Art
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Waylon Driscoll  (52) 7 classes
+  1: Agriculture
+  3: English
+  4: Carpentry
+  5: Biology 1
+  5: Auto
+  6: US History
+  7: Algebra 1
+  1 conflicts
+
+
+Lincoln Lopez  (53) 6 classes
+  1: US History
+  2: Algebra 1
+  2: French 1
+  4: Spanish 1
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Maria Carter  (54) 7 classes
+  2: Latin 1
+  2: Health
+  3: US History
+  4: Phys Ed
+  5: Algebra 1
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Jack Raven  (55) 6 classes
+  1: Computer
+  3: Algebra 1
+  4: Fine Art
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Raelynn Vespertine  (56) 7 classes
+  1: Agriculture
+  3: Biology 1
+  4: Carpentry
+  5: English
+  5: Auto
+  6: US History
+  7: Algebra 1
+  1 conflicts
+
+
+Lincoln Oatrun  (57) 6 classes
+  1: US History
+  2: Spanish 1
+  3: Algebra 1
+  4: French 1
+  6: English
+  7: Biology 1
+
+
+Nova Gonzales  (58) 7 classes
+  1: Phys Ed
+  2: Latin 1
+  3: US History
+  4: Health
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Autumn Yearwood  (59) 6 classes
+  1: Computer
+  3: English
+  4: Fine Art
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Everleigh James  (60) 7 classes
+  1: US History
+  2: Algebra 1
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: Biology 1
+  7: English
+
+
+Luna Gasper  (61) 6 classes
+  2: French 1
+  3: US History
+  4: Spanish 1
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Sophie Amos  (62) 7 classes
+  1: Health
+  2: Latin 1
+  3: Algebra 1
+  4: Phys Ed
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Scarlett Dawson  (63) 6 classes
+  1: Fine Art
+  3: Biology 1
+  4: Computer
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Ezra Wilson  (64) 7 classes
+  1: US History
+  2: Carpentry
+  3: Algebra 1
+  4: Agriculture
+  5: Auto
+  6: English
+  7: Biology 1
+
+
+Ava Fellowes  (65) 6 classes
+  2: Spanish 1
+  3: US History
+  4: French 1
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Micah Madison  (66) 7 classes
+  1: Health
+  2: Latin 1
+  3: English
+  4: Phys Ed
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Noah Marley  (67) 6 classes
+  1: US History
+  2: Algebra 1
+  3: Fine Art
+  5: Computer
+  6: Biology 1
+  7: English
+
+
+Theodore Gasper  (68) 7 classes
+  1: Auto
+  2: Agriculture
+  3: US History
+  4: Carpentry
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Ella Lennon  (69) 6 classes
+  2: French 1
+  3: Algebra 1
+  4: Spanish 1
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Josiah Raven  (70) 7 classes
+  1: Health
+  2: Latin 1
+  3: Biology 1
+  4: Phys Ed
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Gabriel Ford  (71) 6 classes
+  1: US History
+  2: Fine Art
+  3: Algebra 1
+  4: Computer
+  6: English
+  7: Biology 1
+
+
+Madelyn Zimmerman  (72) 7 classes
+  1: Carpentry
+  3: US History
+  4: Agriculture
+  5: Biology 1
+  6: Algebra 1
+  7: English
+  7: Auto
+  1 conflicts
+
+
+Aubrey Hart  (73) 6 classes
+  2: Spanish 1
+  3: English
+  4: French 1
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Hannah Crawford  (74) 7 classes
+  1: US History
+  2: Algebra 1
+  2: Latin 1
+  3: Health
+  5: Phys Ed
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Ian Poverly  (75) 6 classes
+  2: Computer
+  3: US History
+  4: Fine Art
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Miles Barlowe  (76) 7 classes
+  1: Agriculture
+  3: Algebra 1
+  4: Carpentry
+  5: English
+  6: Biology 1
+  6: Auto
+  7: US History
+  1 conflicts
+
+
+Benjamin Madden  (77) 6 classes
+  2: French 1
+  3: Biology 1
+  4: Spanish 1
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Axel Adler  (78) 7 classes
+  1: US History
+  2: Latin 1
+  2: Phys Ed
+  3: Algebra 1
+  4: Health
+  6: English
+  7: Biology 1
+  1 conflicts
+
+
+Sophie Humblecut  (79) 6 classes
+  1: Computer
+  3: US History
+  4: Fine Art
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Weston Adler  (80) 7 classes
+  1: Agriculture
+  3: English
+  4: Carpentry
+  5: Biology 1
+  5: Auto
+  6: US History
+  7: Algebra 1
+  1 conflicts
+
+
+Raelynn McKenna  (81) 6 classes
+  1: US History
+  2: Algebra 1
+  2: Spanish 1
+  4: French 1
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Mason Laurier  (82) 7 classes
+  2: Latin 1
+  2: Health
+  3: US History
+  4: Phys Ed
+  5: Algebra 1
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Everett Levine  (83) 6 classes
+  1: Computer
+  3: Algebra 1
+  4: Fine Art
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Weston Madden  (84) 7 classes
+  1: Agriculture
+  3: Biology 1
+  4: Carpentry
+  5: English
+  5: Auto
+  6: US History
+  7: Algebra 1
+  1 conflicts
+
+
+Christopher James  (85) 6 classes
+  1: US History
+  2: French 1
+  3: Algebra 1
+  4: Spanish 1
+  6: English
+  7: Biology 1
+
+
+Hannah Laurier  (86) 7 classes
+  1: Phys Ed
+  2: Latin 1
+  3: US History
+  4: Health
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Serenity Ashley  (87) 6 classes
+  1: Computer
+  3: English
+  4: Fine Art
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Layla Yearwood  (88) 7 classes
+  1: US History
+  2: Algebra 1
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: Biology 1
+  7: English
+
+
+Jordan Yearwood  (89) 6 classes
+  2: Spanish 1
+  3: US History
+  4: French 1
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Carter Wixx  (90) 7 classes
+  1: Health
+  2: Latin 1
+  3: Algebra 1
+  4: Phys Ed
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Natalie West  (91) 6 classes
+  1: Fine Art
+  3: Biology 1
+  4: Computer
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Alexander Verlice  (92) 7 classes
+  1: US History
+  2: Carpentry
+  3: Algebra 1
+  4: Agriculture
+  5: Auto
+  6: English
+  7: Biology 1
+
+
+Kennedy Cassidy  (93) 6 classes
+  2: French 1
+  3: US History
+  4: Spanish 1
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Theo Hendrix  (94) 7 classes
+  1: Health
+  2: Latin 1
+  3: English
+  4: Phys Ed
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Lydia Undergrove  (95) 6 classes
+  1: US History
+  2: Algebra 1
+  3: Fine Art
+  5: Computer
+  6: Biology 1
+  7: English
+
+
+Jaxon Hope  (96) 7 classes
+  1: Auto
+  2: Agriculture
+  3: US History
+  4: Carpentry
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Kinsley Cassidy  (97) 6 classes
+  2: Spanish 1
+  3: Algebra 1
+  4: French 1
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Andrew West  (98) 7 classes
+  1: Health
+  2: Latin 1
+  3: Biology 1
+  4: Phys Ed
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Olivia Adler  (99) 6 classes
+  1: US History
+  2: Fine Art
+  3: Algebra 1
+  4: Computer
+  6: English
+  7: Biology 1
+
+
+Julian Adair  (100) 7 classes
+  1: Carpentry
+  3: US History
+  4: Agriculture
+  5: Biology 1
+  6: Algebra 1
+  7: English
+  7: Auto
+  1 conflicts
+
+
+Joshua Wixx  (101) 6 classes
+  2: French 1
+  3: English
+  4: Spanish 1
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Leah Gray  (102) 7 classes
+  1: US History
+  2: Algebra 1
+  2: Latin 1
+  3: Health
+  5: Phys Ed
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Aiden Caskcut  (103) 6 classes
+  2: Computer
+  3: US History
+  4: Fine Art
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Harper Kicklighter  (104) 7 classes
+  1: Agriculture
+  3: Algebra 1
+  4: Carpentry
+  5: English
+  6: Biology 1
+  6: Auto
+  7: US History
+  1 conflicts
+
+
+Bennett Lennon  (105) 6 classes
+  2: Spanish 1
+  3: Biology 1
+  4: French 1
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+John Verlice  (106) 7 classes
+  1: US History
+  2: Latin 1
+  2: Phys Ed
+  3: Algebra 1
+  4: Health
+  6: English
+  7: Biology 1
+  1 conflicts
+
+
+Jordan Keller  (107) 6 classes
+  1: Computer
+  3: US History
+  4: Fine Art
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Olivia Bardot  (108) 7 classes
+  1: Agriculture
+  3: English
+  4: Carpentry
+  5: Biology 1
+  5: Auto
+  6: US History
+  7: Algebra 1
+  1 conflicts
+
+
+Miles Moses  (109) 6 classes
+  1: US History
+  2: Algebra 1
+  2: French 1
+  4: Spanish 1
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Julian Gasper  (110) 7 classes
+  2: Latin 1
+  2: Health
+  3: US History
+  4: Phys Ed
+  5: Algebra 1
+  6: Biology 1
+  7: English
+  1 conflicts
+
+
+Leonardo Ashbluff  (111) 6 classes
+  1: Computer
+  3: Algebra 1
+  4: Fine Art
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Savannah Caskcut  (112) 7 classes
+  1: Agriculture
+  3: Biology 1
+  4: Carpentry
+  5: English
+  5: Auto
+  6: US History
+  7: Algebra 1
+  1 conflicts
+
+
+Cora Whitlock  (113) 6 classes
+  1: US History
+  2: Spanish 1
+  3: Algebra 1
+  4: French 1
+  6: English
+  7: Biology 1
+
+
+Anthony Adams  (114) 7 classes
+  1: Phys Ed
+  2: Latin 1
+  3: US History
+  4: Health
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Walker Lightfoot  (115) 6 classes
+  1: Computer
+  3: English
+  4: Fine Art
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+Adam Huxley  (116) 7 classes
+  1: US History
+  2: Algebra 1
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: Biology 1
+  7: English
+
+
+Leilani Lennon  (117) 6 classes
+  2: French 1
+  3: US History
+  4: Spanish 1
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Theodore Lightfoot  (118) 7 classes
+  1: Health
+  2: Latin 1
+  3: Algebra 1
+  4: Phys Ed
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Nolan Finch  (119) 6 classes
+  1: Fine Art
+  3: Biology 1
+  4: Computer
+  5: English
+  6: US History
+  7: Algebra 1
+
+
+Camila West  (120) 7 classes
+  1: US History
+  2: Carpentry
+  3: Algebra 1
+  4: Agriculture
+  5: Auto
+  6: English
+  7: Biology 1
+
+
+Victoria Mintz  (121) 6 classes
+  2: Spanish 1
+  3: US History
+  4: French 1
+  5: Biology 1
+  6: Algebra 1
+  7: English
+
+
+Quinn Hayes  (122) 7 classes
+  1: Health
+  2: Latin 1
+  3: English
+  4: Phys Ed
+  5: Biology 1
+  6: US History
+  7: Algebra 1
+
+
+David Lennon  (123) 6 classes
+  1: US History
+  2: Algebra 1
+  3: Fine Art
+  5: Computer
+  6: Biology 1
+  7: English
+
+
+Josiah Yarrow  (124) 7 classes
+  1: Auto
+  2: Agriculture
+  3: US History
+  4: Carpentry
+  5: Algebra 1
+  6: Biology 1
+  7: English
+
+
+Eloise Barlowe  (125) 6 classes
+  2: French 1
+  3: Algebra 1
+  4: Spanish 1
+  5: English
+  6: Biology 1
+  7: US History
+
+
+Ezra Vespertine  (126) 7 classes
+  1: Latin 2
+  2: US Government
+  3: Biology 2
+  4: French 2
+  5: Spanish 2
+  6: Literature
+  7: Algebra 2
+
+
+Benjamin Cyprus  (127) 6 classes
+  1: Health
+  2: Algebra 2
+  3: Biology 2
+  4: Phys Ed
+  6: Literature
+  7: US Government
+
+
+Anthony Gannon  (128) 7 classes
+  1: Biology 2
+  2: Fine Art
+  3: Algebra 2
+  4: Computer
+  5: US Government
+  6: Literature
+  7: Auto
+
+
+Brooks Caddel  (129) 6 classes
+  1: Carpentry
+  2: US Government
+  3: Algebra 2
+  4: Agriculture
+  6: Biology 2
+  7: Literature
+
+
+Greyson Beckett  (130) 7 classes
+  1: French 2
+  2: Algebra 2
+  3: Biology 2
+  4: Spanish 2
+  5: Latin 2
+  6: US Government
+  7: Literature
+
+
+Nora Gorestriker  (131) 6 classes
+  2: Biology 2
+  3: Health
+  4: Literature
+  5: Phys Ed
+  6: US Government
+  7: Algebra 2
+
+
+Lillian Fleet  (132) 7 classes
+  1: Biology 2
+  2: Computer
+  3: Literature
+  4: Fine Art
+  5: Algebra 2
+  6: Auto
+  7: US Government
+
+
+Adam Keller  (133) 6 classes
+  1: Agriculture
+  2: US Government
+  3: Biology 2
+  4: Carpentry
+  6: Literature
+  7: Algebra 2
+
+
+Willow Sagespark  (134) 7 classes
+  1: Latin 2
+  2: Algebra 2
+  3: Biology 2
+  4: French 2
+  5: Spanish 2
+  6: Literature
+  7: US Government
+
+
+Serenity Carter  (135) 6 classes
+  1: Biology 2
+  2: Phys Ed
+  3: Algebra 2
+  4: Health
+  5: US Government
+  6: Literature
+
+
+Maverick Spade  (136) 7 classes
+  1: Computer
+  2: US Government
+  3: Algebra 2
+  4: Fine Art
+  5: Auto
+  6: Biology 2
+  7: Literature
+
+
+Ruby Hydrafist  (137) 6 classes
+  1: Agriculture
+  2: Algebra 2
+  3: Biology 2
+  4: Carpentry
+  6: US Government
+  7: Literature
+
+
+Elizabeth Bardot  (138) 7 classes
+  1: French 2
+  2: Biology 2
+  4: Literature
+  4: Spanish 2
+  5: Latin 2
+  6: US Government
+  7: Algebra 2
+  1 conflicts
+
+
+Aurora Spade  (139) 6 classes
+  1: Biology 2
+  2: Health
+  3: Literature
+  4: Phys Ed
+  5: Algebra 2
+  7: US Government
+
+
+Angel Gorestriker  (140) 7 classes
+  1: Computer
+  2: US Government
+  3: Biology 2
+  4: Fine Art
+  5: Auto
+  6: Literature
+  7: Algebra 2
+
+
+Thomas Gray  (141) 6 classes
+  1: Agriculture
+  2: Algebra 2
+  3: Biology 2
+  4: Carpentry
+  6: Literature
+  7: US Government
+
+
+Emily Bardot  (142) 7 classes
+  1: Biology 2
+  1: Latin 2
+  3: Algebra 2
+  4: French 2
+  5: US Government
+  5: Spanish 2
+  6: Literature
+  2 conflicts
+
+
+Lydia Gasper  (143) 6 classes
+  1: Phys Ed
+  2: US Government
+  3: Algebra 2
+  4: Health
+  6: Biology 2
+  7: Literature
+
+
+Ivy Solace  (144) 7 classes
+  1: Computer
+  2: Algebra 2
+  3: Biology 2
+  4: Fine Art
+  4: Auto
+  6: US Government
+  7: Literature
+  1 conflicts
+
+
+Josephine Strongblossom  (145) 6 classes
+  2: Biology 2
+  3: Carpentry
+  4: Literature
+  5: Agriculture
+  6: US Government
+  7: Algebra 2
+
+
+Victoria Elrod  (146) 7 classes
+  1: Biology 2
+  1: French 2
+  3: Literature
+  4: Spanish 2
+  5: Algebra 2
+  5: Latin 2
+  7: US Government
+  2 conflicts
+
+
+Eli Kicklighter  (147) 6 classes
+  1: Health
+  2: US Government
+  3: Biology 2
+  4: Phys Ed
+  6: Literature
+  7: Algebra 2
+
+
+Lydia Dustfinger  (148) 7 classes
+  1: Fine Art
+  2: Algebra 2
+  3: Biology 2
+  4: Computer
+  5: Auto
+  6: Literature
+  7: US Government
+
+
+Audrey Madden  (149) 6 classes
+  1: Biology 2
+  2: Carpentry
+  3: Algebra 2
+  4: Agriculture
+  5: US Government
+  6: Literature
+
+
+Anthony Zimmerman  (150) 7 classes
+  1: Latin 2
+  2: US Government
+  3: Algebra 2
+  4: French 2
+  5: Spanish 2
+  6: Biology 2
+  7: Literature
+
+
+Owen Remington  (151) 6 classes
+  1: Health
+  2: Algebra 2
+  3: Biology 2
+  4: Phys Ed
+  6: US Government
+  7: Literature
+
+
+Riley Madden  (152) 7 classes
+  1: Auto
+  2: Biology 2
+  3: Fine Art
+  4: Literature
+  5: Computer
+  6: US Government
+  7: Algebra 2
+
+
+Elias Beckett  (153) 6 classes
+  1: Biology 2
+  2: Agriculture
+  3: Literature
+  4: Carpentry
+  5: Algebra 2
+  7: US Government
+
+
+Miles Gasper  (154) 7 classes
+  1: French 2
+  2: US Government
+  3: Biology 2
+  4: Spanish 2
+  5: Latin 2
+  6: Literature
+  7: Algebra 2
+
+
+Walker Sharpe  (155) 6 classes
+  1: Health
+  2: Algebra 2
+  3: Biology 2
+  4: Phys Ed
+  6: Literature
+  7: US Government
+
+
+Parker Undergrove  (156) 7 classes
+  1: Biology 2
+  2: Fine Art
+  3: Algebra 2
+  4: Computer
+  5: US Government
+  6: Literature
+  7: Auto
+
+
+Claire Biddercombe  (157) 6 classes
+  1: Carpentry
+  2: US Government
+  3: Algebra 2
+  4: Agriculture
+  6: Biology 2
+  7: Literature
+
+
+Weston Truthbelly  (158) 7 classes
+  1: Latin 2
+  2: Algebra 2
+  3: Biology 2
+  4: French 2
+  5: Spanish 2
+  6: US Government
+  7: Literature
+
+
+Jonathan Gray  (159) 6 classes
+  2: Biology 2
+  3: Health
+  4: Literature
+  5: Phys Ed
+  6: US Government
+  7: Algebra 2
+
+
+Maya Ashbluff  (160) 7 classes
+  1: Biology 2
+  2: Computer
+  3: Literature
+  4: Fine Art
+  5: Algebra 2
+  6: Auto
+  7: US Government
+
+
+Elijah Madden  (161) 6 classes
+  1: Agriculture
+  2: US Government
+  3: Biology 2
+  4: Carpentry
+  6: Literature
+  7: Algebra 2
+
+
+Ezekiel Kicklighter  (162) 7 classes
+  1: French 2
+  2: Algebra 2
+  3: Biology 2
+  4: Spanish 2
+  5: Latin 2
+  6: Literature
+  7: US Government
+
+
+Chloe Adler  (163) 6 classes
+  1: Biology 2
+  2: Phys Ed
+  3: Algebra 2
+  4: Health
+  5: US Government
+  6: Literature
+
+
+Ryan Elrod  (164) 7 classes
+  1: Computer
+  2: US Government
+  3: Algebra 2
+  4: Fine Art
+  5: Auto
+  6: Biology 2
+  7: Literature
+
+
+Luna West  (165) 6 classes
+  1: Agriculture
+  2: Algebra 2
+  3: Biology 2
+  4: Carpentry
+  6: US Government
+  7: Literature
+
+
+Ella Hart  (166) 7 classes
+  1: Latin 2
+  2: Biology 2
+  4: Literature
+  4: French 2
+  5: Spanish 2
+  6: US Government
+  7: Algebra 2
+  1 conflicts
+
+
+Mateo Beckett  (167) 6 classes
+  1: Biology 2
+  2: Health
+  3: Literature
+  4: Phys Ed
+  5: Algebra 2
+  7: US Government
+
+
+Athena Woodgrip  (168) 7 classes
+  1: Computer
+  2: US Government
+  3: Biology 2
+  4: Fine Art
+  5: Auto
+  6: Literature
+  7: Algebra 2
+
+
+Cooper Solace  (169) 6 classes
+  1: Agriculture
+  2: Algebra 2
+  3: Biology 2
+  4: Carpentry
+  6: Literature
+  7: US Government
+
+
+Everly Cassidy  (170) 7 classes
+  1: Biology 2
+  1: French 2
+  3: Algebra 2
+  4: Spanish 2
+  5: US Government
+  5: Latin 2
+  6: Literature
+  2 conflicts
+
+
+Liliana Carter  (171) 6 classes
+  1: Phys Ed
+  2: US Government
+  3: Algebra 2
+  4: Health
+  6: Biology 2
+  7: Literature
+
+
+Anna Spade  (172) 7 classes
+  1: Computer
+  2: Algebra 2
+  3: Biology 2
+  4: Fine Art
+  4: Auto
+  6: US Government
+  7: Literature
+  1 conflicts
+
+
+Elias Amos  (173) 6 classes
+  2: Biology 2
+  3: Carpentry
+  4: Literature
+  5: Agriculture
+  6: US Government
+  7: Algebra 2
+
+
+Mia Sharpe  (174) 7 classes
+  1: Biology 2
+  1: Latin 2
+  3: Literature
+  4: French 2
+  5: Algebra 2
+  5: Spanish 2
+  7: US Government
+  2 conflicts
+
+
+Jack Gonzales  (175) 6 classes
+  1: Health
+  2: US Government
+  3: Biology 2
+  4: Phys Ed
+  6: Literature
+  7: Algebra 2
+
+
+Ryan Poverly  (176) 7 classes
+  1: Fine Art
+  2: Algebra 2
+  3: Biology 2
+  4: Computer
+  5: Auto
+  6: Literature
+  7: US Government
+
+
+Alice Crawford  (177) 6 classes
+  1: Biology 2
+  2: Carpentry
+  3: Algebra 2
+  4: Agriculture
+  5: US Government
+  6: Literature
+
+
+Eloise Dagon  (178) 7 classes
+  1: French 2
+  2: US Government
+  3: Algebra 2
+  4: Spanish 2
+  5: Latin 2
+  6: Biology 2
+  7: Literature
+
+
+Cooper Carter  (179) 6 classes
+  1: Health
+  2: Algebra 2
+  3: Biology 2
+  4: Phys Ed
+  6: US Government
+  7: Literature
+
+
+Julian Undergrove  (180) 7 classes
+  1: Auto
+  2: Biology 2
+  3: Fine Art
+  4: Literature
+  5: Computer
+  6: US Government
+  7: Algebra 2
+
+
+Anthony Strongblossom  (181) 6 classes
+  1: Biology 2
+  2: Agriculture
+  3: Literature
+  4: Carpentry
+  5: Algebra 2
+  7: US Government
+
+
+Everett Poverly  (182) 7 classes
+  1: Latin 2
+  2: US Government
+  3: Biology 2
+  4: French 2
+  5: Spanish 2
+  6: Literature
+  7: Algebra 2
+
+
+Weston Hansley  (183) 6 classes
+  1: Health
+  2: Algebra 2
+  3: Biology 2
+  4: Phys Ed
+  6: Literature
+  7: US Government
+
+
+Mila Crassus  (184) 7 classes
+  1: Biology 2
+  2: Fine Art
+  3: Algebra 2
+  4: Computer
+  5: US Government
+  6: Literature
+  7: Auto
+
+
+Easton Ashley  (185) 6 classes
+  1: Carpentry
+  2: US Government
+  3: Algebra 2
+  4: Agriculture
+  6: Biology 2
+  7: Literature
+
+
+Genesis Truthbelly  (186) 7 classes
+  1: French 2
+  2: Algebra 2
+  3: Biology 2
+  4: Spanish 2
+  5: Latin 2
+  6: US Government
+  7: Literature
+
+
+Cora Hansley  (187) 6 classes
+  2: Biology 2
+  3: Health
+  4: Literature
+  5: Phys Ed
+  6: US Government
+  7: Algebra 2
+
+
+Maya James  (188) 7 classes
+  1: Biology 2
+  2: Computer
+  3: Literature
+  4: Fine Art
+  5: Algebra 2
+  6: Auto
+  7: US Government
+
+
+Jacob Gonzales  (189) 6 classes
+  1: Agriculture
+  2: US Government
+  3: Biology 2
+  4: Carpentry
+  6: Literature
+  7: Algebra 2
+
+
+Emery Windward  (190) 7 classes
+  1: Latin 2
+  2: Algebra 2
+  3: Biology 2
+  4: French 2
+  5: Spanish 2
+  6: Literature
+  7: US Government
+
+
+Raelynn Caskcut  (191) 6 classes
+  1: Biology 2
+  2: Phys Ed
+  3: Algebra 2
+  4: Health
+  5: US Government
+  6: Literature
+
+
+Maverick Thatcher  (192) 7 classes
+  1: Computer
+  2: US Government
+  3: Algebra 2
+  4: Fine Art
+  5: Auto
+  6: Biology 2
+  7: Literature
+
+
+Gabriella Adair  (193) 6 classes
+  1: Agriculture
+  2: Algebra 2
+  3: Biology 2
+  4: Carpentry
+  6: US Government
+  7: Literature
+
+
+Ava Lennon  (194) 7 classes
+  1: French 2
+  2: Biology 2
+  4: Literature
+  4: Spanish 2
+  5: Latin 2
+  6: US Government
+  7: Algebra 2
+  1 conflicts
+
+
+Brooks Marley  (195) 6 classes
+  1: Biology 2
+  2: Health
+  3: Literature
+  4: Phys Ed
+  5: Algebra 2
+  7: US Government
+
+
+James Curran  (196) 7 classes
+  1: Computer
+  2: US Government
+  3: Biology 2
+  4: Fine Art
+  5: Auto
+  6: Literature
+  7: Algebra 2
+
+
+Jordan Spade  (197) 6 classes
+  1: Agriculture
+  2: Algebra 2
+  3: Biology 2
+  4: Carpentry
+  6: Literature
+  7: US Government
+
+
+Xavier Humblecut  (198) 7 classes
+  1: Biology 2
+  1: Latin 2
+  3: Algebra 2
+  4: French 2
+  5: US Government
+  5: Spanish 2
+  6: Literature
+  2 conflicts
+
+
+Elena Moses  (199) 6 classes
+  1: Phys Ed
+  2: US Government
+  3: Algebra 2
+  4: Health
+  6: Biology 2
+  7: Literature
+
+
+Mateo Jenkins  (200) 7 classes
+  1: Computer
+  2: Algebra 2
+  3: Biology 2
+  4: Fine Art
+  4: Auto
+  6: US Government
+  7: Literature
+  1 conflicts
+
+
+Owen Ashford  (201) 6 classes
+  2: Biology 2
+  3: Carpentry
+  4: Literature
+  5: Agriculture
+  6: US Government
+  7: Algebra 2
+
+
+Greyson Adler  (202) 7 classes
+  1: Biology 2
+  1: French 2
+  3: Literature
+  4: Spanish 2
+  5: Algebra 2
+  5: Latin 2
+  7: US Government
+  2 conflicts
+
+
+Jayden Beam  (203) 6 classes
+  1: Health
+  2: US Government
+  3: Biology 2
+  4: Phys Ed
+  6: Literature
+  7: Algebra 2
+
+
+Joshua Yearwood  (204) 7 classes
+  1: Fine Art
+  2: Algebra 2
+  3: Biology 2
+  4: Computer
+  5: Auto
+  6: Literature
+  7: US Government
+
+
+John Strongblossom  (205) 6 classes
+  1: Biology 2
+  2: Carpentry
+  3: Algebra 2
+  4: Agriculture
+  5: US Government
+  6: Literature
+
+
+Theodore Fellowes  (206) 7 classes
+  1: Latin 2
+  2: US Government
+  3: Algebra 2
+  4: French 2
+  5: Spanish 2
+  6: Biology 2
+  7: Literature
+
+
+Adam Lopez  (207) 6 classes
+  1: Health
+  2: Algebra 2
+  3: Biology 2
+  4: Phys Ed
+  6: US Government
+  7: Literature
+
+
+Charlotte Gasper  (208) 7 classes
+  1: Auto
+  2: Biology 2
+  3: Fine Art
+  4: Literature
+  5: Computer
+  6: US Government
+  7: Algebra 2
+
+
+Logan Elsher  (209) 6 classes
+  1: Biology 2
+  2: Agriculture
+  3: Literature
+  4: Carpentry
+  5: Algebra 2
+  7: US Government
+
+
+Xavier Sharpe  (210) 7 classes
+  1: French 2
+  2: US Government
+  3: Biology 2
+  4: Spanish 2
+  5: Latin 2
+  6: Literature
+  7: Algebra 2
+
+
+Xavier Hendrix  (211) 6 classes
+  1: Health
+  2: Algebra 2
+  3: Biology 2
+  4: Phys Ed
+  6: Literature
+  7: US Government
+
+
+Adeline Hydrafist  (212) 7 classes
+  1: Biology 2
+  2: Fine Art
+  3: Algebra 2
+  4: Computer
+  5: US Government
+  6: Literature
+  7: Auto
+
+
+Eloise Adams  (213) 6 classes
+  1: Carpentry
+  2: US Government
+  3: Algebra 2
+  4: Agriculture
+  6: Biology 2
+  7: Literature
+
+
+Aaliyah Langley  (214) 7 classes
+  1: Latin 2
+  2: Algebra 2
+  3: Biology 2
+  4: French 2
+  5: Spanish 2
+  6: US Government
+  7: Literature
+
+
+Naomi Mintz  (215) 6 classes
+  2: Biology 2
+  3: Health
+  4: Literature
+  5: Phys Ed
+  6: US Government
+  7: Algebra 2
+
+
+Aubrey James  (216) 7 classes
+  1: Biology 2
+  2: Computer
+  3: Literature
+  4: Fine Art
+  5: Algebra 2
+  6: Auto
+  7: US Government
+
+
+Nathan Huxley  (217) 6 classes
+  1: Agriculture
+  2: US Government
+  3: Biology 2
+  4: Carpentry
+  6: Literature
+  7: Algebra 2
+
+
+Josiah Daughtler  (218) 7 classes
+  1: French 2
+  2: Algebra 2
+  3: Biology 2
+  4: Spanish 2
+  5: Latin 2
+  6: Literature
+  7: US Government
+
+
+Levi Bardot  (219) 6 classes
+  1: Biology 2
+  2: Phys Ed
+  3: Algebra 2
+  4: Health
+  5: US Government
+  6: Literature
+
+
+Daniel Beckett  (220) 7 classes
+  1: Computer
+  2: US Government
+  3: Algebra 2
+  4: Fine Art
+  5: Auto
+  6: Biology 2
+  7: Literature
+
+
+Victoria Caskcut  (221) 6 classes
+  1: Agriculture
+  2: Algebra 2
+  3: Biology 2
+  4: Carpentry
+  6: US Government
+  7: Literature
+
+
+Isabella Woodgrip  (222) 7 classes
+  1: Latin 2
+  2: Biology 2
+  4: Literature
+  4: French 2
+  5: Spanish 2
+  6: US Government
+  7: Algebra 2
+  1 conflicts
+
+
+Owen Madden  (223) 6 classes
+  1: Biology 2
+  2: Health
+  3: Literature
+  4: Phys Ed
+  5: Algebra 2
+  7: US Government
+
+
+Everleigh Gray  (224) 7 classes
+  1: Computer
+  2: US Government
+  3: Biology 2
+  4: Fine Art
+  5: Auto
+  6: Literature
+  7: Algebra 2
+
+
+Wesley Finch  (225) 6 classes
+  1: Agriculture
+  2: Algebra 2
+  3: Biology 2
+  4: Carpentry
+  6: Literature
+  7: US Government
+
+
+Cooper Wixx  (226) 7 classes
+  1: Biology 2
+  1: French 2
+  3: Algebra 2
+  4: Spanish 2
+  5: US Government
+  5: Latin 2
+  6: Literature
+  2 conflicts
+
+
+Penelope Daughtler  (227) 6 classes
+  1: Phys Ed
+  2: US Government
+  3: Algebra 2
+  4: Health
+  6: Biology 2
+  7: Literature
+
+
+Jack Beckett  (228) 7 classes
+  1: Computer
+  2: Algebra 2
+  3: Biology 2
+  4: Fine Art
+  4: Auto
+  6: US Government
+  7: Literature
+  1 conflicts
+
+
+Eli Hendrix  (229) 6 classes
+  2: Biology 2
+  3: Carpentry
+  4: Literature
+  5: Agriculture
+  6: US Government
+  7: Algebra 2
+
+
+Mateo Adair  (230) 7 classes
+  1: Biology 2
+  1: Latin 2
+  3: Literature
+  4: French 2
+  5: Algebra 2
+  5: Spanish 2
+  7: US Government
+  2 conflicts
+
+
+Bennett Sagespark  (231) 6 classes
+  1: Health
+  2: US Government
+  3: Biology 2
+  4: Phys Ed
+  6: Literature
+  7: Algebra 2
+
+
+Jordan Vespertine  (232) 7 classes
+  1: Fine Art
+  2: Algebra 2
+  3: Biology 2
+  4: Computer
+  5: Auto
+  6: Literature
+  7: US Government
+
+
+Elias Ashley  (233) 6 classes
+  1: Biology 2
+  2: Carpentry
+  3: Algebra 2
+  4: Agriculture
+  5: US Government
+  6: Literature
+
+
+Brooklyn Undergrove  (234) 7 classes
+  1: French 2
+  2: US Government
+  3: Algebra 2
+  4: Spanish 2
+  5: Latin 2
+  6: Biology 2
+  7: Literature
+
+
+Brooks Gasper  (235) 6 classes
+  1: Health
+  2: Algebra 2
+  3: Biology 2
+  4: Phys Ed
+  6: US Government
+  7: Literature
+
+
+Zoey Beam  (236) 7 classes
+  1: Auto
+  2: Biology 2
+  3: Fine Art
+  4: Literature
+  5: Computer
+  6: US Government
+  7: Algebra 2
+
+
+Kennedy Hart  (237) 6 classes
+  1: Biology 2
+  2: Agriculture
+  3: Literature
+  4: Carpentry
+  5: Algebra 2
+  7: US Government
+
+
+Angel Fleet  (238) 7 classes
+  1: Latin 2
+  2: US Government
+  3: Biology 2
+  4: French 2
+  5: Spanish 2
+  6: Literature
+  7: Algebra 2
+
+
+Athena Gonzales  (239) 6 classes
+  1: Health
+  2: Algebra 2
+  3: Biology 2
+  4: Phys Ed
+  6: Literature
+  7: US Government
+
+
+Oliver Ashbluff  (240) 7 classes
+  1: Biology 2
+  2: Fine Art
+  3: Algebra 2
+  4: Computer
+  5: US Government
+  6: Literature
+  7: Auto
+
+
+Nathan Adair  (241) 6 classes
+  1: Carpentry
+  2: US Government
+  3: Algebra 2
+  4: Agriculture
+  6: Biology 2
+  7: Literature
+
+
+Aaron Keller  (242) 7 classes
+  1: French 2
+  2: Algebra 2
+  3: Biology 2
+  4: Spanish 2
+  5: Latin 2
+  6: US Government
+  7: Literature
+
+
+Eleanor Hendrix  (243) 6 classes
+  2: Biology 2
+  3: Health
+  4: Literature
+  5: Phys Ed
+  6: US Government
+  7: Algebra 2
+
+
+Madelyn Jenkins  (244) 7 classes
+  1: Biology 2
+  2: Computer
+  3: Literature
+  4: Fine Art
+  5: Algebra 2
+  6: Auto
+  7: US Government
+
+
+Victoria Finnegan  (245) 6 classes
+  1: Agriculture
+  2: US Government
+  3: Biology 2
+  4: Carpentry
+  6: Literature
+  7: Algebra 2
+
+
+Josephine Barlowe  (246) 7 classes
+  1: Latin 2
+  2: Algebra 2
+  3: Biology 2
+  4: French 2
+  5: Spanish 2
+  6: Literature
+  7: US Government
+
+
+Beau Ashford  (247) 6 classes
+  1: Biology 2
+  2: Phys Ed
+  3: Algebra 2
+  4: Health
+  5: US Government
+  6: Literature
+
+
+Zoey Gorestriker  (248) 7 classes
+  1: Computer
+  2: US Government
+  3: Algebra 2
+  4: Fine Art
+  5: Auto
+  6: Biology 2
+  7: Literature
+
+
+Ayla Carter  (249) 6 classes
+  1: Agriculture
+  2: Algebra 2
+  3: Biology 2
+  4: Carpentry
+  6: US Government
+  7: Literature
+
+
+Ellie Ellis  (250) 7 classes
+  1: French 2
+  2: Biology 2
+  4: Literature
+  4: Spanish 2
+  5: Latin 2
+  6: US Government
+  7: Algebra 2
+  1 conflicts
+
+
+Josiah Elrod  (251) 6 classes
+  1: Geometry
+  1: Spanish 3
+  2: Chemistry
+  4: French 3
+  6: World History
+  7: Composition
+  1 conflicts
+
+
+Greyson Beam  (252) 7 classes
+  1: Latin 3
+  2: Health
+  3: World History
+  4: Phys Ed
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Nevaeh Hayes  (253) 6 classes
+  1: Computer
+  2: World History
+  3: Composition
+  4: Fine Art
+  5: Geometry
+  7: Chemistry
+
+
+Ivy Stoll  (254) 7 classes
+  1: Agriculture
+  2: Geometry
+  3: Composition
+  4: Carpentry
+  5: Auto
+  6: Chemistry
+  7: World History
+
+
+Savannah Dagon  (255) 6 classes
+  1: French 3
+  3: Chemistry
+  4: Spanish 3
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Skylar Lightfoot  (256) 7 classes
+  1: Latin 3
+  1: Phys Ed
+  2: Chemistry
+  3: Geometry
+  4: Health
+  5: Composition
+  6: World History
+  1 conflicts
+
+
+Easton Vespertine  (257) 6 classes
+  1: Computer
+  2: Composition
+  3: World History
+  4: Fine Art
+  5: Chemistry
+  6: Geometry
+
+
+Cameron James  (258) 7 classes
+  1: Geometry
+  2: Chemistry
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: World History
+  7: Composition
+
+
+Gianna Stoll  (259) 6 classes
+  1: Spanish 3
+  3: World History
+  4: French 3
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Andrew Elsher  (260) 7 classes
+  1: Latin 3
+  1: Health
+  2: World History
+  3: Composition
+  4: Phys Ed
+  5: Geometry
+  7: Chemistry
+  1 conflicts
+
+
+Charles Ledger  (261) 6 classes
+  1: Fine Art
+  2: Geometry
+  3: Composition
+  4: Computer
+  6: Chemistry
+  7: World History
+
+
+Hazel Fellowes  (262) 7 classes
+  2: Carpentry
+  3: Chemistry
+  4: Agriculture
+  5: Geometry
+  5: Auto
+  6: Composition
+  7: World History
+  1 conflicts
+
+
+Luke Gorestriker  (263) 6 classes
+  1: French 3
+  2: Chemistry
+  3: Geometry
+  4: Spanish 3
+  5: Composition
+  6: World History
+
+
+Nathan Sagespark  (264) 7 classes
+  1: Latin 3
+  1: Health
+  2: Composition
+  3: World History
+  4: Phys Ed
+  5: Chemistry
+  6: Geometry
+  1 conflicts
+
+
+Landon Ashbluff  (265) 6 classes
+  1: Geometry
+  2: Chemistry
+  3: Fine Art
+  5: Computer
+  6: World History
+  7: Composition
+
+
+Aria Biddercombe  (266) 7 classes
+  1: Auto
+  2: Agriculture
+  3: World History
+  4: Carpentry
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Ezekiel Hope  (267) 6 classes
+  1: Spanish 3
+  2: World History
+  3: Composition
+  4: French 3
+  5: Geometry
+  7: Chemistry
+
+
+Cora Beam  (268) 7 classes
+  1: Latin 3
+  1: Health
+  2: Geometry
+  3: Composition
+  4: Phys Ed
+  6: Chemistry
+  7: World History
+  1 conflicts
+
+
+Valentina Mintz  (269) 6 classes
+  2: Fine Art
+  3: Chemistry
+  4: Computer
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Violet Snakeleaf  (270) 7 classes
+  1: Carpentry
+  2: Chemistry
+  3: Geometry
+  4: Agriculture
+  5: Composition
+  6: World History
+  7: Auto
+
+
+Victoria Stoll  (271) 6 classes
+  1: French 3
+  2: Composition
+  3: World History
+  4: Spanish 3
+  5: Chemistry
+  6: Geometry
+
+
+Ian Crassus  (272) 7 classes
+  1: Geometry
+  1: Latin 3
+  2: Chemistry
+  3: Health
+  5: Phys Ed
+  6: World History
+  7: Composition
+  1 conflicts
+
+
+Nicholas Lennon  (273) 6 classes
+  2: Computer
+  3: World History
+  4: Fine Art
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Mila Bozzelli  (274) 7 classes
+  1: Agriculture
+  2: World History
+  3: Composition
+  4: Carpentry
+  5: Geometry
+  6: Auto
+  7: Chemistry
+
+
+Isaac Remington  (275) 6 classes
+  1: Spanish 3
+  2: Geometry
+  3: Composition
+  4: French 3
+  6: Chemistry
+  7: World History
+
+
+Isla Lopez  (276) 7 classes
+  1: Latin 3
+  2: Phys Ed
+  3: Chemistry
+  4: Health
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Gabriel Undergrove  (277) 6 classes
+  1: Computer
+  2: Chemistry
+  3: Geometry
+  4: Fine Art
+  5: Composition
+  6: World History
+
+
+Wesley Adler  (278) 7 classes
+  1: Agriculture
+  2: Composition
+  3: World History
+  4: Carpentry
+  5: Chemistry
+  5: Auto
+  6: Geometry
+  1 conflicts
+
+
+Ella Moses  (279) 6 classes
+  1: Geometry
+  1: French 3
+  2: Chemistry
+  4: Spanish 3
+  6: World History
+  7: Composition
+  1 conflicts
+
+
+Penelope Truthbelly  (280) 7 classes
+  1: Latin 3
+  2: Health
+  3: World History
+  4: Phys Ed
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Nicholas Undergrove  (281) 6 classes
+  1: Computer
+  2: World History
+  3: Composition
+  4: Fine Art
+  5: Geometry
+  7: Chemistry
+
+
+Zoey Beckett  (282) 7 classes
+  1: Agriculture
+  2: Geometry
+  3: Composition
+  4: Carpentry
+  5: Auto
+  6: Chemistry
+  7: World History
+
+
+Ezra Curran  (283) 6 classes
+  1: Spanish 3
+  3: Chemistry
+  4: French 3
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Colton Ellis  (284) 7 classes
+  1: Latin 3
+  1: Phys Ed
+  2: Chemistry
+  3: Geometry
+  4: Health
+  5: Composition
+  6: World History
+  1 conflicts
+
+
+Theo Caskcut  (285) 6 classes
+  1: Computer
+  2: Composition
+  3: World History
+  4: Fine Art
+  5: Chemistry
+  6: Geometry
+
+
+Autumn Thatcher  (286) 7 classes
+  1: Geometry
+  2: Chemistry
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: World History
+  7: Composition
+
+
+Adam Keller  (287) 6 classes
+  1: French 3
+  3: World History
+  4: Spanish 3
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Anna Remington  (288) 7 classes
+  1: Latin 3
+  1: Health
+  2: World History
+  3: Composition
+  4: Phys Ed
+  5: Geometry
+  7: Chemistry
+  1 conflicts
+
+
+Bennett Sharpe  (289) 6 classes
+  1: Fine Art
+  2: Geometry
+  3: Composition
+  4: Computer
+  6: Chemistry
+  7: World History
+
+
+Sophia Lennon  (290) 7 classes
+  2: Carpentry
+  3: Chemistry
+  4: Agriculture
+  5: Geometry
+  5: Auto
+  6: Composition
+  7: World History
+  1 conflicts
+
+
+Kinsley Ford  (291) 6 classes
+  1: Spanish 3
+  2: Chemistry
+  3: Geometry
+  4: French 3
+  5: Composition
+  6: World History
+
+
+Cora Wilson  (292) 7 classes
+  1: Latin 3
+  1: Health
+  2: Composition
+  3: World History
+  4: Phys Ed
+  5: Chemistry
+  6: Geometry
+  1 conflicts
+
+
+Delilah Crassus  (293) 6 classes
+  1: Geometry
+  2: Chemistry
+  3: Fine Art
+  5: Computer
+  6: World History
+  7: Composition
+
+
+Waylon Keller  (294) 7 classes
+  1: Auto
+  2: Agriculture
+  3: World History
+  4: Carpentry
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Sofia Raven  (295) 6 classes
+  1: French 3
+  2: World History
+  3: Composition
+  4: Spanish 3
+  5: Geometry
+  7: Chemistry
+
+
+Henry Marblemaw  (296) 7 classes
+  1: Latin 3
+  1: Health
+  2: Geometry
+  3: Composition
+  4: Phys Ed
+  6: Chemistry
+  7: World History
+  1 conflicts
+
+
+Luke Gorestriker  (297) 6 classes
+  2: Fine Art
+  3: Chemistry
+  4: Computer
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Nora Adams  (298) 7 classes
+  1: Carpentry
+  2: Chemistry
+  3: Geometry
+  4: Agriculture
+  5: Composition
+  6: World History
+  7: Auto
+
+
+Lucy Zimmerman  (299) 6 classes
+  1: Spanish 3
+  2: Composition
+  3: World History
+  4: French 3
+  5: Chemistry
+  6: Geometry
+
+
+Emery Langley  (300) 7 classes
+  1: Geometry
+  1: Latin 3
+  2: Chemistry
+  3: Health
+  5: Phys Ed
+  6: World History
+  7: Composition
+  1 conflicts
+
+
+Caleb Gray  (301) 6 classes
+  2: Computer
+  3: World History
+  4: Fine Art
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Isaac Collymore  (302) 7 classes
+  1: Agriculture
+  2: World History
+  3: Composition
+  4: Carpentry
+  5: Geometry
+  6: Auto
+  7: Chemistry
+
+
+William Hydrafist  (303) 6 classes
+  1: French 3
+  2: Geometry
+  3: Composition
+  4: Spanish 3
+  6: Chemistry
+  7: World History
+
+
+Waylon Biddercombe  (304) 7 classes
+  1: Latin 3
+  2: Phys Ed
+  3: Chemistry
+  4: Health
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Ella Thatcher  (305) 6 classes
+  1: Computer
+  2: Chemistry
+  3: Geometry
+  4: Fine Art
+  5: Composition
+  6: World History
+
+
+Mila Thatcher  (306) 7 classes
+  1: Agriculture
+  2: Composition
+  3: World History
+  4: Carpentry
+  5: Chemistry
+  5: Auto
+  6: Geometry
+  1 conflicts
+
+
+Daniel Wixx  (307) 6 classes
+  1: Geometry
+  1: Spanish 3
+  2: Chemistry
+  4: French 3
+  6: World History
+  7: Composition
+  1 conflicts
+
+
+Paisley Hope  (308) 7 classes
+  1: Latin 3
+  2: Health
+  3: World History
+  4: Phys Ed
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Bella Poverly  (309) 6 classes
+  1: Computer
+  2: World History
+  3: Composition
+  4: Fine Art
+  5: Geometry
+  7: Chemistry
+
+
+Adrian Anderson  (310) 7 classes
+  1: Agriculture
+  2: Geometry
+  3: Composition
+  4: Carpentry
+  5: Auto
+  6: Chemistry
+  7: World History
+
+
+Jordan Hart  (311) 6 classes
+  1: French 3
+  3: Chemistry
+  4: Spanish 3
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Mia Cassidy  (312) 7 classes
+  1: Latin 3
+  1: Phys Ed
+  2: Chemistry
+  3: Geometry
+  4: Health
+  5: Composition
+  6: World History
+  1 conflicts
+
+
+Savannah Hope  (313) 6 classes
+  1: Computer
+  2: Composition
+  3: World History
+  4: Fine Art
+  5: Chemistry
+  6: Geometry
+
+
+Caroline James  (314) 7 classes
+  1: Geometry
+  2: Chemistry
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: World History
+  7: Composition
+
+
+Jacob Huxley  (315) 6 classes
+  1: Spanish 3
+  3: World History
+  4: French 3
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Asher Madden  (316) 7 classes
+  1: Latin 3
+  1: Health
+  2: World History
+  3: Composition
+  4: Phys Ed
+  5: Geometry
+  7: Chemistry
+  1 conflicts
+
+
+Theo Jenkins  (317) 6 classes
+  1: Fine Art
+  2: Geometry
+  3: Composition
+  4: Computer
+  6: Chemistry
+  7: World History
+
+
+Riley Verlice  (318) 7 classes
+  2: Carpentry
+  3: Chemistry
+  4: Agriculture
+  5: Geometry
+  5: Auto
+  6: Composition
+  7: World History
+  1 conflicts
+
+
+Aiden Sagespark  (319) 6 classes
+  1: French 3
+  2: Chemistry
+  3: Geometry
+  4: Spanish 3
+  5: Composition
+  6: World History
+
+
+Adam Finch  (320) 7 classes
+  1: Latin 3
+  1: Health
+  2: Composition
+  3: World History
+  4: Phys Ed
+  5: Chemistry
+  6: Geometry
+  1 conflicts
+
+
+Lucas Pierce  (321) 6 classes
+  1: Geometry
+  2: Chemistry
+  3: Fine Art
+  5: Computer
+  6: World History
+  7: Composition
+
+
+Chloe Undergrove  (322) 7 classes
+  1: Auto
+  2: Agriculture
+  3: World History
+  4: Carpentry
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Matthew Adair  (323) 6 classes
+  1: Spanish 3
+  2: World History
+  3: Composition
+  4: French 3
+  5: Geometry
+  7: Chemistry
+
+
+Ezra Spade  (324) 7 classes
+  1: Latin 3
+  1: Health
+  2: Geometry
+  3: Composition
+  4: Phys Ed
+  6: Chemistry
+  7: World History
+  1 conflicts
+
+
+Nicholas Gatlin  (325) 6 classes
+  2: Fine Art
+  3: Chemistry
+  4: Computer
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Sebastian Driscoll  (326) 7 classes
+  1: Carpentry
+  2: Chemistry
+  3: Geometry
+  4: Agriculture
+  5: Composition
+  6: World History
+  7: Auto
+
+
+Ryan Laurier  (327) 6 classes
+  1: French 3
+  2: Composition
+  3: World History
+  4: Spanish 3
+  5: Chemistry
+  6: Geometry
+
+
+Isaiah Oatrun  (328) 7 classes
+  1: Geometry
+  1: Latin 3
+  2: Chemistry
+  3: Health
+  5: Phys Ed
+  6: World History
+  7: Composition
+  1 conflicts
+
+
+Anna Madden  (329) 6 classes
+  2: Computer
+  3: World History
+  4: Fine Art
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Daniel Katz  (330) 7 classes
+  1: Agriculture
+  2: World History
+  3: Composition
+  4: Carpentry
+  5: Geometry
+  6: Auto
+  7: Chemistry
+
+
+Ayla Fellowes  (331) 6 classes
+  1: Spanish 3
+  2: Geometry
+  3: Composition
+  4: French 3
+  6: Chemistry
+  7: World History
+
+
+Caroline Ashbluff  (332) 7 classes
+  1: Latin 3
+  2: Phys Ed
+  3: Chemistry
+  4: Health
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Samuel Adair  (333) 6 classes
+  1: Computer
+  2: Chemistry
+  3: Geometry
+  4: Fine Art
+  5: Composition
+  6: World History
+
+
+Walker Verlice  (334) 7 classes
+  1: Agriculture
+  2: Composition
+  3: World History
+  4: Carpentry
+  5: Chemistry
+  5: Auto
+  6: Geometry
+  1 conflicts
+
+
+Oliver Yarrow  (335) 6 classes
+  1: Geometry
+  1: French 3
+  2: Chemistry
+  4: Spanish 3
+  6: World History
+  7: Composition
+  1 conflicts
+
+
+Cora Gray  (336) 7 classes
+  1: Latin 3
+  2: Health
+  3: World History
+  4: Phys Ed
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Micah Hansley  (337) 6 classes
+  1: Computer
+  2: World History
+  3: Composition
+  4: Fine Art
+  5: Geometry
+  7: Chemistry
+
+
+Eloise Gonzales  (338) 7 classes
+  1: Agriculture
+  2: Geometry
+  3: Composition
+  4: Carpentry
+  5: Auto
+  6: Chemistry
+  7: World History
+
+
+Iris Marley  (339) 6 classes
+  1: Spanish 3
+  3: Chemistry
+  4: French 3
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Daniel Crassus  (340) 7 classes
+  1: Latin 3
+  1: Phys Ed
+  2: Chemistry
+  3: Geometry
+  4: Health
+  5: Composition
+  6: World History
+  1 conflicts
+
+
+Anna Beckett  (341) 6 classes
+  1: Computer
+  2: Composition
+  3: World History
+  4: Fine Art
+  5: Chemistry
+  6: Geometry
+
+
+Jade West  (342) 7 classes
+  1: Geometry
+  2: Chemistry
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: World History
+  7: Composition
+
+
+Mia Wilson  (343) 6 classes
+  1: French 3
+  3: World History
+  4: Spanish 3
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Luca Remington  (344) 7 classes
+  1: Latin 3
+  1: Health
+  2: World History
+  3: Composition
+  4: Phys Ed
+  5: Geometry
+  7: Chemistry
+  1 conflicts
+
+
+Kinsley Truthbelly  (345) 6 classes
+  1: Fine Art
+  2: Geometry
+  3: Composition
+  4: Computer
+  6: Chemistry
+  7: World History
+
+
+Emery Monroe  (346) 7 classes
+  2: Carpentry
+  3: Chemistry
+  4: Agriculture
+  5: Geometry
+  5: Auto
+  6: Composition
+  7: World History
+  1 conflicts
+
+
+Chloe Humblecut  (347) 6 classes
+  1: Spanish 3
+  2: Chemistry
+  3: Geometry
+  4: French 3
+  5: Composition
+  6: World History
+
+
+Noah Ashford  (348) 7 classes
+  1: Latin 3
+  1: Health
+  2: Composition
+  3: World History
+  4: Phys Ed
+  5: Chemistry
+  6: Geometry
+  1 conflicts
+
+
+Jaxon Moses  (349) 6 classes
+  1: Geometry
+  2: Chemistry
+  3: Fine Art
+  5: Computer
+  6: World History
+  7: Composition
+
+
+Waylon Driscoll  (350) 7 classes
+  1: Auto
+  2: Agriculture
+  3: World History
+  4: Carpentry
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Mateo Crassus  (351) 6 classes
+  1: French 3
+  2: World History
+  3: Composition
+  4: Spanish 3
+  5: Geometry
+  7: Chemistry
+
+
+Mia Gatlin  (352) 7 classes
+  1: Latin 3
+  1: Health
+  2: Geometry
+  3: Composition
+  4: Phys Ed
+  6: Chemistry
+  7: World History
+  1 conflicts
+
+
+Lincoln Adams  (353) 6 classes
+  2: Fine Art
+  3: Chemistry
+  4: Computer
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Parker Ashford  (354) 7 classes
+  1: Carpentry
+  2: Chemistry
+  3: Geometry
+  4: Agriculture
+  5: Composition
+  6: World History
+  7: Auto
+
+
+Mateo Anderson  (355) 6 classes
+  1: Spanish 3
+  2: Composition
+  3: World History
+  4: French 3
+  5: Chemistry
+  6: Geometry
+
+
+Elena Poverly  (356) 7 classes
+  1: Geometry
+  1: Latin 3
+  2: Chemistry
+  3: Health
+  5: Phys Ed
+  6: World History
+  7: Composition
+  1 conflicts
+
+
+Brooks Poverly  (357) 6 classes
+  2: Computer
+  3: World History
+  4: Fine Art
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Madison Thatcher  (358) 7 classes
+  1: Agriculture
+  2: World History
+  3: Composition
+  4: Carpentry
+  5: Geometry
+  6: Auto
+  7: Chemistry
+
+
+Mason Elrod  (359) 6 classes
+  1: French 3
+  2: Geometry
+  3: Composition
+  4: Spanish 3
+  6: Chemistry
+  7: World History
+
+
+Lucas Dagon  (360) 7 classes
+  1: Latin 3
+  2: Phys Ed
+  3: Chemistry
+  4: Health
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+Caroline Wixx  (361) 6 classes
+  1: Computer
+  2: Chemistry
+  3: Geometry
+  4: Fine Art
+  5: Composition
+  6: World History
+
+
+Walker Gasper  (362) 7 classes
+  1: Agriculture
+  2: Composition
+  3: World History
+  4: Carpentry
+  5: Chemistry
+  5: Auto
+  6: Geometry
+  1 conflicts
+
+
+Isabella Moses  (363) 6 classes
+  1: Geometry
+  1: Spanish 3
+  2: Chemistry
+  4: French 3
+  6: World History
+  7: Composition
+  1 conflicts
+
+
+Isabella Windward  (364) 7 classes
+  1: Latin 3
+  2: Health
+  3: World History
+  4: Phys Ed
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Hudson Gonzales  (365) 6 classes
+  1: Computer
+  2: World History
+  3: Composition
+  4: Fine Art
+  5: Geometry
+  7: Chemistry
+
+
+Colton Beckett  (366) 7 classes
+  1: Agriculture
+  2: Geometry
+  3: Composition
+  4: Carpentry
+  5: Auto
+  6: Chemistry
+  7: World History
+
+
+Leonardo Wilson  (367) 6 classes
+  1: French 3
+  3: Chemistry
+  4: Spanish 3
+  5: Geometry
+  6: Composition
+  7: World History
+
+
+John Curran  (368) 7 classes
+  1: Latin 3
+  1: Phys Ed
+  2: Chemistry
+  3: Geometry
+  4: Health
+  5: Composition
+  6: World History
+  1 conflicts
+
+
+Violet Elrod  (369) 6 classes
+  1: Computer
+  2: Composition
+  3: World History
+  4: Fine Art
+  5: Chemistry
+  6: Geometry
+
+
+Ella Lopez  (370) 7 classes
+  1: Geometry
+  2: Chemistry
+  3: Carpentry
+  4: Auto
+  5: Agriculture
+  6: World History
+  7: Composition
+
+
+Everly Langley  (371) 6 classes
+  1: Spanish 3
+  3: World History
+  4: French 3
+  5: Composition
+  6: Geometry
+  7: Chemistry
+
+
+Grace James  (372) 7 classes
+  1: Latin 3
+  1: Health
+  2: World History
+  3: Composition
+  4: Phys Ed
+  5: Geometry
+  7: Chemistry
+  1 conflicts
+
+
+Emilia Ashbluff  (373) 6 classes
+  1: Fine Art
+  2: Geometry
+  3: Composition
+  4: Computer
+  6: Chemistry
+  7: World History
+
+
+Gianna Zimmerman  (374) 7 classes
+  2: Carpentry
+  3: Chemistry
+  4: Agriculture
+  5: Geometry
+  5: Auto
+  6: Composition
+  7: World History
+  1 conflicts
+
+
+Gabriel Adler  (375) 6 classes
+  1: French 3
+  2: Chemistry
+  3: Geometry
+  4: Spanish 3
+  5: Composition
+  6: World History
+
+
+Delilah Keller  (376) 7 classes
+  1: Latin 4
+  2: Statistics
+  3: Physics
+  4: Spanish 4
+  5: French 4
+  6: Economics
+  7: Speech
+
+
+Willow Crawford  (377) 6 classes
+  1: Health
+  2: Speech
+  3: Statistics
+  4: Phys Ed
+  6: Economics
+  7: Physics
+
+
+Victoria Gorestriker  (378) 7 classes
+  1: Auto
+  2: Economics
+  3: Fine Art
+  4: Physics
+  5: Computer
+  6: Speech
+  7: Statistics
+
+
+Stella Gasper  (379) 6 classes
+  1: Statistics
+  2: Agriculture
+  3: Speech
+  4: Carpentry
+  5: Physics
+  7: Economics
+
+
+Gabriel Finch  (380) 7 classes
+  1: Spanish 4
+  2: Physics
+  3: Speech
+  4: French 4
+  5: Latin 4
+  6: Economics
+  7: Statistics
+
+
+Paisley Ledger  (381) 6 classes
+  1: Health
+  2: Physics
+  3: Speech
+  4: Phys Ed
+  6: Statistics
+  7: Economics
+
+
+Isla Gatlin  (382) 7 classes
+  1: Statistics
+  2: Fine Art
+  3: Economics
+  4: Computer
+  5: Physics
+  6: Speech
+  7: Auto
+
+
+Jordan Woodgrip  (383) 6 classes
+  1: Carpentry
+  2: Statistics
+  3: Physics
+  4: Agriculture
+  6: Economics
+  7: Speech
+
+
+Lily Hendrix  (384) 7 classes
+  1: Latin 4
+  2: Speech
+  3: Statistics
+  4: Spanish 4
+  5: French 4
+  6: Economics
+  7: Physics
+
+
+Eliana Whitlock  (385) 6 classes
+  2: Economics
+  3: Health
+  4: Physics
+  5: Phys Ed
+  6: Speech
+  7: Statistics
+
+
+Audrey Lopez  (386) 7 classes
+  1: Statistics
+  2: Computer
+  3: Speech
+  4: Fine Art
+  5: Physics
+  6: Auto
+  7: Economics
+
+
+James Humblecut  (387) 6 classes
+  1: Agriculture
+  2: Physics
+  3: Speech
+  4: Carpentry
+  6: Economics
+  7: Statistics
+
+
+Benjamin Singh  (388) 7 classes
+  1: Spanish 4
+  2: Physics
+  3: Speech
+  4: French 4
+  5: Latin 4
+  6: Statistics
+  7: Economics
+
+
+Julian Jenkins  (389) 6 classes
+  1: Statistics
+  2: Phys Ed
+  3: Economics
+  4: Health
+  5: Physics
+  6: Speech
+
+
+Parker Whitlock  (390) 7 classes
+  1: Computer
+  2: Statistics
+  3: Physics
+  4: Fine Art
+  5: Auto
+  6: Economics
+  7: Speech
+
+
+Kai Ashbluff  (391) 6 classes
+  1: Agriculture
+  2: Speech
+  3: Statistics
+  4: Carpentry
+  6: Economics
+  7: Physics
+
+
+Jackson Jenkins  (392) 7 classes
+  1: Latin 4
+  2: Economics
+  4: Physics
+  4: Spanish 4
+  5: French 4
+  6: Speech
+  7: Statistics
+  1 conflicts
+
+
+Dylan Gorestriker  (393) 6 classes
+  1: Statistics
+  2: Health
+  3: Speech
+  4: Phys Ed
+  5: Physics
+  7: Economics
+
+
+Waylon Caskcut  (394) 7 classes
+  1: Computer
+  2: Physics
+  3: Speech
+  4: Fine Art
+  5: Auto
+  6: Economics
+  7: Statistics
+
+
+Penelope Elsher  (395) 6 classes
+  1: Agriculture
+  2: Physics
+  3: Speech
+  4: Carpentry
+  6: Statistics
+  7: Economics
+
+
+John Lennon  (396) 7 classes
+  1: Statistics
+  1: Spanish 4
+  3: Economics
+  4: French 4
+  5: Physics
+  5: Latin 4
+  6: Speech
+  2 conflicts
+
+
+Sophie Woodgrip  (397) 6 classes
+  1: Phys Ed
+  2: Statistics
+  3: Physics
+  4: Health
+  6: Economics
+  7: Speech
+
+
+Zoey Hansley  (398) 7 classes
+  1: Computer
+  2: Speech
+  3: Statistics
+  4: Fine Art
+  4: Auto
+  6: Economics
+  7: Physics
+  1 conflicts
+
+
+Thomas Lightfoot  (399) 6 classes
+  2: Economics
+  3: Carpentry
+  4: Physics
+  5: Agriculture
+  6: Speech
+  7: Statistics
+
+
+Sophia Crawford  (400) 7 classes
+  1: Statistics
+  1: Latin 4
+  3: Speech
+  4: Spanish 4
+  5: Physics
+  5: French 4
+  7: Economics
+  2 conflicts
+
+
+Josephine Adair  (401) 6 classes
+  1: Health
+  2: Physics
+  3: Speech
+  4: Phys Ed
+  6: Economics
+  7: Statistics
+
+
+Ruby Adler  (402) 7 classes
+  1: Fine Art
+  2: Physics
+  3: Speech
+  4: Computer
+  5: Auto
+  6: Statistics
+  7: Economics
+
+
+Jaxon Yearwood  (403) 6 classes
+  1: Statistics
+  2: Carpentry
+  3: Economics
+  4: Agriculture
+  5: Physics
+  6: Speech
+
+
+Roman Anderson  (404) 7 classes
+  1: Spanish 4
+  2: Statistics
+  3: Physics
+  4: French 4
+  5: Latin 4
+  6: Economics
+  7: Speech
+
+
+Jordan Lopez  (405) 6 classes
+  1: Health
+  2: Speech
+  3: Statistics
+  4: Phys Ed
+  6: Economics
+  7: Physics
+
+
+William Ashley  (406) 7 classes
+  1: Auto
+  2: Economics
+  3: Fine Art
+  4: Physics
+  5: Computer
+  6: Speech
+  7: Statistics
+
+
+Mateo Hart  (407) 6 classes
+  1: Statistics
+  2: Agriculture
+  3: Speech
+  4: Carpentry
+  5: Physics
+  7: Economics
+
+
+Liam Windward  (408) 7 classes
+  1: Latin 4
+  2: Physics
+  3: Speech
+  4: Spanish 4
+  5: French 4
+  6: Economics
+  7: Statistics
+
+
+Santiago Kicklighter  (409) 6 classes
+  1: Health
+  2: Physics
+  3: Speech
+  4: Phys Ed
+  6: Statistics
+  7: Economics
+
+
+Autumn Marblemaw  (410) 7 classes
+  1: Statistics
+  2: Fine Art
+  3: Economics
+  4: Computer
+  5: Physics
+  6: Speech
+  7: Auto
+
+
+Serenity Lightfoot  (411) 6 classes
+  1: Carpentry
+  2: Statistics
+  3: Physics
+  4: Agriculture
+  6: Economics
+  7: Speech
+
+
+Elena Singh  (412) 7 classes
+  1: Spanish 4
+  2: Speech
+  3: Statistics
+  4: French 4
+  5: Latin 4
+  6: Economics
+  7: Physics
+
+
+Leo Daughtler  (413) 6 classes
+  2: Economics
+  3: Health
+  4: Physics
+  5: Phys Ed
+  6: Speech
+  7: Statistics
+
+
+Daniel Jenkins  (414) 7 classes
+  1: Statistics
+  2: Computer
+  3: Speech
+  4: Fine Art
+  5: Physics
+  6: Auto
+  7: Economics
+
+
+Sebastian Caddel  (415) 6 classes
+  1: Agriculture
+  2: Physics
+  3: Speech
+  4: Carpentry
+  6: Economics
+  7: Statistics
+
+
+Natalia Gorestriker  (416) 7 classes
+  1: Latin 4
+  2: Physics
+  3: Speech
+  4: Spanish 4
+  5: French 4
+  6: Statistics
+  7: Economics
+
+
+Bennett Laurier  (417) 6 classes
+  1: Statistics
+  2: Phys Ed
+  3: Economics
+  4: Health
+  5: Physics
+  6: Speech
+
+
+Isabella Madison  (418) 7 classes
+  1: Computer
+  2: Statistics
+  3: Physics
+  4: Fine Art
+  5: Auto
+  6: Economics
+  7: Speech
+
+
+Kinsley Driscoll  (419) 6 classes
+  1: Agriculture
+  2: Speech
+  3: Statistics
+  4: Carpentry
+  6: Economics
+  7: Physics
+
+
+Maya Bardot  (420) 7 classes
+  1: Spanish 4
+  2: Economics
+  4: Physics
+  4: French 4
+  5: Latin 4
+  6: Speech
+  7: Statistics
+  1 conflicts
+
+
+Sophie Marley  (421) 6 classes
+  1: Statistics
+  2: Health
+  3: Speech
+  4: Phys Ed
+  5: Physics
+  7: Economics
+
+
+Caleb Lennon  (422) 7 classes
+  1: Computer
+  2: Physics
+  3: Speech
+  4: Fine Art
+  5: Auto
+  6: Economics
+  7: Statistics
+
+
+Ava Remington  (423) 6 classes
+  1: Agriculture
+  2: Physics
+  3: Speech
+  4: Carpentry
+  6: Statistics
+  7: Economics
+
+
+Josephine Yarrow  (424) 7 classes
+  1: Statistics
+  1: Latin 4
+  3: Economics
+  4: Spanish 4
+  5: Physics
+  5: French 4
+  6: Speech
+  2 conflicts
+
+
+Evelyn Madison  (425) 6 classes
+  1: Phys Ed
+  2: Statistics
+  3: Physics
+  4: Health
+  6: Economics
+  7: Speech
+
+
+Lucas Curran  (426) 7 classes
+  1: Computer
+  2: Speech
+  3: Statistics
+  4: Fine Art
+  4: Auto
+  6: Economics
+  7: Physics
+  1 conflicts
+
+
+Eli West  (427) 6 classes
+  2: Economics
+  3: Carpentry
+  4: Physics
+  5: Agriculture
+  6: Speech
+  7: Statistics
+
+
+Adeline Thatcher  (428) 7 classes
+  1: Statistics
+  1: Spanish 4
+  3: Speech
+  4: French 4
+  5: Physics
+  5: Latin 4
+  7: Economics
+  2 conflicts
+
+
+Cameron Dawson  (429) 6 classes
+  1: Health
+  2: Physics
+  3: Speech
+  4: Phys Ed
+  6: Economics
+  7: Statistics
+
+
+Grayson Ashbluff  (430) 7 classes
+  1: Fine Art
+  2: Physics
+  3: Speech
+  4: Computer
+  5: Auto
+  6: Statistics
+  7: Economics
+
+
+Harper Bozzelli  (431) 6 classes
+  1: Statistics
+  2: Carpentry
+  3: Economics
+  4: Agriculture
+  5: Physics
+  6: Speech
+
+
+Jackson Kicklighter  (432) 7 classes
+  1: Latin 4
+  2: Statistics
+  3: Physics
+  4: Spanish 4
+  5: French 4
+  6: Economics
+  7: Speech
+
+
+Micah West  (433) 6 classes
+  1: Health
+  2: Speech
+  3: Statistics
+  4: Phys Ed
+  6: Economics
+  7: Physics
+
+
+Claire Driscoll  (434) 7 classes
+  1: Auto
+  2: Economics
+  3: Fine Art
+  4: Physics
+  5: Computer
+  6: Speech
+  7: Statistics
+
+
+Charlotte Whitlock  (435) 6 classes
+  1: Statistics
+  2: Agriculture
+  3: Speech
+  4: Carpentry
+  5: Physics
+  7: Economics
+
+
+Gabriella Beam  (436) 7 classes
+  1: Spanish 4
+  2: Physics
+  3: Speech
+  4: French 4
+  5: Latin 4
+  6: Economics
+  7: Statistics
+
+
+Leonardo Katz  (437) 6 classes
+  1: Health
+  2: Physics
+  3: Speech
+  4: Phys Ed
+  6: Statistics
+  7: Economics
+
+
+Mia Moses  (438) 7 classes
+  1: Statistics
+  2: Fine Art
+  3: Economics
+  4: Computer
+  5: Physics
+  6: Speech
+  7: Auto
+
+
+Emery Dagon  (439) 6 classes
+  1: Carpentry
+  2: Statistics
+  3: Physics
+  4: Agriculture
+  6: Economics
+  7: Speech
+
+
+Matthew Madison  (440) 7 classes
+  1: Latin 4
+  2: Speech
+  3: Statistics
+  4: Spanish 4
+  5: French 4
+  6: Economics
+  7: Physics
+
+
+Skylar Finch  (441) 6 classes
+  2: Economics
+  3: Health
+  4: Physics
+  5: Phys Ed
+  6: Speech
+  7: Statistics
+
+
+Scarlett Cassidy  (442) 7 classes
+  1: Statistics
+  2: Computer
+  3: Speech
+  4: Fine Art
+  5: Physics
+  6: Auto
+  7: Economics
+
+
+Delilah Vespertine  (443) 6 classes
+  1: Agriculture
+  2: Physics
+  3: Speech
+  4: Carpentry
+  6: Economics
+  7: Statistics
+
+
+Aiden Gorestriker  (444) 7 classes
+  1: Spanish 4
+  2: Physics
+  3: Speech
+  4: French 4
+  5: Latin 4
+  6: Statistics
+  7: Economics
+
+
+Caleb Gray  (445) 6 classes
+  1: Statistics
+  2: Phys Ed
+  3: Economics
+  4: Health
+  5: Physics
+  6: Speech
+
+
+Jackson Laurier  (446) 7 classes
+  1: Computer
+  2: Statistics
+  3: Physics
+  4: Fine Art
+  5: Auto
+  6: Economics
+  7: Speech
+
+
+Kinsley Windward  (447) 6 classes
+  1: Agriculture
+  2: Speech
+  3: Statistics
+  4: Carpentry
+  6: Economics
+  7: Physics
+
+
+Benjamin Driscoll  (448) 7 classes
+  1: Latin 4
+  2: Economics
+  4: Physics
+  4: Spanish 4
+  5: French 4
+  6: Speech
+  7: Statistics
+  1 conflicts
+
+
+Santiago Ford  (449) 6 classes
+  1: Statistics
+  2: Health
+  3: Speech
+  4: Phys Ed
+  5: Physics
+  7: Economics
+
+
+Kennedy Ashbluff  (450) 7 classes
+  1: Computer
+  2: Physics
+  3: Speech
+  4: Fine Art
+  5: Auto
+  6: Economics
+  7: Statistics
+
+
+Elijah Wilson  (451) 6 classes
+  1: Agriculture
+  2: Physics
+  3: Speech
+  4: Carpentry
+  6: Statistics
+  7: Economics
+
+
+Caleb Undergrove  (452) 7 classes
+  1: Statistics
+  1: Spanish 4
+  3: Economics
+  4: French 4
+  5: Physics
+  5: Latin 4
+  6: Speech
+  2 conflicts
+
+
+Jackson Truthbelly  (453) 6 classes
+  1: Phys Ed
+  2: Statistics
+  3: Physics
+  4: Health
+  6: Economics
+  7: Speech
+
+
+Leonardo Sagespark  (454) 7 classes
+  1: Computer
+  2: Speech
+  3: Statistics
+  4: Fine Art
+  4: Auto
+  6: Economics
+  7: Physics
+  1 conflicts
+
+
+Avery Dustfinger  (455) 6 classes
+  2: Economics
+  3: Carpentry
+  4: Physics
+  5: Agriculture
+  6: Speech
+  7: Statistics
+
+
+Ian Adler  (456) 7 classes
+  1: Statistics
+  1: Latin 4
+  3: Speech
+  4: Spanish 4
+  5: Physics
+  5: French 4
+  7: Economics
+  2 conflicts
+
+
+Lincoln Elrod  (457) 6 classes
+  1: Health
+  2: Physics
+  3: Speech
+  4: Phys Ed
+  6: Economics
+  7: Statistics
+
+
+Charles Truthbelly  (458) 7 classes
+  1: Fine Art
+  2: Physics
+  3: Speech
+  4: Computer
+  5: Auto
+  6: Statistics
+  7: Economics
+
+
+Christopher Cyprus  (459) 6 classes
+  1: Statistics
+  2: Carpentry
+  3: Economics
+  4: Agriculture
+  5: Physics
+  6: Speech
+
+
+Ella Gannon  (460) 7 classes
+  1: Spanish 4
+  2: Statistics
+  3: Physics
+  4: French 4
+  5: Latin 4
+  6: Economics
+  7: Speech
+
+
+Madelyn Remington  (461) 6 classes
+  1: Health
+  2: Speech
+  3: Statistics
+  4: Phys Ed
+  6: Economics
+  7: Physics
+
+
+Wesley Cyprus  (462) 7 classes
+  1: Auto
+  2: Economics
+  3: Fine Art
+  4: Physics
+  5: Computer
+  6: Speech
+  7: Statistics
+
+
+Micah Beam  (463) 6 classes
+  1: Statistics
+  2: Agriculture
+  3: Speech
+  4: Carpentry
+  5: Physics
+  7: Economics
+
+
+John Langley  (464) 7 classes
+  1: Latin 4
+  2: Physics
+  3: Speech
+  4: Spanish 4
+  5: French 4
+  6: Economics
+  7: Statistics
+
+
+Jackson Ashley  (465) 6 classes
+  1: Health
+  2: Physics
+  3: Speech
+  4: Phys Ed
+  6: Statistics
+  7: Economics
+
+
+Logan Raven  (466) 7 classes
+  1: Statistics
+  2: Fine Art
+  3: Economics
+  4: Computer
+  5: Physics
+  6: Speech
+  7: Auto
+
+
+Aaron Singh  (467) 6 classes
+  1: Carpentry
+  2: Statistics
+  3: Physics
+  4: Agriculture
+  6: Economics
+  7: Speech
+
+
+Lucas Hope  (468) 7 classes
+  1: Spanish 4
+  2: Speech
+  3: Statistics
+  4: French 4
+  5: Latin 4
+  6: Economics
+  7: Physics
+
+
+Maria Cyprus  (469) 6 classes
+  2: Economics
+  3: Health
+  4: Physics
+  5: Phys Ed
+  6: Speech
+  7: Statistics
+
+
+Eleanor Singh  (470) 7 classes
+  1: Statistics
+  2: Computer
+  3: Speech
+  4: Fine Art
+  5: Physics
+  6: Auto
+  7: Economics
+
+
+Joseph Mintz  (471) 6 classes
+  1: Agriculture
+  2: Physics
+  3: Speech
+  4: Carpentry
+  6: Economics
+  7: Statistics
+
+
+Riley Carter  (472) 7 classes
+  1: Latin 4
+  2: Physics
+  3: Speech
+  4: Spanish 4
+  5: French 4
+  6: Statistics
+  7: Economics
+
+
+Aaliyah Adams  (473) 6 classes
+  1: Statistics
+  2: Phys Ed
+  3: Economics
+  4: Health
+  5: Physics
+  6: Speech
+
+
+Adrian Cromwell  (474) 7 classes
+  1: Computer
+  2: Statistics
+  3: Physics
+  4: Fine Art
+  5: Auto
+  6: Economics
+  7: Speech
+
+
+Delilah Fellowes  (475) 6 classes
+  1: Agriculture
+  2: Speech
+  3: Statistics
+  4: Carpentry
+  6: Economics
+  7: Physics
+
+
+Levi West  (476) 7 classes
+  1: Spanish 4
+  2: Economics
+  4: Physics
+  4: French 4
+  5: Latin 4
+  6: Speech
+  7: Statistics
+  1 conflicts
+
+
+Aubrey Kicklighter  (477) 6 classes
+  1: Statistics
+  2: Health
+  3: Speech
+  4: Phys Ed
+  5: Physics
+  7: Economics
+
+
+Benjamin Snakeleaf  (478) 7 classes
+  1: Computer
+  2: Physics
+  3: Speech
+  4: Fine Art
+  5: Auto
+  6: Economics
+  7: Statistics
+
+
+Madison Marblemaw  (479) 6 classes
+  1: Agriculture
+  2: Physics
+  3: Speech
+  4: Carpentry
+  6: Statistics
+  7: Economics
+
+
+Gianna Caddel  (480) 7 classes
+  1: Statistics
+  1: Latin 4
+  3: Economics
+  4: Spanish 4
+  5: Physics
+  5: French 4
+  6: Speech
+  2 conflicts
+
+
+Naomi Adams  (481) 6 classes
+  1: Phys Ed
+  2: Statistics
+  3: Physics
+  4: Health
+  6: Economics
+  7: Speech
+
+
+Sophie October  (482) 7 classes
+  1: Computer
+  2: Speech
+  3: Statistics
+  4: Fine Art
+  4: Auto
+  6: Economics
+  7: Physics
+  1 conflicts
+
+
+Raelynn Keller  (483) 6 classes
+  2: Economics
+  3: Carpentry
+  4: Physics
+  5: Agriculture
+  6: Speech
+  7: Statistics
+
+
+Christopher Humblecut  (484) 7 classes
+  1: Statistics
+  1: Spanish 4
+  3: Speech
+  4: French 4
+  5: Physics
+  5: Latin 4
+  7: Economics
+  2 conflicts
+
+
+Paisley Hope  (485) 6 classes
+  1: Health
+  2: Physics
+  3: Speech
+  4: Phys Ed
+  6: Economics
+  7: Statistics
+
+
+Ella Fellowes  (486) 7 classes
+  1: Fine Art
+  2: Physics
+  3: Speech
+  4: Computer
+  5: Auto
+  6: Statistics
+  7: Economics
+
+
+Cameron Beckett  (487) 6 classes
+  1: Statistics
+  2: Carpentry
+  3: Economics
+  4: Agriculture
+  5: Physics
+  6: Speech
+
+
+James Cassidy  (488) 7 classes
+  1: Latin 4
+  2: Statistics
+  3: Physics
+  4: Spanish 4
+  5: French 4
+  6: Economics
+  7: Speech
+
+
+Ayla James  (489) 6 classes
+  1: Health
+  2: Speech
+  3: Statistics
+  4: Phys Ed
+  6: Economics
+  7: Physics
+
+
+Grayson Gannon  (490) 7 classes
+  1: Auto
+  2: Economics
+  3: Fine Art
+  4: Physics
+  5: Computer
+  6: Speech
+  7: Statistics
+
+
+Ryan Zimmerman  (491) 6 classes
+  1: Statistics
+  2: Agriculture
+  3: Speech
+  4: Carpentry
+  5: Physics
+  7: Economics
+
+
+Elizabeth Windward  (492) 7 classes
+  1: Spanish 4
+  2: Physics
+  3: Speech
+  4: French 4
+  5: Latin 4
+  6: Economics
+  7: Statistics
+
+
+Kennedy Hansley  (493) 6 classes
+  1: Health
+  2: Physics
+  3: Speech
+  4: Phys Ed
+  6: Statistics
+  7: Economics
+
+
+Nevaeh Cyprus  (494) 7 classes
+  1: Statistics
+  2: Fine Art
+  3: Economics
+  4: Computer
+  5: Physics
+  6: Speech
+  7: Auto
+
+
+Athena Bozzelli  (495) 6 classes
+  1: Carpentry
+  2: Statistics
+  3: Physics
+  4: Agriculture
+  6: Economics
+  7: Speech
+
+
+Gianna Solace  (496) 7 classes
+  1: Latin 4
+  2: Speech
+  3: Statistics
+  4: Spanish 4
+  5: French 4
+  6: Economics
+  7: Physics
+
+
+Brooklyn Ellis  (497) 6 classes
+  2: Economics
+  3: Health
+  4: Physics
+  5: Phys Ed
+  6: Speech
+  7: Statistics
+
+
+Kennedy Yarrow  (498) 7 classes
+  1: Statistics
+  2: Computer
+  3: Speech
+  4: Fine Art
+  5: Physics
+  6: Auto
+  7: Economics
+
+
+Ryan Remington  (499) 6 classes
+  1: Agriculture
+  2: Physics
+  3: Speech
+  4: Carpentry
+  6: Economics
+  7: Statistics
+
+
+Jack Madden  (500) 7 classes
+  1: Spanish 4
+  2: Physics
+  3: Speech
+  4: French 4
+  5: Latin 4
+  6: Statistics
+  7: Economics
+
+
+101 students with conflicts
