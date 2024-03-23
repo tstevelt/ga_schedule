@@ -19,35 +19,43 @@
 
 #include	"ga_schedule.h"
 
-void init ()
+int crossover ( ALLELE parent1[], ALLELE parent2[],
+			  	ALLELE child1[], ALLELE child2[] )
 {
-	if (( CurrPop = calloc ( PopCount, sizeof(INDIVIDUAL) )) == NULL )
+	int		cross_site;
+	int		xi;
+
+	if ( flip ( ProbCross ) )
 	{
-		printf ( "init: calloc CurrPop failed, %s\n", strerror(errno) );
-		exit ( 1 );
+		cross_site = (int) random_range ( 0, ClassCount - 2 );
+	}
+	else
+	{
+		cross_site = ClassCount;
 	}
 
-	if (( NextPop = calloc ( PopCount, sizeof(INDIVIDUAL) )) == NULL )
-	{
-		printf ( "init: calloc NextPop failed, %s\n", strerror(errno) );
-		exit ( 1 );
-	}
-
-	LoadClasses ();
-
-	LoadRequests ();
-
-	BestFitness = -1;
-
-	for ( int p = 0; p < PopCount; p++ )
-	{
-		for ( int c = 0; c < ClassCount; c++ )
+	/*---------------------------------------------------------------------------
+		typedef struct
 		{
-			CurrPop[p].Chromosome[c].Period  = random_range ( 1, MAXPERIODS );
-		}
+			int	Period;
+		} ALLELE;
 
-		CurrPop[p].Fitness = obj_func ( CurrPop[p].Chromosome, &CurrPop[p].StudentConflicts, &CurrPop[p].TeacherConflicts );
+		From start to site-1, children are the same as their parents
+		From site to end, children get the other parent's period
+	---------------------------------------------------------------------------*/
+
+	for ( xi = 0; xi < cross_site; xi++ )
+	{
+		child1[xi].Period = parent1[xi].Period;
+		child2[xi].Period = parent2[xi].Period;
 	}
 
-	report ( 0, Verbose ? REPORT_ALL : REPORT_MINMAX );
+	for ( ; xi < ClassCount; xi++ )
+	{
+		child1[xi].Period = parent2[xi].Period;
+		child2[xi].Period = parent1[xi].Period;
+	}
+
+	return ( cross_site );
+
 }
