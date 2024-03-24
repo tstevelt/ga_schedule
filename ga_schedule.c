@@ -80,6 +80,10 @@ int main ( int argc, char *argv[] )
 			}
 			printf ( "average per generation %.4f\n", Average );
 			break;
+
+		case MODE_ASSIGN:
+			AssignStudents ();
+			break;
 	}
 
 	return ( 0 );

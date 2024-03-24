@@ -25,6 +25,7 @@ static void Usage ()
 	printf ( "  1 = make requests from students and courses\n" );
 	printf ( "  2 = make classes from requests\n" );
 	printf ( "  3 = make schedule using GA\n" );
+	printf ( "  4 = students pick classes\n" );
 	printf ( "Options\n" );
 	printf ( "  -pop #     - mode 3, population count (default %d)\n", PopCount );
 	printf ( "  -probX #.# - mode 3, probability of crossover (default %.4f)\n", ProbCross );
@@ -60,6 +61,10 @@ void getargs ( int argc, char *argv[] )
 		else if ( argv[xa][0] == '3' )
 		{
 			RunMode = MODE_SCHEDULE;
+		}
+		else if ( argv[xa][0] == '4' )
+		{
+			RunMode = MODE_ASSIGN;
 		}
 		else if ( strcmp ( argv[xa], "-v" ) == 0 )
 		{

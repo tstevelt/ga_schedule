@@ -15,6 +15,7 @@ FILES = \
 	$(LIB)(MakeSchedule.o)	\
 	$(LIB)(PrintSchedule.o)	\
 	$(LIB)(PrintStudents.o)	\
+	$(LIB)(AssignStudents.o)	\
 	$(LIB)(init.o)			\
 	$(LIB)(report.o)		\
 	$(LIB)(obj_func.o)		\

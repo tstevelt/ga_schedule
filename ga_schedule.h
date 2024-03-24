@@ -33,6 +33,7 @@
 #define		MODE_REQUESTS	11
 #define		MODE_CLASSES	12
 #define		MODE_SCHEDULE	13
+#define		MODE_ASSIGN		14
 TYPE	int		RunMode;
 TYPE	int		Verbose;
 
@@ -155,6 +156,9 @@ void MakeRequests ( void );
 
 /* MakeSchedule.c */
 void MakeSchedule ( void );
+
+/* AssignStudents.c */
+void AssignStudents ( void );
 
 /* PrintSchedule.c */
 void PrintSchedule ( void );
