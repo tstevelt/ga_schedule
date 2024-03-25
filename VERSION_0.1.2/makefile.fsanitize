@@ -1,0 +1,43 @@
+PROG = ga_schedule
+LIB = ga_schedule.a
+XLIB = /usr/local/lib64/shslib.a
+DEF = /usr/local/include
+PRG = /usr/local/bin/$(PROG)
+CFLAGS = -fsanitize=address -g -Wall -Wformat-truncation=0 -I../../include -I/usr/local/include
+
+FILES = \
+	$(LIB)(ga_schedule.o)	\
+	$(LIB)(LoadCourses.o)	\
+	$(LIB)(LoadClasses.o)	\
+	$(LIB)(LoadRequests.o)	\
+	$(LIB)(MakeClasses.o)	\
+	$(LIB)(MakeRequests.o)	\
+	$(LIB)(MakeSchedule.o)	\
+	$(LIB)(PrintSchedule.o)	\
+	$(LIB)(init.o)			\
+	$(LIB)(report.o)		\
+	$(LIB)(obj_func.o)		\
+	$(LIB)(select_shuffle.o)	\
+	$(LIB)(generation.o)	\
+	$(LIB)(crossover.o)		\
+	$(LIB)(getargs.o)
+
+.SILENT:
+
+$(PRG): $(LIB) $(XLIB)
+	echo "using gcc to load $(PRG)"
+	gcc -fsanitize=address -o $(PRG) $(LIB) $(XLIB)
+
+$(LIB): $(FILES)
+
+$(FILES): ga_schedule.h $(DEF)/shslib.h
+
+clean:
+	rm -f $(LIB)
+
+all:
+	make clean
+	make
+
+.PRECIOUS: $(LIB)
+

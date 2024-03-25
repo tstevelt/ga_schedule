@@ -25,9 +25,9 @@ void PrintSchedule ()
 	COURSE_RECORD	*ptrCourse;
 	FILE			*ofp;
 
-	if (( ofp = fopen ( "schedule_classes.TXT", "w" )) == NULL )
+	if (( ofp = fopen ( "classes_summary.TXT", "w" )) == NULL )
 	{
-		printf ( "Cannot create schedule_classes.TXT\n" );
+		printf ( "Cannot create classes_summary.TXT\n" );
 		ofp = stdout;
 	}
 

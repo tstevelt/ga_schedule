@@ -30,7 +30,7 @@ static void Usage ()
 	printf ( "  -probX #.# - mode 3, probability of crossover (default %.4f)\n", ProbCross );
 	printf ( "  -probM #.# - mode 3, probability of mutation (default %.4f)\n", ProbMutate );
 	printf ( "  -maxgen #  - mode 3, maximum generations (default %d)\n", MaxGenerations );
-	printf ( "  -conflicts # # - mode 3, stop if student conflicts less than #1 and teacher conflicts less than #2\n" );
+	printf ( "  -conflicts # - mode 3, stop if student conflicts less than 1\n" );
 	printf ( "  -v         - verbose\n" );
 	exit ( 1 );
 
@@ -45,7 +45,6 @@ void getargs ( int argc, char *argv[] )
 	ProbMutate = 0.05;
 	MaxGenerations =  500;
 	StudentStop = -1;
-	TeacherStop = -1;
 
 	for ( int xa = 1; xa < argc; xa++ )
 	{
@@ -85,12 +84,10 @@ void getargs ( int argc, char *argv[] )
 			xa++;
 			MaxGenerations = atoi ( argv[xa] );
 		}
-		else if ( xa + 2 < argc && strcmp ( argv[xa], "-conflicts" ) == 0 )
+		else if ( xa + 1 < argc && strcmp ( argv[xa], "-conflicts" ) == 0 )
 		{
 			xa++;
 			StudentStop = atoi ( argv[xa] );
-			xa++;
-			TeacherStop = atoi ( argv[xa] );
 		}
 		else
 		{

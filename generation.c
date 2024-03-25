@@ -72,7 +72,7 @@ void generation ( int Generation )
 			NextPop[xi].Chromosome[xd].Period = SaveMe.Period;
 		}
 
-		NextPop[xi].Fitness = obj_func ( NextPop[xi].Chromosome, &NextPop[xi].StudentConflicts, &NextPop[xi].TeacherConflicts );
-		NextPop[xi+1].Fitness = obj_func ( NextPop[xi+1].Chromosome, &NextPop[xi+1].StudentConflicts, &NextPop[xi+1].TeacherConflicts );
+		NextPop[xi].Fitness = obj_func ( NextPop[xi].Chromosome );
+		NextPop[xi+1].Fitness = obj_func ( NextPop[xi+1].Chromosome );
 	}
 }

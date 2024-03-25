@@ -22,9 +22,6 @@
 void MakeRequests ()
 {
 	FILE	*ifp, *ofp;
-	char	buffer[1024];
-	char	*tokens[10];
-	int		tokcnt;
 	int		lineno;
 	int		xe = 0;
 	int		xo, xs, xl;
@@ -64,7 +61,7 @@ void MakeRequests ()
 	{
 		lineno++;
 
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 3 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 3 )
 		{
 			continue;
 		}

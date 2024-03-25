@@ -26,12 +26,13 @@ static void Usage ()
 	printf ( "  2 = make classes from requests\n" );
 	printf ( "  3 = make schedule using GA\n" );
 	printf ( "  4 = students pick classes\n" );
+	printf ( "  5 = print schedules\n" );
 	printf ( "Options\n" );
 	printf ( "  -pop #     - mode 3, population count (default %d)\n", PopCount );
 	printf ( "  -probX #.# - mode 3, probability of crossover (default %.4f)\n", ProbCross );
 	printf ( "  -probM #.# - mode 3, probability of mutation (default %.4f)\n", ProbMutate );
 	printf ( "  -maxgen #  - mode 3, maximum generations (default %d)\n", MaxGenerations );
-	printf ( "  -conflicts # # - mode 3, stop if student conflicts less than #1 and teacher conflicts less than #2\n" );
+	printf ( "  -conflicts # - mode 3, stop if teacher conflicts less than #\n" );
 	printf ( "  -v         - verbose\n" );
 	exit ( 1 );
 
@@ -45,7 +46,6 @@ void getargs ( int argc, char *argv[] )
 	ProbCross = 0.995;
 	ProbMutate = 0.05;
 	MaxGenerations =  500;
-	StudentStop = -1;
 	TeacherStop = -1;
 
 	for ( int xa = 1; xa < argc; xa++ )
@@ -65,6 +65,10 @@ void getargs ( int argc, char *argv[] )
 		else if ( argv[xa][0] == '4' )
 		{
 			RunMode = MODE_ASSIGN;
+		}
+		else if ( argv[xa][0] == '5' )
+		{
+			RunMode = MODE_PRINT;
 		}
 		else if ( strcmp ( argv[xa], "-v" ) == 0 )
 		{
@@ -90,10 +94,8 @@ void getargs ( int argc, char *argv[] )
 			xa++;
 			MaxGenerations = atoi ( argv[xa] );
 		}
-		else if ( xa + 2 < argc && strcmp ( argv[xa], "-conflicts" ) == 0 )
+		else if ( xa + 1 < argc && strcmp ( argv[xa], "-conflicts" ) == 0 )
 		{
-			xa++;
-			StudentStop = atoi ( argv[xa] );
 			xa++;
 			TeacherStop = atoi ( argv[xa] );
 		}

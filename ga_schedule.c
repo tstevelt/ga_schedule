@@ -4,9 +4,12 @@
 	Date    : Mar 2024
 	Synopsis: Use GA to create high school schedule
 
-	Who		Date		Modification
+	Who		Date		Version		Modification
 	---------------------------------------------------------------------
-	tms		03/22/2024	Added number of teachers to courses.CSV, etc.
+	tms		03/16/2024	0.1.1		Started program
+	tms		03/22/2024	0.1.2		Added teacher conflicts
+	tms		03/22/2024	0.1.3		Remove student conflcts
+	tms		03/25/2024	     	 	Added final reports (option 5)
 
 ----------------------------------------------------------------------------*/
 /*---------------------------------------------------------------------------
@@ -55,7 +58,6 @@ int main ( int argc, char *argv[] )
 			time ( &StartTime );
 			MakeSchedule ();
 			PrintSchedule ();
-			PrintStudents ();
 			time ( &EndTime );
 			Elapsed = EndTime - StartTime;
 			Average = (double) Elapsed / (double) GenerationCount;
@@ -83,6 +85,10 @@ int main ( int argc, char *argv[] )
 
 		case MODE_ASSIGN:
 			AssignStudents ();
+			break;
+
+		case MODE_PRINT:
+			PrintRosters ();
 			break;
 	}
 

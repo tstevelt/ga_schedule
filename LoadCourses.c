@@ -35,9 +35,6 @@ int cmpcourse ( COURSE_RECORD *a, COURSE_RECORD *b )
 void LoadCourses ()
 {
 	FILE	*ifp;
-	char	buffer[1024];
-	char	*tokens[10];
-	int		tokcnt;
 	int		lineno;
 //	int		xe = 0;
 //	int		xo;
@@ -65,7 +62,7 @@ ID,LEVEL,REQUIRED,NAME, TEACHERS
 	{
 		lineno++;
 
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 5 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 5 )
 		{
 			continue;
 		}

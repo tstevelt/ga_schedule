@@ -64,9 +64,6 @@ static int GetRingIndex ( int CourseIndex )
 void LoadRequests ()
 {
 	FILE	*ifp;
-	char	buffer[1024];
-	char	*tokens[10];
-	int		tokcnt;
 //	int		xe = 0;
 	int		lineno;
 	int		xo;
@@ -74,7 +71,7 @@ void LoadRequests ()
 
 	if ( ClassCount == 0 )
 	{
-		LoadClasses ();
+		LoadClasses ( 1 );
 	}
 
 	/*----------------------------------------------------------
@@ -107,7 +104,7 @@ void LoadRequests ()
 		{
 			continue;
 		}
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 3 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 3 )
 		{	
 			continue;
 		}
@@ -148,7 +145,7 @@ void LoadRequests ()
 		{
 			continue;
 		}
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 8 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 8 )
 		{
 			continue;
 		}

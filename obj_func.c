@@ -19,7 +19,7 @@
 
 #include	"ga_schedule.h"
 
-static int DebugObjFunc = 0;
+// static int DebugObjFunc = 0;
 
 typedef struct
 {
@@ -53,14 +53,12 @@ static int cmprec ( RECORD *a, RECORD *b )
 	return ( 0 );
 }
 
-int obj_func ( ALLELE Chromosome [], int *StudentConflicts, int *TeacherConflicts )
+int obj_func ( ALLELE Chromosome [] )
 {
 static	int		firstpass = 1;
-	int		Students = 0;
 	int		Teachers = 0;
 	int		Total = 0;
-	int		PeriodArray[MAXPERIODS];
-	int		xc, xp, PeriodCount;
+	int		xc, xp;
 	RECORD	*ptr, key;
 
 	if ( firstpass == 1 )
@@ -90,45 +88,7 @@ static	int		firstpass = 1;
 			}
 		}
 	}
-#ifdef CHECK_STUDENTS
-#define CHECK_STUDENTS
-	/*------------------------------------------------------------------------------
-		tally conflicts for each student, add to StudentConflicts
-	------------------------------------------------------------------------------*/
-	for ( int RequestIndex = 0; RequestIndex < RequestCount; RequestIndex++ )
-	{
-		if ( DebugObjFunc )
-		{
-			printf ( "---\n" );
-		}
-		PeriodCount = 0;
-		memset ( PeriodArray, '\0', sizeof(PeriodArray) );
 
-		for ( int RequestClassIndex = 0; RequestClassIndex < RequestArray[RequestIndex].ClassCount; RequestClassIndex++ )
-		{
-			for ( int ChromoIndex = 0; ChromoIndex < ClassCount; ChromoIndex++ )
-			{
-				if ( ChromoIndex == RequestArray[RequestIndex].ClassIndex[RequestClassIndex] )
-				{
-					for ( xp = 0; xp < PeriodCount; xp++ )
-					{
-						if ( PeriodArray[xp] == Chromosome[ChromoIndex].Period )
-						{
-							break;
-						}
-					}
-					if ( xp >= PeriodCount )
-					{
-						 PeriodArray[PeriodCount] = Chromosome[ChromoIndex].Period;
-						 PeriodCount++;
-					}
-				}
-			}
-		}
-		
-		Students += (RequestArray[RequestIndex].ClassCount - PeriodCount);
-	}
-#endif
 	/*---------------------------------------------------------------------------
 		tally conflicts for number of teachers available for each course.
 	---------------------------------------------------------------------------*/
@@ -155,10 +115,7 @@ static	int		firstpass = 1;
 		}
 	}
 
-	*StudentConflicts = Students;
-	*TeacherConflicts = Teachers;
-	Total = Students + Teachers;
-	// printf ( "Students %d + Teachers %d = %d\n", Students, Teachers, Total );
+	Total = Teachers;
 
 	return ( Total );
 }

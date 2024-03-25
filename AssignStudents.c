@@ -134,9 +134,7 @@ static	int		MyRequestCount;
 void AssignStudents ()
 {
 	FILE	*ifp, *ofp;
-	char	xbuffer[MAXCLASS];
-	char	*tokens[10];
-	int		xt, tokcnt;
+	int		xt;
 	int		letters[MAXPERIODS];
 	int		StudentID;
 	int		Successes = 0;
@@ -156,35 +154,35 @@ void AssignStudents ()
 	generatePermutations( letters, 0, MAXPERIODS - 1);
 	shuffle ();
 
-	LoadClasses ();
+	LoadClasses ( 1 );
 
 	if (( ifp = fopen ( "schedule_chromosome.TXT", "r" )) == NULL )
 	{
 		printf ( "Cannot open schedule_chromosome.TXT for input\n" );
 		exit ( 1 );
 	}
-	fgets ( xbuffer, sizeof(xbuffer), ifp );
-	TrimRight ( xbuffer );
+	fgets ( buffer, sizeof(buffer), ifp );
+	TrimRight ( buffer );
 	fclose ( ifp );
 
 	if ( Verbose )
 	{
-		printf ( "%s\n", xbuffer );
+		printf ( "%s\n", buffer );
 	}
 
-	if ( ClassCount !=  strlen(xbuffer) )
+	if ( ClassCount !=  strlen(buffer) )
 	{
-		printf ( "Class count %d NOT EQUAL chromo length %ld\n", ClassCount, strlen(xbuffer) );
+		printf ( "Class count %d NOT EQUAL chromo length %ld\n", ClassCount, strlen(buffer) );
 		exit ( 1 );
 	}
 	else
 	{
-		printf ( "Class count %d, chromo length %ld\n", ClassCount, strlen(xbuffer) );
+		printf ( "Class count %d, chromo length %ld\n", ClassCount, strlen(buffer) );
 	}
 
 /*---------------------------------------------------------------------------
 Breakpoint 1, AssignStudents () at AssignStudents.c:46
-46		printf ( "Class count %d, chromo length %ld\n", ClassCount, strlen(xbuffer) );
+46		printf ( "Class count %d, chromo length %ld\n", ClassCount, strlen(buffer) );
 Missing separate debuginfos, use: yum debuginfo-install glibc-2.28-236.el8_9.12.x86_64
 (gdb) p ClassArray[0]
 $1 = {ClassID = 1, CourseIndex = 0, ClassCode = "101A\000\000\000\000\000", Period = 0}
@@ -206,7 +204,7 @@ A debugging session is active.
 
 		MyArray[MyCount].CourseID = CourseArray[ClassArray[xc].CourseIndex].CourseID;
 		sprintf ( MyArray[MyCount].ClassCode, "%s", ClassArray[xc].ClassCode );
-		MyArray[MyCount].Period   = xbuffer[xc] - '0';
+		MyArray[MyCount].Period   = buffer[xc] - '0';
 		MyArray[MyCount].Count    = 0;
 		MyCount++;
 	}
@@ -224,9 +222,9 @@ A debugging session is active.
 		exit ( 1 );
 	}
 
-	if (( ofp = fopen ( "schedule_assign.CSV", "w" )) == NULL )
+	if (( ofp = fopen ( "assign.CSV", "w" )) == NULL )
 	{
-		printf ( "Cannot open schedule_assign.CSV for input\n" );
+		printf ( "Cannot open assign.CSV for input\n" );
 		exit ( 1 );
 	}
 
@@ -246,13 +244,13 @@ A debugging session is active.
 	----------------------------------------------------------*/
 	int		MinLength = 0;
 	int		MaxLength = 0;
-	while ( fgets ( xbuffer, sizeof(xbuffer), ifp ) != NULL )
+	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
 	{
-		if ( xbuffer[0] == '#' )
+		if ( buffer[0] == '#' )
 		{
 			continue;
 		}
-		if (( tokcnt = GetTokensD ( xbuffer, ",\n\r", tokens, 10 )) < 3 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 3 )
 		{	
 			continue;
 		}
@@ -280,13 +278,13 @@ A debugging session is active.
 		printf ( "Pass for length %d\n", Length );
 	}
 
-	while ( fgets ( xbuffer, sizeof(xbuffer), ifp ) != NULL )
+	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
 	{
-		if ( xbuffer[0] == '#' )
+		if ( buffer[0] == '#' )
 		{
 			continue;
 		}
-		if (( tokcnt = GetTokensD ( xbuffer, ",\n\r", tokens, 10 )) != Length )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) != Length )
 		{	
 			continue;
 		}
@@ -411,7 +409,7 @@ A debugging session is active.
 			}
 		}
 
-	} // xxxx while ( fgets ( xbuffer, sizeof(xbuffer), ifp ) != NULL )
+	} // xxxx while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
 
 		Length--;
 		rewind ( ifp );

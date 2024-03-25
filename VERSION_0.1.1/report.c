@@ -38,9 +38,9 @@ void report ( int Generation, int mode )
 		}
 
 		/*----------------------------------------------------------
-			added Student and Teacher stopping points
+			added Student stopping point
 		----------------------------------------------------------*/
-		if ( /* Generation > 0 && */ StudentStop > 0 && TeacherStop > 0 && CurrPop[p].StudentConflicts < StudentStop && CurrPop[p].TeacherConflicts < TeacherStop )
+		if ( /* Generation > 0 && */ StudentStop > 0 && CurrPop[p].Fitness < StudentStop )
 		{
 			BestIndex = p;
 			GenerationCount = MaxGenerations;
@@ -69,15 +69,12 @@ void report ( int Generation, int mode )
 			printf ( "Generation %d\n", Generation );
 			for ( int p = 0; p < PopCount; p++ )
 			{
-				if ( mode == REPORT_ALL )
+				printf ( "%4d:", p );
+				for ( int c = 0; c < ClassCount; c++ )
 				{
-					printf ( "%4d:", p );
-					for ( int c = 0; c < ClassCount; c++ )
-					{
-						printf ( " %d", CurrPop[p].Chromosome[c].Period );
-					}
-					printf ( " = %d\n", CurrPop[p].Fitness );
+					printf ( " %d", CurrPop[p].Chromosome[c].Period );
 				}
+				printf ( " = %d\n", CurrPop[p].Fitness );
 			}
 			printf ( "Minimum %d, Maximum %d\n", MinFit, MaxFit );
 			fflush ( stdout );

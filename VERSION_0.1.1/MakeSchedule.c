@@ -32,7 +32,7 @@ void MakeSchedule ()
 			memcpy ( &CurrPop[xp], &NextPop[xp], sizeof(INDIVIDUAL) );
 		}
 
-		report ( GenerationCount, REPORT_MINMAX );
+		report ( GenerationCount,  Verbose ? REPORT_ALL : REPORT_MINMAX );
 	}
 	GenerationCount--;
 }

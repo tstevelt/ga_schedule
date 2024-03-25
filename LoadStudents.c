@@ -19,7 +19,7 @@
 
 #include	"ga_schedule.h"
 
-static int cmpstudent ( STUDENT_RECORD *a, STUDENT_RECORD *b )
+int cmpstudent ( STUDENT_RECORD *a, STUDENT_RECORD *b )
 {
 	if ( a->StudentID < b->StudentID )
 	{
@@ -35,9 +35,6 @@ static int cmpstudent ( STUDENT_RECORD *a, STUDENT_RECORD *b )
 void LoadStudents ()
 {
 	FILE	*ifp;
-	char	buffer[1024];
-	char	*tokens[10];
-	int		tokcnt;
 	int		lineno;
 	int		xo;
 
@@ -56,7 +53,7 @@ void LoadStudents ()
 			{
 				continue;
 			}
-			if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 3 )
+			if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 3 )
 			{	
 				continue;
 			}
@@ -98,7 +95,7 @@ ID,LEVEL,NAME
 		{
 			continue;
 		}
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 3 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 3 )
 		{
 			continue;
 		}

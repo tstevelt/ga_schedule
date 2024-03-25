@@ -48,7 +48,6 @@ typedef struct
 	int		Level;
 	int		Required;
 	char	Name[MAXNAME];
-	int		Teachers;
 	int		Counter;
 	int		RingIndex;
 } COURSE_RECORD;
@@ -100,7 +99,6 @@ TYPE	double	ProbMutate;
 TYPE	int		MaxGenerations;
 TYPE	int		GenerationCount;
 TYPE	int		StudentStop;
-TYPE	int		TeacherStop;
 
 typedef struct
 {
@@ -110,8 +108,6 @@ typedef struct
 typedef struct
 {
 	ALLELE	Chromosome[MAXCLASS];
-	int		TeacherConflicts;
-	int		StudentConflicts;
 	int		Fitness;
 } INDIVIDUAL;
 
@@ -178,7 +174,7 @@ void getargs ( int argc , char *argv []);
 void init ( void );
 
 /* obj_func.c */
-int obj_func ( ALLELE Chromosome [], int *StudentConflicts , int *TeacherConflicts );
+int obj_func ( ALLELE Chromosome [] );
 
 /* report.c */
 void report ( int Generation , int mode );

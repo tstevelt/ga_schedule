@@ -22,9 +22,6 @@
 void MakeClasses ()
 {
 	FILE	*ifp, *ofp;
-	char	buffer[1024];
-	char	*tokens[10];
-	int		tokcnt;
 	int		lineno;
 	int		xe;
 	int		xo;
@@ -64,7 +61,7 @@ void MakeClasses ()
 			continue;
 		}
 
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 8 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 8 )
 		{
 			continue;
 		}

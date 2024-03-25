@@ -46,7 +46,7 @@ void init ()
 			CurrPop[p].Chromosome[c].Period  = random_range ( 1, MAXPERIODS );
 		}
 
-		CurrPop[p].Fitness = obj_func ( CurrPop[p].Chromosome, &CurrPop[p].StudentConflicts, &CurrPop[p].TeacherConflicts );
+		CurrPop[p].Fitness = obj_func ( CurrPop[p].Chromosome );
 	}
 
 	report ( 0, Verbose ? REPORT_ALL : REPORT_MINMAX );

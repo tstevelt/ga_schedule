@@ -34,6 +34,7 @@
 #define		MODE_CLASSES	12
 #define		MODE_SCHEDULE	13
 #define		MODE_ASSIGN		14
+#define		MODE_PRINT		15
 TYPE	int		RunMode;
 TYPE	int		Verbose;
 
@@ -42,6 +43,11 @@ TYPE	int		Verbose;
 #define		MAXCLASS		200
 #define		MAXPERIODS		7
 #define		MAXPERCLASS		20
+
+#define		MAXTOKS			16
+TYPE	char	buffer[1024];
+TYPE	char	*tokens[10];
+TYPE	int		tokcnt;
 
 typedef struct
 {
@@ -100,7 +106,6 @@ TYPE	double	ProbCross;
 TYPE	double	ProbMutate;
 TYPE	int		MaxGenerations;
 TYPE	int		GenerationCount;
-TYPE	int		StudentStop;
 TYPE	int		TeacherStop;
 
 typedef struct
@@ -111,8 +116,6 @@ typedef struct
 typedef struct
 {
 	ALLELE	Chromosome[MAXCLASS];
-	int		TeacherConflicts;
-	int		StudentConflicts;
 	int		Fitness;
 } INDIVIDUAL;
 
@@ -130,9 +133,12 @@ TYPE	int				BestFitness;
 :r ! mkproto -p *.c
 ----------------------------*/
 
+/* AssignStudents.c */
+void AssignStudents ( void );
+
 /* LoadClasses.c */
 int cmpclass ( CLASS_RECORD *a , CLASS_RECORD *b );
-void LoadClasses ( void );
+void LoadClasses ( int SortBy );
 void DumpClasses ( void );
 
 /* LoadCourses.c */
@@ -145,6 +151,7 @@ void LoadRequests ( void );
 void DumpRequests ( void );
 
 /* LoadStudents.c */
+int cmpstudent ( STUDENT_RECORD *a , STUDENT_RECORD *b );
 void LoadStudents ( void );
 void DumpStudents ( void );
 
@@ -157,14 +164,11 @@ void MakeRequests ( void );
 /* MakeSchedule.c */
 void MakeSchedule ( void );
 
-/* AssignStudents.c */
-void AssignStudents ( void );
+/* PrintRosters.c */
+void PrintRosters ( void );
 
 /* PrintSchedule.c */
 void PrintSchedule ( void );
-
-/* PrintStudents.c */
-void PrintStudents ( void );
 
 /* crossover.c */
 int crossover ( ALLELE parent1 [], ALLELE parent2 [], ALLELE child1 [], ALLELE child2 []);
@@ -182,7 +186,7 @@ void getargs ( int argc , char *argv []);
 void init ( void );
 
 /* obj_func.c */
-int obj_func ( ALLELE Chromosome [], int *StudentConflicts , int *TeacherConflicts );
+int obj_func ( ALLELE Chromosome [] );
 
 /* report.c */
 void report ( int Generation , int mode );

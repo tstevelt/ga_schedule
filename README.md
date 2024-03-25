@@ -1,8 +1,7 @@
 
 ## Catholic Girls High School Class Scheduling
-Creating a block schedule for a high school was something I struggled with from 1987 to 1989. The closest I ever got to a solution came fine tuned the loose ends by programmatically throwing darts at a dartboard. It wasn't until years later I heard of GA and thought that might have worked. However, I was two jobs along and never tried to do it. I'll leave it as a challenge for motivated readers.
 
-Here's the setup.
+### Here's the setup.
 
 The day was to be split into 7 periods. The students all submitted requests for 2 or 3 electives, this gives some flexibility.
 * 500 students
@@ -19,25 +18,39 @@ Some checking and preparation is needed.
 * Total number of classes to for each day is 7 times 4 times 7 equal 112 required plus 10 electives equals 122 classes. Double checking classroom requirement, 122 divided by 7 is 18 classrooms, so we have enough classrooms.
 * Given that there is only one science lab, we're limited to 140 students in the science track.
 
-My assignment was to place all the classes into 7 blocks such that everyone got what they needed and there were no (minimum) conflicts. No student could be in more than one classroom at the same time.
-
-As with designing any GA program, the challenge is figuring out the chromosome structure and the scoring function. Here are my thoughts on the chromosome:
-```
-typedef struct
-{
-  int  period;  // 1 - 7
-  int  classID; // 1 - 122
-} ALLELE;
-
-typedef struct
-{
-  ALLELE Chromosome[122]; // see calculation in article
-  int    Conflicts;       // student is in more than one class at a time
-  int    Missing;         // student's class is not represented.
-  int    Fitness;         // total of Conflicts + Missing
-} INDIVIUDAL;
-
-```
-Scoring function seems to be the challenge, seems that a brute force method is needed to find Conflicts and Missing for each Individual in the Population every generation.
-
 The source code for  my not-a-GA attempt was written in Clipper for a dBase database. And is currently inaccessible on 5-1/4" floppy disks.
+
+### Current Usage Message
+```
+USAGE: ga_schedule mode [options]
+  1 = make requests from students and courses
+  2 = make classes from requests
+  3 = make schedule using GA
+  4 = students pick classes
+  5 = print schedules
+Options
+  -pop #     - mode 3, population count (default 500)
+  -probX #.# - mode 3, probability of crossover (default 0.9950)
+  -probM #.# - mode 3, probability of mutation (default 0.0500)
+  -maxgen #  - mode 3, maximum generations (default 500)
+  -conflicts # - mode 3, stop if teacher conflicts less than #
+  -v         - verbose
+```
+
+### Version history
+
+#### version 0.1.3
+	Remove student conflcts. By eliminating student conflicts from the GA scoring function, program now generates a class schedule with ZERO teacher conflicts. This is achieved quickly, usually in less than 100 generations.
+
+	Added option 4 to assign students to class schedule created with option 3.
+
+	Added final reports (option 5), classes_detail.TXT and schedule_students.TXT
+
+#### version 0.1.2
+	Added teacher conflicts. Realized that previous version might overload courses into a period, showing no regard for how many teachers could teach that course.  Program slowed down a bit as expected, but never achieved a suitable low level of conflicts.
+
+#### version 0.1.1
+	Initial attempt to schedule classes for xxx courses and 500 students, using GA to minimize student conflicts.  Starts with approx 1200 conflicts and after about an hour reduced that to less than 100 conflicts.
+
+
+

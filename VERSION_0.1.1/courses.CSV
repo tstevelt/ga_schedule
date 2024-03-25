@@ -1,54 +1,54 @@
 # this file is created by hand
 # required courses by year
-ID,LEVEL,REQUIRED,NAME, TEACHERS
-101,9,R,English, 1
-102,9,R,Algebra 1, 1
-103,9,R,Biology 1, 1
-104,9,R,US History, 1
+ID,LEVEL,REQUIRED,NAME
+101,9,R,English
+102,9,R,Algebra 1
+103,9,R,Biology 1
+104,9,R,US History
 
-201,10,R,Literature, 1
-202,10,R,Algebra 2, 1
-203,10,R,Biology 2, 1
-204,10,R,US Government, 1
+201,10,R,Literature
+202,10,R,Algebra 2
+203,10,R,Biology 2
+204,10,R,US Government
 
-301,11,R,Composition, 1
-302,11,R,Geometry, 1
-303,11,R,Chemistry, 1
-304,11,R,World History, 1
+301,11,R,Composition
+302,11,R,Geometry
+303,11,R,Chemistry
+304,11,R,World History
 
-401,12,R,Speech, 1
-402,12,R,Statistics, 1
-403,12,R,Physics, 1
-404,12,R,Economics, 1
+401,12,R,Speech
+402,12,R,Statistics
+403,12,R,Physics
+404,12,R,Economics
 
 
 # electives.
 
-111,9,E,French 1, 1
-112,9,E,Spanish 1, 1
-113,9,E,Latin 1, 1
+111,9,E,French 1
+112,9,E,Spanish 1
+113,9,E,Latin 1
 
-211,10,E,French 2, 1
-212,10,E,Spanish 2, 1
-213,10,E,Latin 2, 1
+211,10,E,French 2
+212,10,E,Spanish 2
+213,10,E,Latin 2
 
-311,11,E,French 3, 1
-312,11,E,Spanish 3, 1
-313,11,E,Latin 3, 1
+311,11,E,French 3
+312,11,E,Spanish 3
+313,11,E,Latin 3
 
-411,12,E,French 4, 1
-412,12,E,Spanish 4, 1
-413,12,E,Latin 4, 1
+411,12,E,French 4
+412,12,E,Spanish 4
+413,12,E,Latin 4
 
 # electives, any year can take
 
-501,0,E,Phys Ed, 1
-502,0,E,Health, 1
-503,0,E,Fine Art, 1
-504,0,E,Computer, 1
-505,0,E,Auto, 1
-506,0,E,Carpentry, 1
-507,0,E,Agriculture, 1
+501,0,E,Phys Ed
+502,0,E,Health
+503,0,E,Fine Art
+504,0,E,Computer
+505,0,E,Auto
+506,0,E,Carpentry
+507,0,E,Agriculture
 
 
 

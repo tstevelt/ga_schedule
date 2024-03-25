@@ -14,7 +14,7 @@ FILES = \
 	$(LIB)(MakeRequests.o)	\
 	$(LIB)(MakeSchedule.o)	\
 	$(LIB)(PrintSchedule.o)	\
-	$(LIB)(PrintStudents.o)	\
+	$(LIB)(PrintRosters.o)	\
 	$(LIB)(AssignStudents.o)	\
 	$(LIB)(init.o)			\
 	$(LIB)(report.o)		\

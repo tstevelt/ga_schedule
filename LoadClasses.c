@@ -19,28 +19,44 @@
 
 #include	"ga_schedule.h"
 
+static	int		CompareBy = 0;
 int cmpclass ( CLASS_RECORD *a, CLASS_RECORD *b )
 {
-	if ( a->ClassID < b->ClassID )
+	if ( CompareBy == 1 )
 	{
-		return ( -1 );
+		if ( a->ClassID < b->ClassID )
+		{
+			return ( -1 );
+		}
+		if ( a->ClassID > b->ClassID )
+		{
+			return ( 1 );
+		}
 	}
-	if ( a->ClassID > b->ClassID )
+	else
 	{
-		return ( 1 );
+		return ( strcmp(a->ClassCode,b->ClassCode) );
 	}
 	return ( 0 );
 }
 
-void LoadClasses ()
+void LoadClasses ( int SortBy )
 {
 	FILE	*ifp;
-	char	buffer[1024];
-	char	*tokens[10];
-	int		tokcnt;
 	int		lineno;
 //	int		xe = 0;
 //	int		xo;
+
+	switch ( SortBy )
+	{
+		case 1:
+		case 2:
+			CompareBy = SortBy;
+			break;
+		default:
+			printf ( "LoadClasses: unknown SortBy %d\n", SortBy );
+			exit ( 1 );
+	}
 
 	if ( CourseCount == 0 )
 	{
@@ -58,7 +74,7 @@ void LoadClasses ()
 	{
 		lineno++;
 
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 3 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 3 )
 		{
 			continue;
 		}
