@@ -38,7 +38,7 @@ int main ( int argc, char *argv[] )
 
 	getargs ( argc, argv );
 
-	seed_random_with_usec ( );
+	shs_seed_random ( );
 
 	switch ( RunMode )
 	{
