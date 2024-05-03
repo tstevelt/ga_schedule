@@ -37,14 +37,13 @@ static void swap(int *a, int *b)
 	*b = temp;
 }
 
-static void generatePermutations(int letters[], int start, int end) 
+static void generatePermutations(int Periods[], int start, int end) 
 {
 	if (start == end) 
 	{
-		// printf("%s\n", letters); // Print the permutation
 		for ( int i = 0; i < MAXPERIODS; i++ )
 		{
-			PermutationArray[PermutationCount].Periods[i] = letters[i];
+			PermutationArray[PermutationCount].Periods[i] = Periods[i];
 		}
 		PermutationArray[PermutationCount].SortValue = d_random ();
 		PermutationCount++;
@@ -53,9 +52,9 @@ static void generatePermutations(int letters[], int start, int end)
 
 	for (int i = start; i <= end; i++) 
 	{
-		swap(&letters[start], &letters[i]);
-		generatePermutations(letters, start + 1, end);
-		swap(&letters[start], &letters[i]); // Backtrack
+		swap(&Periods[start], &Periods[i]);
+		generatePermutations(Periods, start + 1, end);
+		swap(&Periods[start], &Periods[i]); // Backtrack
 	}
 }
 
@@ -135,7 +134,7 @@ void AssignStudents ()
 {
 	FILE	*ifp, *ofp;
 	int		xt;
-	int		letters[MAXPERIODS];
+	int		Periods[MAXPERIODS];
 	int		StudentID;
 	int		Successes = 0;
 
@@ -143,7 +142,7 @@ void AssignStudents ()
 	PermutationIndex = 1;
 	for ( int i = 1; i <= MAXPERIODS; i++ )
 	{
-		letters[i-1] = i;
+		Periods[i-1] = i;
 		PermutationIndex *= i;
 	}
 	if (( PermutationArray = calloc ( PermutationIndex, sizeof(PERMUTATION) )) == NULL )
@@ -151,7 +150,7 @@ void AssignStudents ()
 		printf ( "AssignStudents: calloc failed, size %d\n", PermutationCount );
 		exit ( 1 );
 	}
-	generatePermutations( letters, 0, MAXPERIODS - 1);
+	generatePermutations( Periods, 0, MAXPERIODS - 1);
 	shuffle ();
 
 	LoadClasses ( 1 );
@@ -179,19 +178,6 @@ void AssignStudents ()
 	{
 		printf ( "Class count %d, chromo length %ld\n", ClassCount, strlen(buffer) );
 	}
-
-/*---------------------------------------------------------------------------
-Breakpoint 1, AssignStudents () at AssignStudents.c:46
-46		printf ( "Class count %d, chromo length %ld\n", ClassCount, strlen(buffer) );
-Missing separate debuginfos, use: yum debuginfo-install glibc-2.28-236.el8_9.12.x86_64
-(gdb) p ClassArray[0]
-$1 = {ClassID = 1, CourseIndex = 0, ClassCode = "101A\000\000\000\000\000", Period = 0}
-(gdb) p CourseArray[0]
-$2 = {CourseID = 101, Level = 9, Required = 1, Name = "English", '\000' <repeats 22 times>, Teachers = 1, Counter = 0, 
-  RingIndex = 0}
-(gdb) q
-A debugging session is active.
----------------------------------------------------------------------------*/
 
 	MyCount = 0;
 	for ( int xc = 0; xc < ClassCount; xc++ )
@@ -233,7 +219,7 @@ A debugging session is active.
 	/*----------------------------------------------------------
 		# this file is created by MakeRequests()
 		# these are fake student requests for testing
-		ID,LAVEL,CRS1,CRS2,CRS3,CRS4,CRS5,CRS6,CRS7
+		ID,LEVEL,CRS1,CRS2,CRS3,CRS4,CRS5,CRS6,CRS7
 		  1, 9, 101, 102, 103, 104, 111, 112
 		  2, 9, 101, 102, 103, 104, 113, 501, 502
 		  3, 9, 101, 102, 103, 104, 503, 504

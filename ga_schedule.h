@@ -105,6 +105,7 @@ TYPE	int		PopCount;
 TYPE	double	ProbCross;
 TYPE	double	ProbMutate;
 TYPE	int		MaxGenerations;
+TYPE	int		MaxConsecutive;
 TYPE	int		GenerationCount;
 TYPE	int		TeacherStop;
 
@@ -189,7 +190,7 @@ void init ( void );
 int obj_func ( ALLELE Chromosome [] );
 
 /* report.c */
-void report ( int Generation , int mode );
+int report ( int Generation , int mode );
 
 /* select_shuffle.c */
 int select_shuffle ( void );

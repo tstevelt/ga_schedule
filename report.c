@@ -19,7 +19,7 @@
 
 #include	"ga_schedule.h"
 
-void report ( int Generation, int mode )
+int report ( int Generation, int mode )
 {
 	int		BestIndex, MinFit, MaxFit, BreakOut;
 
@@ -38,7 +38,7 @@ void report ( int Generation, int mode )
 		}
 
 		/*----------------------------------------------------------
-			added Student and Teacher stopping points
+			added Teacher stopping points
 		----------------------------------------------------------*/
 		if ( /* Generation > 0 && */  TeacherStop > 0 && CurrPop[p].Fitness < TeacherStop )
 		{
@@ -89,4 +89,5 @@ void report ( int Generation, int mode )
 			break;
 	}
 
+	return ( MinFit );
 }

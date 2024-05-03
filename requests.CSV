@@ -1,6 +1,6 @@
 # this file is created by MakeRequests()
 # these are fake student requests for testing
-ID,LAVEL,CRS1,CRS2,CRS3,CRS4,CRS5,CRS6,CRS7
+ID,LEVEL,CRS1,CRS2,CRS3,CRS4,CRS5,CRS6,CRS7
   1, 9, 101, 102, 103, 104, 111, 112
   2, 9, 101, 102, 103, 104, 113, 501, 502
   3, 9, 101, 102, 103, 104, 503, 504

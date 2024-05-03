@@ -33,7 +33,7 @@ void MakeRequests ()
 	}
 
 	fprintf ( ofp, "# these are fake student requests for testing\n" );
-	fprintf ( ofp, "ID,LAVEL,CRS1,CRS2,CRS3,CRS4,CRS5,CRS6,CRS7\n" );
+	fprintf ( ofp, "ID,LEVEL,CRS1,CRS2,CRS3,CRS4,CRS5,CRS6,CRS7\n" );
 
 	LoadCourses ();
 
