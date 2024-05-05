@@ -41,7 +41,6 @@ static void PrintChromo ( char *description, int xsite, ALLELE Chromosome[] )
 void generation ( int Generation )
 {
 	int		xi, mate1, mate2, xsite;
-	ALLELE	SaveMe;
 	int		xs, xd;
 
 	for ( xi = 0; xi < PopCount; xi += 2 )
@@ -60,6 +59,10 @@ void generation ( int Generation )
 		if ( flip ( ProbMutate ) )
 		{
 			xs = random_range ( 0, ClassCount - 1 );
+#ifdef SWAP_ALLELE
+#define SWAP_ALLELE
+
+			ALLELE	SaveMe;
 
 			do 
 			{
@@ -70,9 +73,24 @@ void generation ( int Generation )
 			memcpy ( &SaveMe, &NextPop[xi].Chromosome[xs], sizeof(ALLELE) );
 			NextPop[xi].Chromosome[xs].Period = NextPop[xi].Chromosome[xd].Period;
 			NextPop[xi].Chromosome[xd].Period = SaveMe.Period;
+
+#endif
+
+#define	CHANGE_PERIOD
+#ifdef	CHANGE_PERIOD
+			do
+			{
+				xd = random_range ( 1, 7 );
+
+			} while ( xd == NextPop[xi].Chromosome[xs].Period );
+
+			NextPop[xi].Chromosome[xs].Period = xd;
+
+#endif
 		}
 
 		NextPop[xi].Fitness = obj_func ( NextPop[xi].Chromosome, &NextPop[xi].StudentConflicts, &NextPop[xi].TeacherConflicts );
 		NextPop[xi+1].Fitness = obj_func ( NextPop[xi+1].Chromosome, &NextPop[xi+1].StudentConflicts, &NextPop[xi+1].TeacherConflicts );
+
 	}
 }

@@ -56,12 +56,15 @@ static int cmprec ( RECORD *a, RECORD *b )
 int obj_func ( ALLELE Chromosome [], int *StudentConflicts, int *TeacherConflicts )
 {
 static	int		firstpass = 1;
-	int		Students = 0;
-	int		Teachers = 0;
 	int		Total = 0;
 	int		PeriodArray[MAXPERIODS];
 	int		xc, xp, PeriodCount;
 	RECORD	*ptr, key;
+	struct timeval		tvStart, tvEnd;
+	double				dblStart, dblEnd, ChromoTime;
+
+	*StudentConflicts = 0;
+	*TeacherConflicts = 0;
 
 	if ( firstpass == 1 )
 	{
@@ -91,8 +94,13 @@ static	int		firstpass = 1;
 		}
 	}
 
-#define CHECK_STUDENTS
-#ifdef CHECK_STUDENTS
+	/*----------------------------------------------------------
+		struct timeval		tvStart, tvEnd;
+		double				dblStart, dblEnd, ChromoTime;
+	----------------------------------------------------------*/
+	gettimeofday ( &tvStart, NULL );
+	dblStart = tvStart.tv_sec + (double)tvStart.tv_usec / 1000000.0;
+
 	/*------------------------------------------------------------------------------
 		tally conflicts for each student, add to StudentConflicts
 	------------------------------------------------------------------------------*/
@@ -100,36 +108,40 @@ static	int		firstpass = 1;
 	{
 		if ( DebugObjFunc )
 		{
-			printf ( "---\n" );
+			printf ( "--- class count %d\n", RequestArray[RequestIndex].ClassCount );
 		}
 		PeriodCount = 0;
 		memset ( PeriodArray, '\0', sizeof(PeriodArray) );
 
 		for ( int RequestClassIndex = 0; RequestClassIndex < RequestArray[RequestIndex].ClassCount; RequestClassIndex++ )
 		{
-			for ( int ChromoIndex = 0; ChromoIndex < ClassCount; ChromoIndex++ )
+			int ChromoIndex = RequestArray[RequestIndex].ClassIndex[RequestClassIndex];
+			
+			for ( xp = 0; xp < PeriodCount; xp++ )
 			{
-				if ( ChromoIndex == RequestArray[RequestIndex].ClassIndex[RequestClassIndex] )
+				if ( PeriodArray[xp] == Chromosome[ChromoIndex].Period )
 				{
-					for ( xp = 0; xp < PeriodCount; xp++ )
-					{
-						if ( PeriodArray[xp] == Chromosome[ChromoIndex].Period )
-						{
-							break;
-						}
-					}
-					if ( xp >= PeriodCount )
-					{
-						 PeriodArray[PeriodCount] = Chromosome[ChromoIndex].Period;
-						 PeriodCount++;
-					}
+					break;
 				}
+			}
+			if ( xp >= PeriodCount )
+			{
+				 PeriodArray[PeriodCount] = Chromosome[ChromoIndex].Period;
+				 PeriodCount++;
 			}
 		}
 		
-		Students += (RequestArray[RequestIndex].ClassCount - PeriodCount);
+		*StudentConflicts += (RequestArray[RequestIndex].ClassCount - PeriodCount);
 	}
-#endif
+
+
+	gettimeofday ( &tvEnd, NULL );
+	dblEnd = tvEnd.tv_sec + (double)tvEnd.tv_usec / 1000000.0;
+	ChromoTime = dblEnd - dblStart;
+	// printf ( "%.6f\n", ChromoTime );
+	ObjFuncTime += ChromoTime;
+
+
 	/*---------------------------------------------------------------------------
 		tally conflicts for number of teachers available for each course.
 	---------------------------------------------------------------------------*/
@@ -152,14 +164,12 @@ static	int		firstpass = 1;
 	{
 		if ( Array[ndx].Count > CourseArray[Array[ndx].CourseIndex].Teachers )
 		{
-			Teachers += Array[ndx].Count - CourseArray[Array[ndx].CourseIndex].Teachers;
+			*TeacherConflicts += Array[ndx].Count - CourseArray[Array[ndx].CourseIndex].Teachers;
 		}
 	}
 
-	*StudentConflicts = Students;
-	*TeacherConflicts = Teachers;
-	Total = Students + Teachers;
-	// printf ( "Students %d + Teachers %d = %d\n", Students, Teachers, Total );
+	Total = *StudentConflicts + *TeacherConflicts;
+	// printf ( "Students %d + Teachers %d = %d\n", *StudentConflicts, *TeacherConflicts, Total );
 
 	return ( Total );
 }

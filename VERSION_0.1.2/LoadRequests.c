@@ -32,6 +32,7 @@ static int cmprequest ( REQUEST_RECORD *a, REQUEST_RECORD *b )
 	return ( 0 );
 }
 
+#ifdef USE_RING_INDEX
 static void SetRingIndex ( int CourseIndex, int ClassIndex )
 {
 	CourseArray[CourseIndex].RingIndex = ClassIndex;
@@ -60,6 +61,22 @@ static int GetRingIndex ( int CourseIndex )
 
 	return ( rv );
 }
+#endif
+
+static void DumpRequests ()
+{
+	for ( int xr = 0; xr < RequestCount; xr++ )
+	{
+		printf ( "%4d %2d %2d: ", 
+			RequestArray[xr].StudentID, RequestArray[xr].Level, RequestArray[xr].ClassCount );
+
+		for ( int xc = 0; xc < RequestArray[xr].ClassCount; xc++ )
+		{
+			printf ( " %3d", RequestArray[xr].ClassIndex[xc] );
+		}
+		printf ( "\n" );
+	}
+}
 
 void LoadRequests ()
 {
@@ -77,6 +94,7 @@ void LoadRequests ()
 		LoadClasses ();
 	}
 
+#ifdef USE_RING_INDEX
 	/*----------------------------------------------------------
 		set RingIndex for each course
 	----------------------------------------------------------*/
@@ -88,6 +106,7 @@ void LoadRequests ()
 			SetRingIndex ( ClassArray[xc].CourseIndex, xc );
 		}
 	}
+#endif
 
 	if ( Verbose )
 	{
@@ -100,6 +119,9 @@ void LoadRequests ()
 		exit ( 1 );
 	}
 
+	/*----------------------------------------------------------
+		get number of requests
+	----------------------------------------------------------*/
 	RequestCount = 0;
 	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
 	{
@@ -164,6 +186,7 @@ void LoadRequests ()
 		RequestArray[xo].Level = atoi ( tokens[1] );
 		RequestArray[xo].ClassCount = tokcnt - 2;
 
+#ifdef USE_RING_INDEX
 		/*----------------------------------------------------------
 			assign classes cyclicaly
 		----------------------------------------------------------*/
@@ -180,6 +203,8 @@ void LoadRequests ()
 				}
 			}
 		}
+#else
+#endif
 		xo++;
 	}
 	printf ( "Loaded %d Requests\n", RequestCount );
@@ -192,19 +217,3 @@ void LoadRequests ()
 		DumpRequests ();
 	}
 }
-
-void DumpRequests ()
-{
-	for ( int xr = 0; xr < RequestCount; xr++ )
-	{
-		printf ( "%4d %2d %2d: ", 
-			RequestArray[xr].StudentID, RequestArray[xr].Level, RequestArray[xr].ClassCount );
-
-		for ( int xc = 0; xc < RequestArray[xr].ClassCount; xc++ )
-		{
-			printf ( " %3d", RequestArray[xr].ClassIndex[xc] );
-		}
-		printf ( "\n" );
-	}
-}
-

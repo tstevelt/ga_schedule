@@ -58,7 +58,11 @@ int main ( int argc, char *argv[] )
 			PrintStudents ();
 			time ( &EndTime );
 			Elapsed = EndTime - StartTime;
-			Average = (double) Elapsed / (double) GenerationCount;
+
+			/*----------------------------------------------------------
+				have to count generation zero also
+			----------------------------------------------------------*/
+			Average = (double) Elapsed / (double) (GenerationCount + 1);
 			Hours = Elapsed / 3600;
 			if ( Hours )
 			{
@@ -79,6 +83,7 @@ int main ( int argc, char *argv[] )
 				printf ( "runtime: %d seconds\n", Seconds );
 			}
 			printf ( "average per generation %.4f\n", Average );
+			printf ( "total time in obj_func student conflict %.6f\n", ObjFuncTime );
 			break;
 	}
 

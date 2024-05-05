@@ -21,9 +21,13 @@
 
 void MakeSchedule ()
 {
+    int     BestFitness = -1;
+    int     ThisFitness;
+    int     Consecutive = 0;
+
 	init ();
 
-	for ( GenerationCount = 1; GenerationCount <= MaxGenerations; GenerationCount++ )
+	for ( GenerationCount = 1; GenerationCount <= MaxGenerations && Consecutive < MaxConsecutive; GenerationCount++ )
 	{
 		generation ( GenerationCount );
 	
@@ -32,7 +36,15 @@ void MakeSchedule ()
 			memcpy ( &CurrPop[xp], &NextPop[xp], sizeof(INDIVIDUAL) );
 		}
 
-		report ( GenerationCount, REPORT_MINMAX );
+		ThisFitness = report ( GenerationCount, REPORT_MINMAX );
+		if ( BestFitness == -1 || BestFitness > ThisFitness )
+		{
+			BestFitness = ThisFitness;
+			Consecutive = 0;
+		}
+
+		Consecutive++;
+
 	}
 	GenerationCount--;
 }

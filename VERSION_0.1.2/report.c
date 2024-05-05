@@ -19,12 +19,14 @@
 
 #include	"ga_schedule.h"
 
-void report ( int Generation, int mode )
+int report ( int Generation, int mode )
 {
-	int		BestIndex, MinFit, MaxFit, BreakOut;
+	int		BestIndex, MinFit, MaxFit, MinTeacher, MaxTeacher, MinStudent, MaxStudent, BreakOut;
 
 	BestIndex = BreakOut = 0;
 	MinFit = MaxFit = CurrPop[0].Fitness;
+	MinTeacher = MaxTeacher = CurrPop[0].TeacherConflicts;
+	MinStudent = MaxStudent = CurrPop[0].StudentConflicts;
 	for ( int p = 0; p < PopCount; p++ )
 	{
 		if ( MinFit > CurrPop[p].Fitness )
@@ -35,6 +37,24 @@ void report ( int Generation, int mode )
 		if ( MaxFit < CurrPop[p].Fitness )
 		{
 			MaxFit = CurrPop[p].Fitness;
+		}
+
+		if ( MinTeacher > CurrPop[p].TeacherConflicts )
+		{
+			MinTeacher = CurrPop[p].TeacherConflicts;
+		}
+		if ( MaxTeacher < CurrPop[p].TeacherConflicts )
+		{
+			MaxTeacher = CurrPop[p].TeacherConflicts;
+		}
+
+		if ( MinStudent > CurrPop[p].StudentConflicts )
+		{
+			MinStudent = CurrPop[p].StudentConflicts;
+		}
+		if ( MaxStudent < CurrPop[p].StudentConflicts )
+		{
+			MaxStudent = CurrPop[p].StudentConflicts;
 		}
 
 		/*----------------------------------------------------------
@@ -84,9 +104,12 @@ void report ( int Generation, int mode )
 			break;
 
 		case REPORT_MINMAX:
-			printf ( "Generation %d: Minimum %d, Maximum %d\n", Generation, MinFit, MaxFit );
+			printf ( "Generation %d: Fitness %d - %d Teachers %d - %d Students %d - %d\n", 
+						Generation, MinFit, MaxFit, MinTeacher, MaxTeacher, MinStudent, MaxStudent );
 			fflush ( stdout );
 			break;
 	}
+
+	return ( MinFit );
 
 }

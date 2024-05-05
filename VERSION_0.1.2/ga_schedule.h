@@ -22,6 +22,7 @@
 #include	<unistd.h>
 #include	<string.h>
 #include	<errno.h>
+#include	<sys/time.h>
 #include	"shslib.h"
 
 #ifdef MAIN
@@ -42,6 +43,8 @@ TYPE	int		Verbose;
 #define		MAXPERIODS		7
 #define		MAXPERCLASS		20
 
+#define USE_RING_INDEX
+
 typedef struct
 {
 	int		CourseID;
@@ -50,7 +53,9 @@ typedef struct
 	char	Name[MAXNAME];
 	int		Teachers;
 	int		Counter;
+#ifdef USE_RING_INDEX
 	int		RingIndex;
+#endif
 } COURSE_RECORD;
 
 TYPE	COURSE_RECORD	CourseArray[MAXCOURSE];
@@ -98,6 +103,7 @@ TYPE	int		PopCount;
 TYPE	double	ProbCross;
 TYPE	double	ProbMutate;
 TYPE	int		MaxGenerations;
+TYPE    int     MaxConsecutive;
 TYPE	int		GenerationCount;
 TYPE	int		StudentStop;
 TYPE	int		TeacherStop;
@@ -124,6 +130,8 @@ TYPE	int				BestFitness;
 #define		REPORT_BEST		2
 #define		REPORT_MINMAX	3
 
+TYPE	double	ObjFuncTime;
+
 /*----------------------------
 :.,$d
 :r ! mkproto -p *.c
@@ -141,7 +149,6 @@ void DumpCourses ( void );
 
 /* LoadRequests.c */
 void LoadRequests ( void );
-void DumpRequests ( void );
 
 /* LoadStudents.c */
 void LoadStudents ( void );
@@ -181,7 +188,7 @@ void init ( void );
 int obj_func ( ALLELE Chromosome [], int *StudentConflicts , int *TeacherConflicts );
 
 /* report.c */
-void report ( int Generation , int mode );
+int report ( int Generation , int mode );
 
 /* select_shuffle.c */
 int select_shuffle ( void );
