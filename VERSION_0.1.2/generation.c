@@ -92,5 +92,12 @@ void generation ( int Generation )
 		NextPop[xi].Fitness = obj_func ( NextPop[xi].Chromosome, &NextPop[xi].StudentConflicts, &NextPop[xi].TeacherConflicts );
 		NextPop[xi+1].Fitness = obj_func ( NextPop[xi+1].Chromosome, &NextPop[xi+1].StudentConflicts, &NextPop[xi+1].TeacherConflicts );
 
+		if ( NewBloodCount > 0 )
+		{
+			NewArray[xi].Index = xi;
+			NewArray[xi].Fitness = NextPop[xi].Fitness;
+			NewArray[xi+1].Index = xi+1;
+			NewArray[xi+1].Fitness = NextPop[xi+1].Fitness;
+		}
 	}
 }

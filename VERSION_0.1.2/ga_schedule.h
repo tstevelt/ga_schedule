@@ -21,6 +21,7 @@
 #include	<stdlib.h>
 #include	<unistd.h>
 #include	<string.h>
+#include	<ctype.h>
 #include	<errno.h>
 #include	<sys/time.h>
 #include	"shslib.h"
@@ -36,6 +37,8 @@
 #define		MODE_SCHEDULE	13
 TYPE	int		RunMode;
 TYPE	int		Verbose;
+TYPE	int		NewBloodCount;
+TYPE	int		NewBloodPercent;
 
 #define		MAXNAME			30
 #define		MAXCOURSE		50
@@ -43,7 +46,9 @@ TYPE	int		Verbose;
 #define		MAXPERIODS		7
 #define		MAXPERCLASS		20
 
-#define USE_RING_INDEX
+#define		USE_RING_INDEX		'S'
+#define		USE_RANDOMIZE		'R'
+TYPE	char	LoadType;
 
 typedef struct
 {
@@ -53,9 +58,7 @@ typedef struct
 	char	Name[MAXNAME];
 	int		Teachers;
 	int		Counter;
-#ifdef USE_RING_INDEX
 	int		RingIndex;
-#endif
 } COURSE_RECORD;
 
 TYPE	COURSE_RECORD	CourseArray[MAXCOURSE];
@@ -76,6 +79,7 @@ TYPE	int				StudentCount;
 typedef struct
 {
 	int		ClassID;
+	int		CourseID;
 	int		CourseIndex;
 	char	ClassCode[10];
 	int		Period;
@@ -88,8 +92,10 @@ typedef struct
 {
 	int		StudentID;
 	int		Level;
-	int		ClassCount;
+	int		CourseID[MAXPERIODS];
+	int		CourseCount;
 	int		ClassIndex[MAXPERIODS];
+	int		ClassCount;
 } REQUEST_RECORD;
 
 TYPE	REQUEST_RECORD	*RequestArray;
@@ -132,6 +138,16 @@ TYPE	int				BestFitness;
 
 TYPE	double	ObjFuncTime;
 
+typedef struct
+{
+	int		Index;
+	int		Fitness;
+} NEW_RECORD;
+
+TYPE	NEW_RECORD	*NewArray;
+TYPE	int			ReplaceCount;
+
+
 /*----------------------------
 :.,$d
 :r ! mkproto -p *.c
@@ -148,7 +164,8 @@ void LoadCourses ( void );
 void DumpCourses ( void );
 
 /* LoadRequests.c */
-void LoadRequests ( void );
+void LoadRequestsRandom ( void );
+void LoadRequestsRing ( void );
 
 /* LoadStudents.c */
 void LoadStudents ( void );
@@ -165,6 +182,9 @@ void MakeSchedule ( void );
 
 /* PrintSchedule.c */
 void PrintSchedule ( void );
+
+/* PrintChromosome.c */
+void PrintChromosome ( void );
 
 /* PrintStudents.c */
 void PrintStudents ( void );

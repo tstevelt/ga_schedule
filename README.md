@@ -1,7 +1,11 @@
 
 ## Catholic Girls High School Class Scheduling
 
-### Here's the setup.
+### Revision History
+
+Changed executable name to ga_schedule.v2
+
+### Original Release
 
 The day was to be split into 7 periods. The students all submitted requests for 2 or 3 electives, this gives some flexibility.
 * 500 students

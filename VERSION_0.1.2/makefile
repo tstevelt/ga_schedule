@@ -2,7 +2,7 @@ PROG = ga_schedule
 LIB = ga_schedule.a
 XLIB = /usr/local/lib64/shslib.a
 DEF = /usr/local/include
-PRG = /usr/local/bin/$(PROG)
+PRG = /usr/local/bin/$(PROG).v2
 
 FILES = \
 	$(LIB)(ga_schedule.o)	\
@@ -13,6 +13,7 @@ FILES = \
 	$(LIB)(MakeClasses.o)	\
 	$(LIB)(MakeRequests.o)	\
 	$(LIB)(MakeSchedule.o)	\
+	$(LIB)(PrintChromosome.o)	\
 	$(LIB)(PrintSchedule.o)	\
 	$(LIB)(PrintStudents.o)	\
 	$(LIB)(init.o)			\

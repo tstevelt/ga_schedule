@@ -33,9 +33,24 @@ void init ()
 		exit ( 1 );
 	}
 
+	if (( NewArray = calloc ( PopCount, sizeof(NEW_RECORD) )) == NULL )
+	{
+		printf ( "init: calloc NewArray failed, %s\n", strerror(errno) );
+		exit ( 1 );
+	}
+
+	ReplaceCount = PopCount * NewBloodPercent / 100.0;
+
 	LoadClasses ();
 
-	LoadRequests ();
+	if ( LoadType == USE_RING_INDEX )
+	{
+		LoadRequestsRing ();
+	}
+	else
+	{
+		LoadRequestsRandom ();
+	}
 
 	BestFitness = -1;
 

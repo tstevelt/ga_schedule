@@ -60,11 +60,16 @@ int report ( int Generation, int mode )
 		/*----------------------------------------------------------
 			added Student and Teacher stopping points
 		----------------------------------------------------------*/
-		if ( /* Generation > 0 && */ StudentStop > 0 && TeacherStop > 0 && CurrPop[p].StudentConflicts < StudentStop && CurrPop[p].TeacherConflicts < TeacherStop )
+		if ( /* Generation > 0 && */ 
+			 StudentStop > 0 && 
+			 TeacherStop > 0 && 
+			 CurrPop[p].StudentConflicts < StudentStop && 
+			 CurrPop[p].TeacherConflicts < TeacherStop )
 		{
 			BestIndex = p;
 			GenerationCount = MaxGenerations;
 			BreakOut = 1;
+printf ( "Should stop early!!\n" );
 			break;
 		}
 	}
@@ -110,6 +115,13 @@ int report ( int Generation, int mode )
 			break;
 	}
 
-	return ( MinFit );
+	if ( BreakOut )
+	{
+		return ( -1 );
+	}
+	else
+	{
+		return ( MinFit );
+	}
 
 }

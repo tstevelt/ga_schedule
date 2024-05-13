@@ -29,8 +29,10 @@ static void Usage ()
 	printf ( "  -pop #     - mode 3, population count (default %d)\n", PopCount );
 	printf ( "  -probX #.# - mode 3, probability of crossover (default %.4f)\n", ProbCross );
 	printf ( "  -probM #.# - mode 3, probability of mutation (default %.4f)\n", ProbMutate );
+	printf ( "  -load S|R  - mode 3, load students S static or R random (default %c)\n", LoadType );
 	printf ( "  -maxgen #  - mode 3, maximum generations (default %d)\n", MaxGenerations );
 	printf ( "  -same #    - mode 3, if no improvment after # generations (default %d)\n", MaxConsecutive );
+	printf ( "  -new # #   - mode 3, every # replace worst # percent (default %d %d)\n", NewBloodCount, NewBloodPercent );
 	printf ( "  -conflicts # # - mode 3, stop if student conflicts less than #1 and teacher conflicts less than #2\n" );
 	printf ( "  -v         - verbose\n" );
 	exit ( 1 );
@@ -45,9 +47,11 @@ void getargs ( int argc, char *argv[] )
 	ProbCross = 0.995;
 	ProbMutate = 0.05;
 	MaxGenerations =  500;
-	MaxConsecutive = RAND_MAX;
+	MaxConsecutive = MaxGenerations / 2;
 	StudentStop = -1;
 	TeacherStop = -1;
+	LoadType = USE_RANDOMIZE;
+	NewBloodCount = NewBloodPercent = 0;
 
 	for ( int xa = 1; xa < argc; xa++ )
 	{
@@ -72,6 +76,19 @@ void getargs ( int argc, char *argv[] )
 			xa++;
 			PopCount = atoi ( argv[xa] );
 		}
+		else if ( xa + 1 < argc && strcmp ( argv[xa], "-load" ) == 0 )
+		{
+			xa++;
+			LoadType = toupper(argv[xa][0]);
+			switch ( LoadType )
+			{
+				case USE_RING_INDEX:
+				case USE_RANDOMIZE:
+					break;
+				default:
+					Usage ();
+			}
+		}
 		else if ( xa + 1 < argc && strcmp ( argv[xa], "-probX" ) == 0 )
 		{
 			xa++;
@@ -91,6 +108,13 @@ void getargs ( int argc, char *argv[] )
 		{
 			xa++;
 			MaxGenerations = atoi ( argv[xa] );
+		}
+		else if ( xa + 2 < argc && strcmp ( argv[xa], "-new" ) == 0 )
+		{
+			xa++;
+			NewBloodCount = atoi ( argv[xa] );
+			xa++;
+			NewBloodPercent = atoi ( argv[xa] );
 		}
 		else if ( xa + 2 < argc && strcmp ( argv[xa], "-conflicts" ) == 0 )
 		{

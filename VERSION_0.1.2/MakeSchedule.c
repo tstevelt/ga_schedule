@@ -19,6 +19,18 @@
 
 #include	"ga_schedule.h"
 
+static int cmpnew ( NEW_RECORD *a, NEW_RECORD *b )
+{
+	/*----------------------------------------------------------
+		sort descending
+	----------------------------------------------------------*/
+	if ( a->Fitness < b->Fitness )
+	{
+		return ( 1 );
+	}
+	return ( -1 );
+}
+
 void MakeSchedule ()
 {
     int     BestFitness = -1;
@@ -37,6 +49,12 @@ void MakeSchedule ()
 		}
 
 		ThisFitness = report ( GenerationCount, REPORT_MINMAX );
+
+		if ( ThisFitness < 0 )
+		{
+			break;
+		}
+
 		if ( BestFitness == -1 || BestFitness > ThisFitness )
 		{
 			BestFitness = ThisFitness;
@@ -44,6 +62,25 @@ void MakeSchedule ()
 		}
 
 		Consecutive++;
+
+		if ( NewBloodCount > 0 && (GenerationCount%NewBloodCount) == 0 )
+		{
+			printf ( "Getting %d fresh bloodlines\n", ReplaceCount );
+
+			qsort ( NewArray, PopCount, sizeof(NEW_RECORD), (int(*)()) cmpnew );
+
+			for ( int ndx = 0; ndx < ReplaceCount; ndx++ )
+			{
+				int		p = NewArray[ndx].Index;
+
+				for ( int c = 0; c < ClassCount; c++ )
+				{
+					CurrPop[p].Chromosome[c].Period  = random_range ( 1, MAXPERIODS );
+				}
+
+				CurrPop[p].Fitness = obj_func ( CurrPop[p].Chromosome, &CurrPop[p].StudentConflicts, &CurrPop[p].TeacherConflicts );
+			}
+		}
 
 	}
 	GenerationCount--;

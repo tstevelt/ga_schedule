@@ -1,5 +1,45 @@
 
 ## Catholic Girls High School Class Scheduling
+
+### Revision History
+
+Continued experiments trying to achieve pure GA solutions.
+
+```
+USAGE: ga_schedule mode [options]
+  1 = make requests from students and courses
+  2 = make classes from requests
+  3 = make schedule using GA
+Options
+  -pop #     - mode 3, population count (default 500)
+  -probX #.# - mode 3, probability of crossover (default 0.9950)
+  -probM #.# - mode 3, probability of mutation (default 0.0500)
+  -load S|R  - mode 3, load students S static or R random (default R)
+  -maxgen #  - mode 3, maximum generations (default 500)
+  -same #    - mode 3, if no improvment after # generations (default 250)
+  -new # #   - mode 3, every # replace worst # percent (default 0 0)
+  -conflicts # # - mode 3, stop if student conflicts less than #1 and teacher conflicts less than #2
+  -v         - verbose
+```
+
+* changed executable name to ga_schedule.v2
+* changed mutation logic from swap to replace (see #ifdef in generation.c)
+* added compile time option WeightOption. Set to 10. (see obj_function)
+* added -load S|R to load reqeusts either statically or randomly
+* added -same # option to stop early if not improvingn
+* added -new # # option to replace some of the worst individuals with new 
+* ran with much larger populations and maximum generations
+
+Regardless of above, program still cannot get below approx 750 student conflicts
+
+Final test
+1. ga_schedule.v2 3 -pop 100000 -maxgen 500 -probM 0.05 -same 250 -conflicts 900 1
+2. achieved ZERO teacher conflicts after only 80 generations. There were still 878 student conflicts.
+3. Using chromosome from step 2, ran ga_schedule.v3 4 to assign classes. ZERO student conflicts!
+4. ga_schedule.v3 5 to print rosters.
+This indicates that the loading requests and the objective function are incorrect.
+
+### Original Release
 Creating a block schedule for a high school was something I struggled with from 1987 to 1989. The closest I ever got to a solution came fine tuned the loose ends by programmatically throwing darts at a dartboard. It wasn't until years later I heard of GA and thought that might have worked. However, I was two jobs along and never tried to do it. I'll leave it as a challenge for motivated readers.
 
 Here's the setup.

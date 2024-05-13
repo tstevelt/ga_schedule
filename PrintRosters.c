@@ -207,11 +207,18 @@ void PrintRosters ()
 
 	char	CurrentClassCode[10];
 	sprintf ( CurrentClassCode, "zzzz" );
+	int		StudentsInClass = 0;
 	for ( int xa = 0; xa < Count; xa++ )
 	{
 		if ( strcmp ( CurrentClassCode, Array[xa].ClassCode ) != 0 )
 		{
-			fprintf ( ofp, "\n\n%s %-20.20s (%d)\n", Array[xa].ClassCode, Array[xa].ClassName, Array[xa].Period );
+			if ( StudentsInClass )
+			{
+				fprintf ( ofp, "Student Count %d\n", StudentsInClass );
+				StudentsInClass = 0;
+			}
+
+			fprintf ( ofp, "\n%s %-20.20s Period %d\n", Array[xa].ClassCode, Array[xa].ClassName, Array[xa].Period );
 			sprintf ( CurrentClassCode, "%s", Array[xa].ClassCode );
 
 			sprintf ( keyClass.ClassCode, "%s", Array[xa].ClassCode );
@@ -219,6 +226,7 @@ void PrintRosters ()
 		}
 
 		fprintf ( ofp, "  %s  (%d)\n", Array[xa].StudentName, Array[xa].StudentID );
+		StudentsInClass++;
 		if ( ptrClass != NULL )
 		{
 			ptrClass->Period++;

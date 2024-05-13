@@ -66,22 +66,9 @@ void PrintStudents ()
 		LoadStudents ();
 	}
 
-	if (( ofp = fopen ( "schedule_chromosome.TXT", "w" )) == NULL )
-	{
-		printf ( "Cannot create schedule_chromosome.TXT\n" );
-		ofp = stdout;
-	}
-
 	for ( int xc = 0; xc < ClassCount; xc++ )
 	{
 		ClassArray[xc].Period = BestIndividual.Chromosome[xc].Period;
-		fprintf ( ofp, "%d", BestIndividual.Chromosome[xc].Period );
-	}
-	fprintf ( ofp, "\n" );
-	
-	if ( ofp != stdout )
-	{
-		fclose ( ofp );
 	}
 
 	if (( ofp = fopen ( "schedule_students.TXT", "w" )) == NULL )

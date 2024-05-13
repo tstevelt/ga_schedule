@@ -2,7 +2,7 @@ PROG = ga_schedule
 LIB = ga_schedule.a
 XLIB = /usr/local/lib64/shslib.a
 DEF = /usr/local/include
-PRG = /usr/local/bin/$(PROG)
+PRG = /usr/local/bin/$(PROG).v1
 CFLAGS = -fsanitize=address -g -Wall -Wformat-truncation=0 -I../../include -I/usr/local/include
 
 FILES = \

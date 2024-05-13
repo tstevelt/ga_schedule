@@ -56,6 +56,7 @@ static int cmprec ( RECORD *a, RECORD *b )
 int obj_func ( ALLELE Chromosome [], int *StudentConflicts, int *TeacherConflicts )
 {
 static	int		firstpass = 1;
+static	double	WeightFactor;
 	int		Total = 0;
 	int		PeriodArray[MAXPERIODS];
 	int		xc, xp, PeriodCount;
@@ -69,6 +70,15 @@ static	int		firstpass = 1;
 	if ( firstpass == 1 )
 	{
 		firstpass = 0 ;
+
+		// 14.28 teacher conflict goes to zero quickly WeightFactor = (double)RequestCount / (double)CourseCount;
+		// 2.7 teacher conflict increase WeightFactor = (double)RequestCount / (double)ClassCount;
+		// WeightFactor = 9.0;
+		// WeightFactor = 5.0;
+		WeightFactor = 10.0;
+
+		printf ( "WeightFactor %.2f\n", WeightFactor );
+
 		Size = MAXPERIODS * CourseCount;
 		if (( Array = calloc ( Size, sizeof(RECORD) )) == NULL )
 		{
@@ -168,7 +178,7 @@ static	int		firstpass = 1;
 		}
 	}
 
-	Total = *StudentConflicts + *TeacherConflicts;
+	Total = *StudentConflicts + *TeacherConflicts * WeightFactor;
 	// printf ( "Students %d + Teachers %d = %d\n", *StudentConflicts, *TeacherConflicts, Total );
 
 	return ( Total );

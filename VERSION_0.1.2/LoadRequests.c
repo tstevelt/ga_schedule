@@ -19,6 +19,8 @@
 
 #include	"ga_schedule.h"
 
+static	FILE	*ifp;
+
 static int cmprequest ( REQUEST_RECORD *a, REQUEST_RECORD *b )
 {
 	if ( a->StudentID < b->StudentID )
@@ -29,10 +31,10 @@ static int cmprequest ( REQUEST_RECORD *a, REQUEST_RECORD *b )
 	{
 		return ( 1 );
 	}
+
 	return ( 0 );
 }
 
-#ifdef USE_RING_INDEX
 static void SetRingIndex ( int CourseIndex, int ClassIndex )
 {
 	CourseArray[CourseIndex].RingIndex = ClassIndex;
@@ -61,7 +63,6 @@ static int GetRingIndex ( int CourseIndex )
 
 	return ( rv );
 }
-#endif
 
 static void DumpRequests ()
 {
@@ -78,41 +79,12 @@ static void DumpRequests ()
 	}
 }
 
-void LoadRequests ()
+static	char	buffer[1024];
+static	char	*tokens[10];
+static	int		tokcnt;
+
+static void OpenFileAndAllocateArray ()
 {
-	FILE	*ifp;
-	char	buffer[1024];
-	char	*tokens[10];
-	int		tokcnt;
-//	int		xe = 0;
-	int		lineno;
-	int		xo;
-	int		CourseID;
-
-	if ( ClassCount == 0 )
-	{
-		LoadClasses ();
-	}
-
-#ifdef USE_RING_INDEX
-	/*----------------------------------------------------------
-		set RingIndex for each course
-	----------------------------------------------------------*/
-	SetRingIndex ( ClassArray[0].CourseIndex, 0 );
-	for ( int xc = 1; xc < ClassCount; xc++ )
-	{
-		if ( ClassArray[xc].CourseIndex != ClassArray[xc-1].CourseIndex )
-		{
-			SetRingIndex ( ClassArray[xc].CourseIndex, xc );
-		}
-	}
-#endif
-
-	if ( Verbose )
-	{
-		DumpCourses ();
-	}
-
 	if (( ifp = fopen ( "requests.CSV", "r" )) == NULL )
 	{
 		printf ( "Cannot open requests.CSV\n" );
@@ -120,7 +92,7 @@ void LoadRequests ()
 	}
 
 	/*----------------------------------------------------------
-		get number of requests
+		get number of requests and allocate array
 	----------------------------------------------------------*/
 	RequestCount = 0;
 	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
@@ -147,6 +119,210 @@ void LoadRequests ()
 	}
 
 	rewind ( ifp );
+}
+
+typedef struct
+{
+	int		StudentID;
+	int		Slot;
+	double	Sort;
+
+	int		ClassIndex;
+} RECORD;
+
+static	RECORD	Array[MAXPERIODS*MAXPERCLASS];
+static	int		Count;
+
+static int cmprec ( RECORD *a, RECORD *b )
+{
+	if ( a->Sort < b->Sort )
+	{
+		return ( -1 );
+	}
+	return ( 1 );
+}
+
+//  Array[ndx].ClassIndex = GetNextClass ( CourseArray[xc].CourseID );
+static int GetNextClass ( int CourseID )
+{
+			int		rv;
+	static	int		ClassIndex = 0;
+
+	rv = -1;
+
+	while ( rv == -1 )
+	{
+		if ( ClassIndex >= ClassCount )
+		{
+			ClassIndex = 0;
+		}
+
+		if ( ClassArray[ClassIndex].CourseID == CourseID )
+		{
+			rv = ClassIndex;
+			ClassIndex++;
+			break;
+		}
+
+		ClassIndex++;
+	}
+
+
+	return ( rv );
+}
+
+void LoadRequestsRandom ()
+{
+//	int		xe = 0;
+	int		lineno;
+	int		xc;			// course
+	int		xr;			// request
+	int		xs;			// slot
+//	int		CourseID;
+	REQUEST_RECORD	Key, *Ptr;
+
+	if ( ClassCount == 0 )
+	{
+		LoadClasses ();
+	}
+
+	if ( Verbose )
+	{
+		DumpCourses ();
+	}
+
+	OpenFileAndAllocateArray ();
+
+/*----------------------------------------------------------
+# these are fake student requests for testing
+  1, 9, 101, 102, 103, 104, 111, 112
+  2, 9, 101, 102, 103, 104, 113, 501, 502
+  3, 9, 101, 102, 103, 104, 503, 504
+  4, 9, 101, 102, 103, 104, 505, 506, 507
+  5, 9, 101, 102, 103, 104, 111, 112
+  6, 9, 101, 102, 103, 104, 113, 501, 502
+  7, 9, 101, 102, 103, 104, 503, 504
+  8, 9, 101, 102, 103, 104, 505, 506, 507
+  9, 9, 101, 102, 103, 104, 111, 112
+----------------------------------------------------------*/
+	lineno = 0;
+	xr = 0;
+	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
+	{
+		lineno++;
+
+		if ( buffer[0] == '#' )
+		{
+			continue;
+		}
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, 10 )) < 8 )
+		{
+			continue;
+		}
+		if (( RequestArray[xr].StudentID = atoi ( tokens[0] )) == 0 )
+		{
+			continue;
+		}
+		if ( xr >= RequestCount )
+		{
+			printf ( "Exceeds RequestCount\n" );
+			exit ( 1 );
+		}
+		RequestArray[xr].Level = atoi ( tokens[1] );
+		RequestArray[xr].CourseCount = RequestArray[xr].ClassCount = tokcnt - 2;
+
+		for ( xs = 0; xs < RequestArray[xr].CourseCount; xs++ )
+		{
+			RequestArray[xr].CourseID[xs] = atoi ( tokens[2+xs] );
+		}
+		xr++;
+	}
+	printf ( "Loaded %d Requests\n", RequestCount );
+
+	fclose ( ifp );
+
+	qsort ( RequestArray, RequestCount, sizeof(REQUEST_RECORD), (int(*)()) cmprequest );
+
+	for ( xc = 0; xc < CourseCount; xc++ )
+	{
+		Count = 0;
+		for ( xr = 0; xr < RequestCount; xr++ )
+		{
+			for ( xs = 0; xs < RequestArray[xr].CourseCount; xs++ )
+			{
+				if ( RequestArray[xr].CourseID[xs] == CourseArray[xc].CourseID )
+				{
+					Array[Count].StudentID = RequestArray[xr].StudentID;
+					Array[Count].Slot = xs;
+					Array[Count].Sort = d_random ();
+					Count++;
+				}
+			}
+		}
+		qsort ( Array, Count, sizeof(RECORD), (int(*)()) cmprec );
+
+		for ( int ndx = 0; ndx < Count; ndx++ )
+		{
+			Array[ndx].ClassIndex = GetNextClass ( CourseArray[xc].CourseID );
+		}
+
+		if ( Verbose )
+		{
+			printf ( "%3d %s\n", CourseArray[xc].CourseID, CourseArray[xc].Name );
+			for ( int ndx = 0; ndx < Count; ndx++ )
+			{
+				printf ( "%3d %2d %.4f %3d\n", 
+						Array[ndx].StudentID, Array[ndx].Slot, Array[ndx].Sort, Array[ndx].ClassIndex );
+			}
+		}
+
+// wip
+		for ( int ndx = 0; ndx < Count; ndx++ )
+		{
+			Key.StudentID = Array[ndx].StudentID;
+			Ptr = bsearch ( &Key, RequestArray, RequestCount, sizeof(REQUEST_RECORD), (int(*)()) cmprequest );
+			if ( Ptr == NULL )
+			{
+				printf ( "bsearch failed on %d\n", Key.StudentID );	
+			}
+			else
+			{
+				Ptr->ClassIndex[Array[ndx].Slot] = Array[ndx].ClassIndex;
+			}
+		}
+	}
+}
+
+void LoadRequestsRing ()
+{
+//	int		xe = 0;
+	int		lineno;
+	int		xo;
+	int		CourseID;
+
+	if ( ClassCount == 0 )
+	{
+		LoadClasses ();
+	}
+
+	/*----------------------------------------------------------
+		set RingIndex for each course
+	----------------------------------------------------------*/
+	SetRingIndex ( ClassArray[0].CourseIndex, 0 );
+	for ( int xc = 1; xc < ClassCount; xc++ )
+	{
+		if ( ClassArray[xc].CourseIndex != ClassArray[xc-1].CourseIndex )
+		{
+			SetRingIndex ( ClassArray[xc].CourseIndex, xc );
+		}
+	}
+
+	if ( Verbose )
+	{
+		DumpCourses ();
+	}
+
+	OpenFileAndAllocateArray ();
 
 /*----------------------------------------------------------
 # these are fake student requests for testing
@@ -186,7 +362,6 @@ void LoadRequests ()
 		RequestArray[xo].Level = atoi ( tokens[1] );
 		RequestArray[xo].ClassCount = tokcnt - 2;
 
-#ifdef USE_RING_INDEX
 		/*----------------------------------------------------------
 			assign classes cyclicaly
 		----------------------------------------------------------*/
@@ -203,8 +378,6 @@ void LoadRequests ()
 				}
 			}
 		}
-#else
-#endif
 		xo++;
 	}
 	printf ( "Loaded %d Requests\n", RequestCount );

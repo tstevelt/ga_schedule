@@ -106,21 +106,24 @@ void DumpCourses ()
 {
 	for ( int xc = 0; xc < CourseCount; xc++ )
 	{
-#ifdef USE_RING_INDEX
-		printf ( "%4d %2d %c %-20.20s %2d %4d\n",
-			CourseArray[xc].CourseID,
-			CourseArray[xc].Level,
-			CourseArray[xc].Required ? 'R' : 'E',
-			CourseArray[xc].Name,
-			CourseArray[xc].Counter,
-			CourseArray[xc].RingIndex );
-#else
-		printf ( "%4d %2d %c %-20.20s %2d\n",
-			CourseArray[xc].CourseID,
-			CourseArray[xc].Level,
-			CourseArray[xc].Required ? 'R' : 'E',
-			CourseArray[xc].Name,
-			CourseArray[xc].Counter );
-#endif
+		if ( LoadType == USE_RING_INDEX )
+		{
+			printf ( "%4d %2d %c %-20.20s %2d %4d\n",
+				CourseArray[xc].CourseID,
+				CourseArray[xc].Level,
+				CourseArray[xc].Required ? 'R' : 'E',
+				CourseArray[xc].Name,
+				CourseArray[xc].Counter,
+				CourseArray[xc].RingIndex );
+		}
+		else
+		{
+			printf ( "%4d %2d %c %-20.20s %2d\n",
+				CourseArray[xc].CourseID,
+				CourseArray[xc].Level,
+				CourseArray[xc].Required ? 'R' : 'E',
+				CourseArray[xc].Name,
+				CourseArray[xc].Counter );
+		}
 	}
 }

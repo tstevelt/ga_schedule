@@ -53,6 +53,19 @@ void LoadClasses ()
 		exit ( 1 );
 	}
 
+	/*----------------------------------------------------------
+		# this file is created by MakeClasses()
+		ID,COURSE,CLASS
+		  1,101,101A
+		  2,101,101B
+		  3,101,101C
+		  4,101,101D
+		  5,101,101E
+		  6,101,101F
+		  7,101,101G
+		  8,102,102A
+	----------------------------------------------------------*/
+
 	lineno = 0;
 	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
 	{
@@ -71,12 +84,12 @@ void LoadClasses ()
 			printf ( "Exceeds MAXCLASS\n" );
 			exit ( 1 );
 		}
-		int CourseID = atoi ( tokens[1] );
+		ClassArray[ClassCount].CourseID = atoi ( tokens[1] );
 		snprintf ( ClassArray[ClassCount].ClassCode, sizeof(ClassArray[ClassCount].ClassCode), "%s", tokens[2] );
 
 		for ( int xc = 0; xc < CourseCount; xc++ )
 		{
-			if ( CourseArray[xc].CourseID == CourseID )
+			if ( CourseArray[xc].CourseID == ClassArray[ClassCount].CourseID )
 			{
 				ClassArray[ClassCount].CourseIndex = xc;
 				break;

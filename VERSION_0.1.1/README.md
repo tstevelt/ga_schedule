@@ -1,5 +1,11 @@
 
 ## Catholic Girls High School Class Scheduling
+
+### Revision History
+
+Changed executable name to ga_schedule.v1
+
+### Original Release
 Creating a block schedule for a high school was something I struggled with from 1987 to 1989. The closest I ever got to a solution came fine tuned the loose ends by programmatically throwing darts at a dartboard. It wasn't until years later I heard of GA and thought that might have worked. However, I was two jobs along and never tried to do it. I'll leave it as a challenge for motivated readers.
 
 Here's the setup.
