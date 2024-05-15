@@ -55,7 +55,9 @@ typedef struct
 	int		Level;
 	int		Required;
 	char	Name[MAXNAME];
+	int		Teachers;
 	int		Counter;
+	int		RingIndex;
 } COURSE_RECORD;
 
 TYPE	COURSE_RECORD	CourseArray[MAXCOURSE];
@@ -83,6 +85,17 @@ typedef struct
 
 TYPE	CLASS_RECORD	ClassArray[MAXCLASS];
 TYPE	int				ClassCount;
+
+typedef struct
+{
+	int		StudentID;
+	int		Level;
+	int		ClassCount;
+	int		ClassIndex[MAXPERIODS];
+} REQUEST_RECORD;
+
+TYPE	REQUEST_RECORD	*RequestArray;
+TYPE	int				RequestCount;
 
 /*----------------------------------------------------------
 	Genetic Algorithm defines and variables
@@ -134,6 +147,10 @@ int cmpcourse ( COURSE_RECORD *a , COURSE_RECORD *b );
 void LoadCourses ( void );
 void DumpCourses ( void );
 
+/* LoadRequests.c */
+void LoadRequests ( void );
+void DumpRequests ( void );
+
 /* LoadStudents.c */
 int cmpstudent ( STUDENT_RECORD *a , STUDENT_RECORD *b );
 void LoadStudents ( void );
@@ -150,9 +167,6 @@ void MakeSchedule ( void );
 
 /* PrintRosters.c */
 void PrintRosters ( void );
-
-/* PrintChromosome.c */
-void PrintChromosome ( void );
 
 /* PrintSchedule.c */
 void PrintSchedule ( void );

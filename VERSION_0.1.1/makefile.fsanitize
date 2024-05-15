@@ -36,8 +36,8 @@ clean:
 	rm -f $(LIB)
 
 all:
-	make clean
-	make
+	make -f makefile.fsanitize clean
+	make -f makefile.fsanitize
 
 .PRECIOUS: $(LIB)
 

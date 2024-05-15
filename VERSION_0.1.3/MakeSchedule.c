@@ -19,33 +19,32 @@
 
 #include	"ga_schedule.h"
 
-void init ()
+void MakeSchedule ()
 {
-	if (( CurrPop = calloc ( PopCount, sizeof(INDIVIDUAL) )) == NULL )
+	int		BestFitness = -1;
+	int		ThisFitness;
+	int		Consecutive = 0;
+
+	init ();
+
+	for ( GenerationCount = 1; GenerationCount <= MaxGenerations && Consecutive < MaxConsecutive; GenerationCount++ )
 	{
-		printf ( "init: calloc CurrPop failed, %s\n", strerror(errno) );
-		exit ( 1 );
-	}
-
-	if (( NextPop = calloc ( PopCount, sizeof(INDIVIDUAL) )) == NULL )
-	{
-		printf ( "init: calloc NextPop failed, %s\n", strerror(errno) );
-		exit ( 1 );
-	}
-
-	LoadClasses ( 1 );
-
-	BestFitness = -1;
-
-	for ( int p = 0; p < PopCount; p++ )
-	{
-		for ( int c = 0; c < ClassCount; c++ )
+		generation ( GenerationCount );
+	
+		for ( int xp = 0; xp < PopCount; xp++ )
 		{
-			CurrPop[p].Chromosome[c].Period  = random_range ( 1, MAXPERIODS );
+			memcpy ( &CurrPop[xp], &NextPop[xp], sizeof(INDIVIDUAL) );
 		}
 
-		CurrPop[p].Fitness = obj_func ( CurrPop[p].Chromosome );
-	}
+		ThisFitness = report ( GenerationCount, REPORT_MINMAX );
+		if ( BestFitness == -1 || BestFitness > ThisFitness )
+		{
+			BestFitness = ThisFitness;
+			Consecutive = 0;
+		}
 
-	report ( 0, Verbose ? REPORT_ALL : REPORT_MINMAX );
+		Consecutive++;
+
+	}
+	GenerationCount--;
 }

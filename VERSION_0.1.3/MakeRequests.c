@@ -25,7 +25,6 @@ void MakeRequests ()
 	int		lineno;
 	int		xe = 0;
 	int		xo, xs, xl;
-	int		RequestCount = 0;
 
 	if (( ofp = fopen ( "requests.CSV", "w" )) == NULL )
 	{

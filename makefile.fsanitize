@@ -2,17 +2,17 @@ PROG = ga_schedule
 LIB = ga_schedule.a
 XLIB = /usr/local/lib64/shslib.a
 DEF = /usr/local/include
-PRG = /usr/local/bin/$(PROG).v3
+PRG = /usr/local/bin/$(PROG).v5
 CFLAGS = -fsanitize=address -g -Wall -Wformat-truncation=0 -I../../include -I/usr/local/include
 
 FILES = \
 	$(LIB)(ga_schedule.o)	\
 	$(LIB)(LoadCourses.o)	\
 	$(LIB)(LoadClasses.o)	\
-	$(LIB)(LoadRequests.o)	\
 	$(LIB)(MakeClasses.o)	\
 	$(LIB)(MakeRequests.o)	\
 	$(LIB)(MakeSchedule.o)	\
+	$(LIB)(PrintChromosome.o)	\
 	$(LIB)(PrintSchedule.o)	\
 	$(LIB)(init.o)			\
 	$(LIB)(report.o)		\
@@ -36,8 +36,8 @@ clean:
 	rm -f $(LIB)
 
 all:
-	make clean
-	make
+	make -f makefile.fsanitize clean
+	make -f makefile.fsanitize
 
 .PRECIOUS: $(LIB)
 

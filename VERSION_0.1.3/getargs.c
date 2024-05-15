@@ -21,7 +21,7 @@
 
 static void Usage ()
 {
-	printf ( "USAGE: ga_schedule.v5 mode [options]\n" );
+	printf ( "USAGE: ga_schedule mode [options]\n" );
 	printf ( "  1 = make requests from students and courses\n" );
 	printf ( "  2 = make classes from requests\n" );
 	printf ( "  3 = make schedule using GA\n" );
@@ -33,7 +33,7 @@ static void Usage ()
 	printf ( "  -probM #.# - mode 3, probability of mutation (default %.4f)\n", ProbMutate );
 	printf ( "  -maxgen #  - mode 3, maximum generations (default %d)\n", MaxGenerations );
  	printf ( "  -same #    - mode 3, if no improvment after # generations (default %d)\n", MaxConsecutive );
-	printf ( "  -conflicts # - mode 3, stop if teacher conflicts less than # (default 1)\n" );
+	printf ( "  -conflicts # - mode 3, stop if teacher conflicts less than #\n" );
 	printf ( "  -v         - verbose\n" );
 	exit ( 1 );
 
@@ -48,7 +48,7 @@ void getargs ( int argc, char *argv[] )
 	ProbMutate = 0.05;
 	MaxGenerations = 500;
 	MaxConsecutive = 100;
-	TeacherStop = 1;
+	TeacherStop = -1;
 
 	for ( int xa = 1; xa < argc; xa++ )
 	{

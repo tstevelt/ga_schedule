@@ -2,20 +2,18 @@ PROG = ga_schedule
 LIB = ga_schedule.a
 XLIB = /usr/local/lib64/shslib.a
 DEF = /usr/local/include
-PRG = /usr/local/bin/$(PROG).v5
+PRG = /usr/local/bin/$(PROG).v3
+CFLAGS = -fsanitize=address -g -Wall -Wformat-truncation=0 -I../../include -I/usr/local/include
 
 FILES = \
 	$(LIB)(ga_schedule.o)	\
 	$(LIB)(LoadCourses.o)	\
 	$(LIB)(LoadClasses.o)	\
-	$(LIB)(LoadStudents.o)	\
+	$(LIB)(LoadRequests.o)	\
 	$(LIB)(MakeClasses.o)	\
 	$(LIB)(MakeRequests.o)	\
 	$(LIB)(MakeSchedule.o)	\
-	$(LIB)(PrintChromosome.o)	\
 	$(LIB)(PrintSchedule.o)	\
-	$(LIB)(PrintRosters.o)	\
-	$(LIB)(AssignStudents.o)	\
 	$(LIB)(init.o)			\
 	$(LIB)(report.o)		\
 	$(LIB)(obj_func.o)		\
@@ -28,7 +26,7 @@ FILES = \
 
 $(PRG): $(LIB) $(XLIB)
 	echo "using gcc to load $(PRG)"
-	gcc -o $(PRG) $(LIB) $(XLIB)
+	gcc -fsanitize=address -o $(PRG) $(LIB) $(XLIB)
 
 $(LIB): $(FILES)
 
@@ -38,8 +36,8 @@ clean:
 	rm -f $(LIB)
 
 all:
-	make clean
-	make
+	make -f makefile.fsanitize clean
+	make -f makefile.fsanitize
 
 .PRECIOUS: $(LIB)
 

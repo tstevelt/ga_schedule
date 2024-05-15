@@ -19,33 +19,43 @@
 
 #include	"ga_schedule.h"
 
-void init ()
+void PrintChromosome ()
 {
-	if (( CurrPop = calloc ( PopCount, sizeof(INDIVIDUAL) )) == NULL )
+	FILE	*ofp;
+
+	if (( ofp = fopen ( "schedule_chromosome.TXT", "w" )) == NULL )
 	{
-		printf ( "init: calloc CurrPop failed, %s\n", strerror(errno) );
+		printf ( "Cannot create schedule_chromosome.TXT\n" );
 		exit ( 1 );
 	}
 
-	if (( NextPop = calloc ( PopCount, sizeof(INDIVIDUAL) )) == NULL )
+#define PRINT_BEST_ONLY
+#ifdef PRINT_BEST_ONLY
+	for ( int xc = 0; xc < ClassCount; xc++ )
 	{
-		printf ( "init: calloc NextPop failed, %s\n", strerror(errno) );
-		exit ( 1 );
+		fprintf ( ofp, "%d", BestIndividual.Chromosome[xc].Period );
 	}
+	fprintf ( ofp, "\n" );
 
-	LoadClasses ( 1 );
-
-	BestFitness = -1;
-
-	for ( int p = 0; p < PopCount; p++ )
+	fprintf ( ofp, "\n" );
+	for ( int xc = 0; xc < ClassCount; xc++ )
 	{
-		for ( int c = 0; c < ClassCount; c++ )
+		fprintf ( ofp, "%-4.4s %2d\n", 
+			ClassArray[xc].ClassCode,
+			BestIndividual.Chromosome[xc].Period );
+	}
+	fprintf ( ofp, "\n" );
+#else
+	for ( int xp = 0; xp < PopCount; xp++ )
+	{
+		for ( int xc = 0; xc < ClassCount; xc++ )
 		{
-			CurrPop[p].Chromosome[c].Period  = random_range ( 1, MAXPERIODS );
+			fprintf ( ofp, "%d", CurrPop[xp].Chromosome[xc].Period );
 		}
-
-		CurrPop[p].Fitness = obj_func ( CurrPop[p].Chromosome );
+		fprintf ( ofp, "\n" );
 	}
-
-	report ( 0, Verbose ? REPORT_ALL : REPORT_MINMAX );
+#endif
+	
+	fclose ( ofp );
 }
+

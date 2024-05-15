@@ -56,7 +56,7 @@ static int cmprec ( RECORD *a, RECORD *b )
 int obj_func ( ALLELE Chromosome [] )
 {
 static	int		firstpass = 1;
-	int		TeacherConflicts = 0;
+	int		Teachers = 0;
 	int		Total = 0;
 	int		xc, xp;
 	RECORD	*ptr, key;
@@ -109,13 +109,13 @@ static	int		firstpass = 1;
 	}
 	for ( int ndx = 0; ndx < Count; ndx++ )
 	{
-		if ( Array[ndx].Count > 1 )
+		if ( Array[ndx].Count > CourseArray[Array[ndx].CourseIndex].Teachers )
 		{
-			TeacherConflicts += Array[ndx].Count - 1;
+			Teachers += Array[ndx].Count - CourseArray[Array[ndx].CourseIndex].Teachers;
 		}
 	}
 
-	Total = TeacherConflicts;
+	Total = Teachers;
 
 	return ( Total );
 }

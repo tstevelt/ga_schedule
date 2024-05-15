@@ -35,6 +35,8 @@ void init ()
 
 	LoadClasses ( 1 );
 
+	LoadRequests ();
+
 	BestFitness = -1;
 
 	for ( int p = 0; p < PopCount; p++ )

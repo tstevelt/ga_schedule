@@ -25,6 +25,22 @@ void PrintSchedule ()
 	COURSE_RECORD	*ptrCourse;
 	FILE			*ofp;
 
+
+	if (( ofp = fopen ( "schedule_chromosome.TXT", "w" )) == NULL )
+	{
+		printf ( "Cannot create schedule_chromosome.TXT\n" );
+		exit ( 1 );
+	}
+
+	for ( int xc = 0; xc < ClassCount; xc++ )
+	{
+		ClassArray[xc].Period = BestIndividual.Chromosome[xc].Period;
+		fprintf ( ofp, "%d", BestIndividual.Chromosome[xc].Period );
+	}
+	fprintf ( ofp, "\n" );
+	
+	fclose ( ofp );
+
 	if (( ofp = fopen ( "classes_summary.TXT", "w" )) == NULL )
 	{
 		printf ( "Cannot create classes_summary.TXT\n" );

@@ -46,22 +46,23 @@ void LoadCourses ()
 	}
 
 	/*----------------------------------------------------------
-		# this file is created by hand
-		# required courses by year
-		ID,LEVEL,REQUIRED,NAME
-		101,9,R,English
-		102,9,R,Algebra 1
-		103,9,R,Biology 1
-		104,9,R,US History
-		201,10,R,Literature
-		202,10,R,Algebra 2
+# this file is created by hand
+# required courses by year
+ID,LEVEL,REQUIRED,NAME, TEACHERS
+101,9,R,English, 2
+102,9,R,Algebra 1, 1
+103,9,R,Biology 1, 1
+104,9,R,US History, 1
+
+201,10,R,Literature, 1
+202,10,R,Algebra 2, 2
 	----------------------------------------------------------*/
 	lineno = 0;
 	while ( fgets ( buffer, sizeof(buffer), ifp ) != NULL )
 	{
 		lineno++;
 
-		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 4 )
+		if (( tokcnt = GetTokensD ( buffer, ",\n\r", tokens, MAXTOKS )) < 5 )
 		{
 			continue;
 		}
@@ -89,6 +90,7 @@ void LoadCourses ()
 				exit ( 1 );
 		}
 		snprintf ( CourseArray[CourseCount].Name, MAXNAME, "%s", tokens[3] );
+		CourseArray[CourseCount].Teachers = atoi ( tokens[4] );
 		CourseCount++;
 	}
 	printf ( "Loaded %d courses\n", CourseCount );
@@ -101,11 +103,12 @@ void DumpCourses ()
 {
 	for ( int xc = 0; xc < CourseCount; xc++ )
 	{
-		printf ( "%4d %2d %c %-20.20s %2d\n",
+		printf ( "%4d %2d %c %-20.20s %2d %4d\n",
 			CourseArray[xc].CourseID,
 			CourseArray[xc].Level,
 			CourseArray[xc].Required ? 'R' : 'E',
 			CourseArray[xc].Name,
-			CourseArray[xc].Counter );
+			CourseArray[xc].Counter,
+			CourseArray[xc].RingIndex );
 	}
 }

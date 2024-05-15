@@ -57,7 +57,6 @@ int main ( int argc, char *argv[] )
 		case MODE_SCHEDULE:
 			time ( &StartTime );
 			MakeSchedule ();
-			PrintChromosome ();
 			PrintSchedule ();
 			time ( &EndTime );
 			Elapsed = EndTime - StartTime;
