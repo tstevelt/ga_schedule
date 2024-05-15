@@ -19,7 +19,7 @@ Options
   -v         - verbose
 ```
 
-After considerable experimentation, I realized that student conflicts are dependent on teacher conflict.  Since the class list (classses.TXT) contains enought classes per course to not exceed 'Maximum Students Per Class', we only need to eliminate all teacher confilcts in order to minimize studend conflicts.  Therefore, the 'Pure GA Solutions' I was persuing is not necessary. Huge speed increase!
+After considerable experimentation, I realized that student conflicts are dependent on teacher conflict.  Since the class list (classes.TXT) contains enough classes per course to not exceed 'Maximum Students Per Class', we only need to eliminate all teacher confilcts in order to minimize student conflicts.  Therefore, the 'Pure GA Solution' I was pursuing is not necessary. Huge speed increase!
 
 The courses.CSV file eliminated the 4 column 'TEACHERS'.  Each course has a unique teacher.  If your school has two English teachers, then you will need two English courses (for example '101 Miss Jones English' and '102 Miss Smitth English).
 
